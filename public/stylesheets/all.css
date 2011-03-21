@@ -1,0 +1,194 @@
+/*
+    Document   : scaffold
+    Created on : 13 March 2011, 19:17:49
+    Author     : Stephen Law
+    Description:
+        Default rails stylesheet, handles error checking and body.
+*/
+
+body {
+    background: #b0d8f9;
+    color: #333333;
+    font-family: verdana, arial, helvetica, sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    /*background: url(../images/bg.jpg) 50% 0  no-repeat;*/
+}
+
+pre {
+    background-color: #eee;
+    padding: 10px;
+    font-size: 11px;
+}
+
+form.new_post, form.edit_post {
+    width: 550px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-left: 15px;
+    width: 5em;
+    float: left;
+    text-align: left;
+}
+
+input {
+    width: 400px;
+    font-size: 12px;
+    font-family: verdana, arial, helvetica, sans-serif;
+}
+
+#post_submit {
+    width: 100px;
+}
+
+textarea {
+    width: 400px;
+    font-size: 12px;
+    font-family: verdana, arial, helvetica, sans-serif;
+}
+
+div.field, div.actions {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#notice {
+    color: green;
+}
+
+.field_with_errors {
+    padding: 2px;
+    background-color: red;
+    width: 550px;
+}
+
+#error_explanation {
+    width: 400px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+}
+
+#error_explanation ul li {
+    text-align: center;
+    font-size: 12px;
+    color: #000000;
+    list-style: square;
+}
+
+
+/*
+    Document   : newCascadeStyleSheet
+    Created on : 14 March 2011, 20:51:18
+    Author     : Stephen Law
+    Description:
+        Divs, Links and Misc Styles.
+*/
+
+/* CSS for divs in order of appearance */
+div {
+    display: block;
+    margin: 0 auto;
+}
+
+div.header {
+    width: 100%;
+    height: 200px;
+    background: #153766 url(../images/navbg.jpg) repeat-x;
+}
+
+div.logo {
+    float: left;
+}
+
+div.nav {
+    border-left: 3px solid #CCCCCC;
+    border-right: 3px solid #CCCCCC;
+    width: 1024px;
+    height: 50px;
+}
+
+div.socialbox {
+    width: 320px;
+    height: 35px;
+    padding-top: 15px;
+    text-align: left;
+    float: left;
+}
+
+div.links {
+    width: auto;
+    height: 50px;
+    color: #FFFFFF;
+    text-align: right;
+    padding-top: 15px;
+}
+
+div.banner {
+    border-left: 3px solid #CCCCCC;
+    border-right: 3px solid #CCCCCC;
+    width: 1024px;
+    height: 150px;
+    color: #FFFFFF;
+    text-align: left;
+    padding-top: 15px;
+}
+
+div.searchbg {
+    border-top: 3px solid #CCCCCC;
+    border-bottom: 3px solid #CCCCCC;
+    width: 100%;
+    background: #ffffff;
+}
+
+div.search {
+    border-left: 3px solid #CCCCCC;
+    border-right: 3px solid #CCCCCC;
+    width: 1024px;
+    height: 50px;
+}
+
+div.container {
+    width: 1024px;
+    min-height: 40em;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-left: 3px solid #CCCCCC;
+    border-right: 3px solid #CCCCCC;
+}
+
+div.footer {
+    width: 100%;
+    height: 150px;
+    background: #000000;
+    color: #FFFFFF;
+    border-top: 3px solid #CCCCCC;
+}
+
+/* CSS for links */
+a { color: #000; }
+a:visited { color: #666; }
+div.container a:hover { color: #fff; background-color: #718eff; }
+div.header a:hover { color: #fff; }
+
+/* Misc */
+.borderless {
+    border:0;
+}

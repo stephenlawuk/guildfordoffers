@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Guildford Student Offers</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-language" content="en" />
+  <meta name="description" content="Guildford Student Offers - We find the deals so you don't have to. BETA" />
+  <meta name="keywords" content="Guildford, Student, Offers, Deals, Bargains, Discounts, iGeolise, facebook" />
+  <meta name="author" content="iGeolise (http://www.igeolise.com) Stephen Law (http://www.stephenlaw.co.uk)" />
+  <%= csrf_meta_tag %>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <%= stylesheet_link_tag "scaffold", "stylesheet1", :cache => true, :concat => true %>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4d80079f04c2aeff"></script>  
+  <%= javascript_include_tag :defaults %> 
+</head>
+<body>
+  
+  <div class="header">
+    <div class="nav">
+      <div class="logo">
+        <a href="http://www.guildfordoffers.com" target="_blank"><img alt="Guildford Student Offers" class="borderless" src="/images/gsologo.png"/></a>
+      </div>
+      <div class="socialbox">
+      <!-- AddThis Button BEGIN -->
+        <div class="addthis_toolbox addthis_default_style">
+        <a class="addthis_button_facebook_like" fb:like:layout="button_count" addthis:url="http://www.facebook.com/guildfordoffers"></a>
+        <a class="addthis_button_tweet" addthis:url="http://www.guildfordoffers.com" tw:via="guildfordoffers" tw:text="Guilford Student Offers have loads of discounts check them out!!"></a>
+        <a class="addthis_counter addthis_pill_style" addthis:url="http://www.guildfordoffers.com" addthis:title="Amazing Student Discounts At Guildford Student Offers Check them out!!"></a>
+        </div>
+        <!-- AddThis Button END -->
+      </div>
+      <div class="links">
+        NAV BAR LINKS??
+      </div>
+    </div>
+    <div class="banner">
+      THE MORE LIKES WE GET, THE BETTER DEALS WE CAN GET YOU
+      <br/>
+      Subscribe To Receive Newsletters And Updates - Possibly chuck this in footer
+      <br/>
+      Live Twitter Feed??
+    </div>
+  </div>
+
+  <div class="searchbg">
+    <div class="search">
+      Search Box To Go Here
+    </div>
+  </div>
+
+  <div class="container">
+    <%= yield %>
+  </div>
+
+  <div class="footer">
+    Copyright, links back to top etc etc etc
+  </div>
+
+</body>
+</html>

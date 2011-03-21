@@ -1,0 +1,78 @@
+<%= form_for(@post) do |f| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+      <% @post.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :offer %>
+    <%= f.text_field :offer %>
+  </div>
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description, :rows => "8" %>
+  </div>
+  <div class="field">
+    <%= f.label "Valid Until" %>
+    <%= f.text_field :validto %>
+  </div>
+  <div class="field">
+    <%= f.label "Valid Conditions" %>
+    <%= f.text_area :validtonotes, :rows => "3" %>
+  </div>
+  <div class="field">
+    <%= f.label :company %>
+    <%= f.text_field :company %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :website %>
+    <%= f.text_field :website %>
+  </div>
+  <div class="field">
+    <%= f.label :facebook %>
+    <%= f.text_field :facebook %>
+  </div>
+  <div class="field">
+    <%= f.label :twitter %>
+    <%= f.text_field :twitter %>
+  </div>
+  <div class="field">
+    <%= f.label :address %>
+    <%= f.text_area :address, :rows => "8" %>
+  </div>
+  <div class="field">
+    <%= f.label :latitude %>
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %>
+    <%= f.text_field :longitude %>
+  </div>
+  <div class="field">
+    <%= f.label "Opening Times" %>
+    <%= f.text_area :openingtimes, :rows => "8" %>
+  </div>
+  <div class="field">
+    <%= f.label "Tags" %>
+    <%= f.text_area :metadata, :rows => "2" %>
+  </div>
+  <div class="actions">
+    <%= f.label " " %>
+    <%= f.submit :value => "Post Offer" %>
+  </div>
+<% end %>
