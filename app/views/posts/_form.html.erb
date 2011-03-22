@@ -71,6 +71,18 @@
     <%= f.label "Tags" %>
     <%= f.text_area :metadata, :rows => "2" %>
   </div>
+  <div class="field">
+    <%= f.label "Image Url" %>
+    <%= f.text_field :imgurl %>
+  </div>
+  <div class="field">
+    <%= f.label "NUS Card Required" %>
+    <%= f.check_box :nus, :value => "1" %>
+  </div>
+  <div class="field">
+    <%= f.label "Web Offer" %>
+    <%= f.check_box :web, :value => "1" %>
+  </div>
   <div class="actions">
     <%= f.label " " %>
     <%= f.submit :value => "Post Offer" %>

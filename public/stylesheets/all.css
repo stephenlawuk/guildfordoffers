@@ -22,7 +22,7 @@ pre {
 }
 
 form.new_post, form.edit_post {
-    width: 550px;
+    width: 650px;
     margin: 0 auto;
 }
 
@@ -32,6 +32,7 @@ label {
     width: 5em;
     float: left;
     text-align: left;
+    white-space: nowrap;
 }
 
 input {

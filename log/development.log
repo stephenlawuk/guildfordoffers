@@ -7895,3 +7895,975 @@ Started GET "/posts/35/edit" for 127.0.0.1 at Mon Mar 21 13:21:56 +0000 2011
 Rendered posts/_form.html.erb (47.0ms)
 Rendered posts/edit.html.erb within layouts/application (47.0ms)
 Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 21 23:33:51 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (297.0ms)
+Completed 200 OK in 500ms (Views: 312.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Mon Mar 21 23:33:56 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/_form.html.erb (125.0ms)
+Rendered posts/edit.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 156ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to AddImgurlToPosts (20110321233949)
+  [1m[35mSQL (0.0ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (94.0ms)[0m  [1mALTER TABLE "posts" ADD "imgurl" VARCHAR(255)[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT last_insert_rowid()
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT name, sql FROM sqlite_master WHERE tbl_name = 'posts' AND type = 'index'
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to AddImgurlToPosts (20110321233949)
+Migrating to AddWebToPosts (20110321234536)
+  [1m[35mSQL (0.0ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (78.0ms)[0m  [1mALTER TABLE "posts" ADD "web" VARCHAR(255)[0m
+  [1m[35mSQL (78.0ms)[0m  ALTER TABLE "posts" ADD "nus" VARCHAR(255)
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name, sql FROM sqlite_master WHERE tbl_name = 'posts' AND type = 'index'[0m
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 21 23:53:48 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (156.0ms)
+Completed 200 OK in 203ms (Views: 172.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Mon Mar 21 23:53:50 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Mon Mar 21 23:53:52 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 109ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Mon Mar 21 23:53:54 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/_form.html.erb (63.0ms)
+Rendered posts/edit.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 110ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 21 23:55:10 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 125ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Mon Mar 21 23:55:13 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/_form.html.erb (63.0ms)
+Rendered posts/edit.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 21 23:55:46 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Mon Mar 21 23:55:50 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/_form.html.erb (62.0ms)
+Rendered posts/edit.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/35" for 127.0.0.1 at Mon Mar 21 23:56:11 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"15% off first order", "description"=>"Web Exclusive Offer\r\n\r\n15 % of your first order at The Student Boutique \r\nhttp://www.thestudentboutique.co.uk/pages/clothes_86848.cfm\r\n\r\ndiscount code 'gimme15'", "validto"=>"", "validtonotes"=>"Valid until further notice", "company"=>"The Student Boutique", "phone"=>"(01617)231750", "email"=>"candice@thestudentboutique.co.uk", "website"=>"http://www.thestudentboutique.co.uk/pages/clothes_86848.cfm", "facebook"=>"http://www.facebook.com/group.php?gid=367743221340", "twitter"=>"http://twitter.com/CandiceTSBoutiq", "address"=>"", "latitude"=>"", "longitude"=>"", "openingtimes"=>"", "metadata"=>"clothes", "nus"=>"0", "web"=>"1"}, "commit"=>"Post Offer", "id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "posts" SET "nus" = '0', "web" = '1', "updated_at" = '2011-03-21 23:56:11' WHERE "posts"."id" = 35[0m
+Redirected to http://localhost:3000/posts/35
+Completed 302 Found in 156ms
+
+
+Started GET "/posts/35" for 127.0.0.1 at Mon Mar 21 23:56:11 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 62ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Mon Mar 21 23:56:17 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 156ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Mon Mar 21 23:56:44 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 21 23:58:48 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 110ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Mon Mar 21 23:58:51 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 21 23:59:32 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Mon Mar 21 23:59:35 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/_form.html.erb (31.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 62ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Tue Mar 22 00:00:25 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 110ms (Views: 94.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 22 00:17:52 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (16.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/posts/7/edit" for 127.0.0.1 at Tue Mar 22 00:18:01 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 7 LIMIT 1[0m
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 79ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/7" for 127.0.0.1 at Tue Mar 22 00:18:05 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"£4 off on purchases of £45 at game.co.uk", "description"=>"Clever students save online at <a href=\"http://www.game.co.uk/nus/?cm_mmc=Partnerships-_-Voucher-_-NUSExtra-_-Link\" target=\"_blank\">GAME.co.uk</a>, the UK’s leading gaming specialist.\\r\\n\\r\\nVisit <a href=\"http://www.game.co.uk/nus/?cm_mmc=Partnerships-_-Voucher-_-NUSExtra-_-Link\" target=\"_blank\">GAME.co.uk</a> for the very latest exclusive student offers and to redeem your NUS Extra Card discounts.\\r\\n\\r\\n<strong>Terms and Conditions</strong> :\\r\\nVoucher valid from 05/08/2010 until 31/08/2011. Voucher only redeemable at Game.co.uk and not in any GAME Store. Minimum spend £45.\\r\\n\\r\\nThis promotion is only valid to NUS Extra Card members only and can not be redeemed via any cashback or point portals. Cannot be redeemed against gift vouchers, gift cards, preorder products, hardware, hardware inc Kinect and Move products and software bundles, GAME Rental, GAMEcare, GAME On Demand Download Service, GAME Download to own service, or mobile games.\\r\\n\\r\\nOrders not complying with these T''s and C''s will be cancelled by GAME Stores Group and no discussion entered into. Your email address will not be shared with any third parties. Cash value of the voucher is 0.001p. No alternative offered. GAME reserves the right to withdraw from this promotion at any time or cancel orders if the voucher is abused.", "validto"=>"2011-08-31", "validtonotes"=>"from 05/08/2010 until 31/08/2011", "company"=>"Game", "phone"=>"", "email"=>"", "website"=>"http://www.game.co.uk/nus/?cm_mmc=Partnerships-_-Voucher-_-NUSExtra-_-Link", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.2358382", "longitude"=>"-0.5720834", "openingtimes"=>"", "metadata"=>"video games online", "imgurl"=>"", "nus"=>"0", "web"=>"1"}, "commit"=>"Post Offer", "id"=>"7"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 7 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "posts" SET "phone" = '', "email" = '', "facebook" = '', "twitter" = '', "address" = '', "openingtimes" = '', "imgurl" = '', "nus" = '0', "web" = '1', "updated_at" = '2011-03-22 00:18:05' WHERE "posts"."id" = 7[0m
+Redirected to http://localhost:3000/posts/7
+Completed 302 Found in 110ms
+
+
+Started GET "/posts/7" for 127.0.0.1 at Tue Mar 22 00:18:05 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 7 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 79ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Tue Mar 22 00:18:09 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 22 00:26:30 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 125ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/27/edit" for 127.0.0.1 at Tue Mar 22 00:27:31 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 27 LIMIT 1[0m
+Rendered posts/_form.html.erb (46.0ms)
+Rendered posts/edit.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 62ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/27" for 127.0.0.1 at Tue Mar 22 00:27:36 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"20% Off Hair Cut At Martin \"G\"", "description"=>"Martin \"G\" is pleased to offer 20% off  gentlemen''s hair cuts with an NUS Card! OR 10% without an NUS card if you print this voucher!\\r\\n\\r\\nOffer applies: Tuesday, Wednesday, Thursday and Friday.", "validto"=>"", "validtonotes"=>"Valid until further notice.", "company"=>"Martin \"G\"", "phone"=>"", "email"=>"", "website"=>"", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.2447542", "longitude"=>"-0.5755933", "openingtimes"=>"", "metadata"=>"hair cut hairdressers barber", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"27"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 27 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "posts" SET "phone" = '', "email" = '', "website" = '', "facebook" = '', "twitter" = '', "address" = '', "openingtimes" = '', "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:27:36' WHERE "posts"."id" = 27[0m
+Redirected to http://localhost:3000/posts/27
+Completed 302 Found in 125ms
+
+
+Started GET "/posts/27" for 127.0.0.1 at Tue Mar 22 00:27:36 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 27 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 62ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Tue Mar 22 00:27:38 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/26/edit" for 127.0.0.1 at Tue Mar 22 00:27:51 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"26"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 26 LIMIT 1
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 62ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/26" for 127.0.0.1 at Tue Mar 22 00:27:55 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"20% Off Hair Cuts at Saks Hair", "description"=>"Saks Hair are pleased to announce a 20% discount for all Guildford Students with an NUS card!!", "validto"=>"", "validtonotes"=>"Valid until further notice.", "company"=>"Saks Hair", "phone"=>"", "email"=>"", "website"=>"", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.2349401", "longitude"=>"-0.5733539", "openingtimes"=>"", "metadata"=>"hair cut hairdressers barber", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"26"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 26 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "posts" SET "phone" = '', "email" = '', "website" = '', "facebook" = '', "twitter" = '', "address" = '', "openingtimes" = '', "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:27:55' WHERE "posts"."id" = 26
+Redirected to http://localhost:3000/posts/26
+Completed 302 Found in 125ms
+
+
+Started GET "/posts/26" for 127.0.0.1 at Tue Mar 22 00:27:55 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 26 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 47ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Tue Mar 22 00:27:56 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 109ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/25/edit" for 127.0.0.1 at Tue Mar 22 00:28:07 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 25 LIMIT 1[0m
+Rendered posts/_form.html.erb (31.0ms)
+Rendered posts/edit.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 63ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/25" for 127.0.0.1 at Tue Mar 22 00:28:10 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"15% discount at Crabtree & Evelyn", "description"=>"Crabtree &amp; Evelyn would be pleased to offer a 15% discount for NUS student card holders!\\r\\n\\r\\n(Terms and Conditions: Not valid in conjunction with any other offers)", "validto"=>"", "validtonotes"=>"Valid until further notice.", "company"=>"Crabtree & Evelyn", "phone"=>"", "email"=>"", "website"=>"", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.2360398", "longitude"=>"-0.572088", "openingtimes"=>"", "metadata"=>"", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"25"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 25 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "posts" SET "phone" = '', "email" = '', "website" = '', "facebook" = '', "twitter" = '', "address" = '', "openingtimes" = '', "metadata" = '', "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:28:10' WHERE "posts"."id" = 25[0m
+Redirected to http://localhost:3000/posts/25
+Completed 302 Found in 109ms
+
+
+Started GET "/posts/25" for 127.0.0.1 at Tue Mar 22 00:28:10 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 25 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Tue Mar 22 00:28:12 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 265ms (Views: 265.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/23/edit" for 127.0.0.1 at Tue Mar 22 00:28:30 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"23"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 23 LIMIT 1
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/23" for 127.0.0.1 at Tue Mar 22 00:28:33 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"Free Diagnostic at PC Repair Centre", "description"=>"PC Repairs is your one stop shop for all things technical, whether you need a new laptop, desktop, camera. OR need one fixed PC Repairs can help you! And now when you show your NUS card, PC Repairs will offer a free diagnostic. So if your PC is running like it should, go and see what''s wrong with it, for free!", "validto"=>"", "validtonotes"=>"Valid until further notice.", "company"=>"PC Repair Centre", "phone"=>"", "email"=>"", "website"=>"", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.237568", "longitude"=>"-0.5732415", "openingtimes"=>"", "metadata"=>"PC repair diagnostic", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"23"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 23 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "posts" SET "phone" = '', "email" = '', "website" = '', "facebook" = '', "twitter" = '', "address" = '', "openingtimes" = '', "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:28:33' WHERE "posts"."id" = 23
+Redirected to http://localhost:3000/posts/23
+Completed 302 Found in 109ms
+
+
+Started GET "/posts/23" for 127.0.0.1 at Tue Mar 22 00:28:33 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 23 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Tue Mar 22 00:28:34 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/19/edit" for 127.0.0.1 at Tue Mar 22 00:29:00 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 19 LIMIT 1[0m
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 63ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/19" for 127.0.0.1 at Tue Mar 22 00:29:05 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"10% discount at Office Team Guildford!", "description"=>"Office Team Guildford is a stationary offering an amazing 10% discount to anyone with an NUS card! Go in today and stock up on your stationary supplies!", "validto"=>"", "validtonotes"=>"Valid until further notice.", "company"=>"Office Team Guildford", "phone"=>"", "email"=>"", "website"=>"", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.2373987", "longitude"=>"-0.5721749", "openingtimes"=>"", "metadata"=>"office stationary", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"19"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 19 LIMIT 1
+  [1m[36mAREL (16.0ms)[0m  [1mUPDATE "posts" SET "phone" = '', "email" = '', "website" = '', "facebook" = '', "twitter" = '', "address" = '', "openingtimes" = '', "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:29:05' WHERE "posts"."id" = 19[0m
+Redirected to http://localhost:3000/posts/19
+Completed 302 Found in 140ms
+
+
+Started GET "/posts/19" for 127.0.0.1 at Tue Mar 22 00:29:05 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 19 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Tue Mar 22 00:29:06 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (15.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/posts/19/edit" for 127.0.0.1 at Tue Mar 22 00:29:26 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"19"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 19 LIMIT 1
+Rendered posts/_form.html.erb (31.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Tue Mar 22 00:29:29 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/18/edit" for 127.0.0.1 at Tue Mar 22 00:29:36 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"18"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 18 LIMIT 1
+Rendered posts/_form.html.erb (31.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/18" for 127.0.0.1 at Tue Mar 22 00:29:40 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"20% discount at Tony & Guy", "description"=>"Tony &amp; Guy Guildford are offering an amazing 20% discount on haircuts on a Monday, Tuesday or a Wednesday, when you show your NUS card!", "validto"=>"", "validtonotes"=>"Valid until further notice.", "company"=>"Tony & Guy", "phone"=>"", "email"=>"", "website"=>"", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.2362809", "longitude"=>"-0.5688078", "openingtimes"=>"", "metadata"=>"hairdresser barber hair cut ", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"18"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 18 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "posts" SET "phone" = '', "email" = '', "website" = '', "facebook" = '', "twitter" = '', "address" = '', "openingtimes" = '', "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:29:40' WHERE "posts"."id" = 18
+Redirected to http://localhost:3000/posts/18
+Completed 302 Found in 109ms
+
+
+Started GET "/posts/18" for 127.0.0.1 at Tue Mar 22 00:29:40 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 18 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 125ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Tue Mar 22 00:29:42 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/17/edit" for 127.0.0.1 at Tue Mar 22 00:29:50 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 17 LIMIT 1[0m
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/17" for 127.0.0.1 at Tue Mar 22 00:29:56 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"£25 for any tattoo", "description"=>"Electric Ink are offering any tattoo for £25 if you show an NUS card, and say the word TRIBAL when you ask for it!!! We would like to thank Lee of Electric Ink for giving us this fantastic offer!", "validto"=>"", "validtonotes"=>"Valid until further notice.", "company"=>"Electric Ink", "phone"=>"", "email"=>"", "website"=>"", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.2382614", "longitude"=>"-0.5651754", "openingtimes"=>"", "metadata"=>"tatoo", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"17"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 17 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "posts" SET "phone" = '', "email" = '', "website" = '', "facebook" = '', "twitter" = '', "address" = '', "openingtimes" = '', "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:29:56' WHERE "posts"."id" = 17[0m
+Redirected to http://localhost:3000/posts/17
+Completed 302 Found in 110ms
+
+
+Started GET "/posts/17" for 127.0.0.1 at Tue Mar 22 00:29:56 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 17 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Tue Mar 22 00:29:57 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/16/edit" for 127.0.0.1 at Tue Mar 22 00:30:10 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 16 LIMIT 1
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/16" for 127.0.0.1 at Tue Mar 22 00:30:12 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"10% off at Superdrug Stores", "description"=>"Britain's most fashion conscious beauty and health retailer, committed to bringing innovation and the latest styles and trends to every high street in the UK at fantastic prices.\r\n\r\nJust present NUS card upon purchase.", "validto"=>"", "validtonotes"=>"Valid until further notice.", "company"=>"Superdrug", "phone"=>"", "email"=>"", "website"=>"", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.2357567", "longitude"=>"-0.5732141", "openingtimes"=>"", "metadata"=>"medicine health", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"16"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 16 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "posts" SET "description" = 'Britain''s most fashion conscious beauty and health retailer, committed to bringing innovation and the latest styles and trends to every high street in the UK at fantastic prices.
+
+Just present NUS card upon purchase.', "phone" = '', "email" = '', "website" = '', "facebook" = '', "twitter" = '', "address" = '', "openingtimes" = '', "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:30:12' WHERE "posts"."id" = 16
+Redirected to http://localhost:3000/posts/16
+Completed 302 Found in 125ms
+
+
+Started GET "/posts/16" for 127.0.0.1 at Tue Mar 22 00:30:12 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 16 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Tue Mar 22 00:30:14 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/15/edit" for 127.0.0.1 at Tue Mar 22 00:30:23 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 15 LIMIT 1[0m
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 156ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/15" for 127.0.0.1 at Tue Mar 22 00:30:26 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"£100 free credit with Three", "description"=>"NUS Extra cardholders can get £100 bill credit from Three mobile totally free, after your third month, on one of their new great value phone plans\\r\\n\\r\\nThree are fast becoming champions of the mobile internet. And their aim is to help you go online whenever you like. That’s why they’re offering unlimited internet on all their mobile phone plans. So, you can enjoy loads more fun stuff, like Facebook™ and Windows Live™ Messenger, while you’re on the go.\\r\\n\\r\\nPlus, you even get Skype™ on Three. It’s completely free. So you can chat and message friends on Skype without eating up any of your plan’s minutes.\\r\\n\\r\\nCheck out the new deal on Three’s NUS Extra micro site. It’s updated regularly, so remember to come back and see what’s on offer.\\r\\n\\r\\nSubject to terms and conditions that can be found at<a href=\"http://www.3store.co.uk/\" target=\"_blank\">www.3store.co.uk</a>", "validto"=>"", "validtonotes"=>"Valid until further notice", "company"=>"3 Mobile", "phone"=>"", "email"=>"", "website"=>"http://www.3store.co.uk/", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.2356394", "longitude"=>"-0.5724442", "openingtimes"=>"", "metadata"=>"mobile phones", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"15"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 15 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "posts" SET "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:30:26' WHERE "posts"."id" = 15[0m
+Redirected to http://localhost:3000/posts/15
+Completed 302 Found in 110ms
+
+
+Started GET "/posts/15" for 127.0.0.1 at Tue Mar 22 00:30:26 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 15 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 46ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Tue Mar 22 00:30:28 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/14/edit" for 127.0.0.1 at Tue Mar 22 00:30:47 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 14 LIMIT 1
+Rendered posts/_form.html.erb (31.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/14" for 127.0.0.1 at Tue Mar 22 00:30:52 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"15% off at Moss", "description"=>"With over 120 stores nationwide and styles to suit all tastes and budgets, you’ll find an extensive range of suits, shirts, casualwear and accessories. \r\n\r\nPresent NUS card upon purchase.", "validto"=>"", "validtonotes"=>"Valid until further notice.", "company"=>"Moss", "phone"=>"", "email"=>"", "website"=>"", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.2362738", "longitude"=>"-0.5702768", "openingtimes"=>"", "metadata"=>"suits shirts ties", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"14"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 14 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "posts" SET "description" = 'With over 120 stores nationwide and styles to suit all tastes and budgets, you’ll find an extensive range of suits, shirts, casualwear and accessories. 
+
+Present NUS card upon purchase.', "phone" = '', "email" = '', "website" = '', "facebook" = '', "twitter" = '', "address" = '', "openingtimes" = '', "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:30:52' WHERE "posts"."id" = 14
+Redirected to http://localhost:3000/posts/14
+Completed 302 Found in 110ms
+
+
+Started GET "/posts/14" for 127.0.0.1 at Tue Mar 22 00:30:52 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 14 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/12/edit" for 127.0.0.1 at Tue Mar 22 00:30:58 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 12 LIMIT 1
+Rendered posts/_form.html.erb (46.0ms)
+Rendered posts/edit.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 62ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/12" for 127.0.0.1 at Tue Mar 22 00:31:07 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"Save £250 on driving lessons!", "description"=>"Every 2 minutes someone passes with BSM*\\r\\n\\r\\nBSM is the UK’s number one driving school, with over 3000 instructors helping some 170,000 budding motorists to pass their test every year.\\r\\n\\r\\nWhile BSM is best known for teaching learner drivers, it also provides advanced driving training to individuals and businesses and is one of the largest providers of training for driving instructors. BSM also plays an active role in lobbying the Government on road safety and learner driver-related issues.\\r\\n\\r\\nAt BSM, pupils have always benefited from quality tuition from our instructors, who we train to the highest professional standards. Today, our learners also benefit from taking their lessons in one of our fleet of Fiat 500’s (Car of the Year 2008).\\r\\n\\r\\n15 Epsom Road\\r\\nGuildford, Surrey GU1 3JT\\r\\n01483 560 429\r\n\r\nNUS CARD REQUIRED", "validto"=>"", "validtonotes"=>"Valid until further notice.", "company"=>"BSM", "phone"=>"(01483)560429", "email"=>"", "website"=>"", "facebook"=>"", "twitter"=>"", "address"=>"15 Epsom Road,\r\nGuildford,\r\nSurrey,\r\nGU1 3JT", "latitude"=>"51.333", "longitude"=>"-0.467", "openingtimes"=>"", "metadata"=>"driving instructor lessons test", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"12"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 12 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "posts" SET "description" = 'Every 2 minutes someone passes with BSM*\r\n\r\nBSM is the UK’s number one driving school, with over 3000 instructors helping some 170,000 budding motorists to pass their test every year.\r\n\r\nWhile BSM is best known for teaching learner drivers, it also provides advanced driving training to individuals and businesses and is one of the largest providers of training for driving instructors. BSM also plays an active role in lobbying the Government on road safety and learner driver-related issues.\r\n\r\nAt BSM, pupils have always benefited from quality tuition from our instructors, who we train to the highest professional standards. Today, our learners also benefit from taking their lessons in one of our fleet of Fiat 500’s (Car of the Year 2008).\r\n\r\n15 Epsom Road\r\nGuildford, Surrey GU1 3JT\r\n01483 560 429
+
+NUS CARD REQUIRED', "email" = '', "website" = '', "facebook" = '', "twitter" = '', "address" = '15 Epsom Road,
+Guildford,
+Surrey,
+GU1 3JT', "openingtimes" = '', "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:31:07' WHERE "posts"."id" = 12
+Redirected to http://localhost:3000/posts/12
+Completed 302 Found in 125ms
+
+
+Started GET "/posts/12" for 127.0.0.1 at Tue Mar 22 00:31:07 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 12 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/11/edit" for 127.0.0.1 at Tue Mar 22 00:31:17 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 11 LIMIT 1
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/11" for 127.0.0.1 at Tue Mar 22 00:31:25 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"20% off at Pizza Hut", "description"=>"Love Pizza? Pizza Hut loves students so we’re offering you 20% discount on the full menu price at Pizza Hut Delivery and Pizza Hut Restaurants.\r\n\r\nNUS CARD REQUIRED", "validto"=>"", "validtonotes"=>"Valid until further notice.", "company"=>"Pizza Hut", "phone"=>"", "email"=>"", "website"=>"", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.2362596", "longitude"=>"-0.5717592", "openingtimes"=>"", "metadata"=>"fast food restaurant pizza", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"11"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 11 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "posts" SET "description" = 'Love Pizza? Pizza Hut loves students so we’re offering you 20% discount on the full menu price at Pizza Hut Delivery and Pizza Hut Restaurants.
+
+NUS CARD REQUIRED', "phone" = '', "email" = '', "website" = '', "facebook" = '', "twitter" = '', "address" = '', "openingtimes" = '', "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:31:25' WHERE "posts"."id" = 11
+Redirected to http://localhost:3000/posts/11
+Completed 302 Found in 110ms
+
+
+Started GET "/posts/11" for 127.0.0.1 at Tue Mar 22 00:31:25 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 11 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 62ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/10/edit" for 127.0.0.1 at Tue Mar 22 00:31:31 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 10 LIMIT 1
+Rendered posts/_form.html.erb (46.0ms)
+Rendered posts/edit.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 62ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/10" for 127.0.0.1 at Tue Mar 22 00:31:38 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"No Signing Up Fee At The Gym!", "description"=>"<span style=\"font-family: Arial, Helvetica, Geneva, sans-serif; line-height: 16px; font-size: 12px; color: #444117;\"> </span>\\r\\n<h2 style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0.3em; margin-left: 0px; font-size: 1.3em; color: #5a5838; padding: 0px;\"><span style=\"padding: 0px; margin: 0px;\">Got an NUS Extra card? No joining fee for you then! A healthy lifestyle without bashing your bank balance.</span></h2>\\r\\nAt The Gym we understand the demands of student life. Lectures, tutorials, a social whirl you can barely keep up with and a student loan that a hermit would struggle to live on.  We’re here to help you achieve a healthy balance without bashing that fragile bank balance even further.\\r\\n\\r\\nAt The Gym there’s no joining fee, no contract, no obligation and no catch.\\r\\n\\r\\nWe did away with joining fees especially for you students – the start of semester is quite pricey enough as it is. Just enter your NUS Extra card number when you sign up.\\r\\n\\r\\nAnd we did away with contracts that tie you in, so if you find that money gets too tight, you can take a month or two off while you get your finances in order.\\r\\n\\r\\nBut at just £15.99 a month* we think The Gym is unbeatably affordable and tremendous value for money. Where else could you get a month’s access to premium fitness equipment, 24/7, for less than a night out at the student union bar?\\r\\n\\r\\nOpen 24/7. That’s right. Perfect for the student timetable. We remember pulling all-nighters to get essays and dissertations done on deadline. Which means you’re wide awake at 4am. Now you can keep your body active at any time of day or night as well as your mind.\\r\\n\\r\\n170+ premium fitness machines and free weights. Whether you’re a fitness fanatic, want to drop a dress size or just want to burn off the booze, we’ve got the right equipment for you. With so many machines available you can get on that treadmill without cooling your heels, or really mix up your workouts to keep your body guessing.\\r\\n\\r\\nHave we sold it to you yet?\\r\\n\\r\\nHave your NUS Extra card handy when you sign up, to make sure you benefit from the full student discount.\\r\\n\\r\\n* £15.99 a month where The Gym is already open. If you’re studying in a city where The Gym is soon to make an appearance you can sign up for £10.99 a month guaranteed for the first year. That’s less than getting a round in! So don’t waste time, sign up now.\r\n\r\nNUS CARD REQUIRED", "validto"=>"", "validtonotes"=>"Valid until further notice.", "company"=>"The Gym", "phone"=>"", "email"=>"", "website"=>"", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.2470831", "longitude"=>"-0.582492", "openingtimes"=>"", "metadata"=>"gym", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"10"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 10 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "posts" SET "description" = '<span style="font-family: Arial, Helvetica, Geneva, sans-serif; line-height: 16px; font-size: 12px; color: #444117;"> </span>\r\n<h2 style="margin-top: 0px; margin-right: 0px; margin-bottom: 0.3em; margin-left: 0px; font-size: 1.3em; color: #5a5838; padding: 0px;"><span style="padding: 0px; margin: 0px;">Got an NUS Extra card? No joining fee for you then! A healthy lifestyle without bashing your bank balance.</span></h2>\r\nAt The Gym we understand the demands of student life. Lectures, tutorials, a social whirl you can barely keep up with and a student loan that a hermit would struggle to live on.  We’re here to help you achieve a healthy balance without bashing that fragile bank balance even further.\r\n\r\nAt The Gym there’s no joining fee, no contract, no obligation and no catch.\r\n\r\nWe did away with joining fees especially for you students – the start of semester is quite pricey enough as it is. Just enter your NUS Extra card number when you sign up.\r\n\r\nAnd we did away with contracts that tie you in, so if you find that money gets too tight, you can take a month or two off while you get your finances in order.\r\n\r\nBut at just £15.99 a month* we think The Gym is unbeatably affordable and tremendous value for money. Where else could you get a month’s access to premium fitness equipment, 24/7, for less than a night out at the student union bar?\r\n\r\nOpen 24/7. That’s right. Perfect for the student timetable. We remember pulling all-nighters to get essays and dissertations done on deadline. Which means you’re wide awake at 4am. Now you can keep your body active at any time of day or night as well as your mind.\r\n\r\n170+ premium fitness machines and free weights. Whether you’re a fitness fanatic, want to drop a dress size or just want to burn off the booze, we’ve got the right equipment for you. With so many machines available you can get on that treadmill without cooling your heels, or really mix up your workouts to keep your body guessing.\r\n\r\nHave we sold it to you yet?\r\n\r\nHave your NUS Extra card handy when you sign up, to make sure you benefit from the full student discount.\r\n\r\n* £15.99 a month where The Gym is already open. If you’re studying in a city where The Gym is soon to make an appearance you can sign up for £10.99 a month guaranteed for the first year. That’s less than getting a round in! So don’t waste time, sign up now.
+
+NUS CARD REQUIRED', "phone" = '', "email" = '', "website" = '', "facebook" = '', "twitter" = '', "address" = '', "openingtimes" = '', "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:31:38' WHERE "posts"."id" = 10
+Redirected to http://localhost:3000/posts/10
+Completed 302 Found in 125ms
+
+
+Started GET "/posts/10" for 127.0.0.1 at Tue Mar 22 00:31:38 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 10 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 31ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/8/edit" for 127.0.0.1 at Tue Mar 22 00:31:46 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 8 LIMIT 1
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/8" for 127.0.0.1 at Tue Mar 22 00:31:49 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"Eye test for £5 and save 10% off when you spend £100 on glasses.", "description"=>"NUS Extra cardholders can get their eyes tested for only £5 AND save 10% when you spend £100 or more on a complete pair of glasses in any Boots Opticians and Dollond &amp; Aitchison practice nationwide.\\r\\n\\r\\nTo claim these discounts please print off the unique NUS Extra cardholder voucher and take to your appointment along with your NUS Extra card.\\r\\n\\r\\nTo book an appointment call <strong>0845 120 43 43.</strong>\\r\\n\\r\\nTo find your nearest Boots Opticians or D&amp;A practice, visit <a href=\"http://www.bootsopticians.com/\" target=\"_blank\">www.bootsopticians.com</a> or <a href=\"http://www.danda.co.uk/\" target=\"_blank\">www.danda.co.uk</a>.', '£5 Eye Test and save 10% when you spend £100 or more on a complete pair of glasses at Boots Opticians and Dollond & Aitchison", "validto"=>"", "validtonotes"=>"Valid until further notice.", "company"=>"Boots", "phone"=>"(08451)204343", "email"=>"", "website"=>"http://www.bootsopticians.com/", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.2369822", "longitude"=>"-0.5684622", "openingtimes"=>"", "metadata"=>"opticians", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"8"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 8 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "posts" SET "email" = '', "facebook" = '', "twitter" = '', "address" = '', "openingtimes" = '', "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:31:49' WHERE "posts"."id" = 8
+Redirected to http://localhost:3000/posts/8
+Completed 302 Found in 110ms
+
+
+Started GET "/posts/8" for 127.0.0.1 at Tue Mar 22 00:31:49 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 8 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Tue Mar 22 00:31:51 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/9/edit" for 127.0.0.1 at Tue Mar 22 00:32:07 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 9 LIMIT 1[0m
+Rendered posts/_form.html.erb (32.0ms)
+Rendered posts/edit.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/9" for 127.0.0.1 at Tue Mar 22 00:32:11 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"Eye test for £5 and save 10% off when you spend £100 on glasses.", "description"=>"NUS Extra cardholders can get their eyes tested for only £5 AND save 10% when you spend £100 or more on a complete pair of glasses in any Boots Opticians and Dollond &amp; Aitchison practice nationwide.\\r\\n\\r\\nTo claim these discounts please print off the unique NUS Extra cardholder voucher and take to your appointment along with your NUS Extra card.\\r\\n\\r\\nTo book an appointment call <strong>0845 120 43 43.</strong>\\r\\n\\r\\nTo find your nearest Boots Opticians or D&amp;A practice, visit <a href=\"http://www.bootsopticians.com/\" target=\"_blank\">www.bootsopticians.com</a> or <a href=\"http://www.danda.co.uk/\" target=\"_blank\">www.danda.co.uk</a>.", "validto"=>"", "validtonotes"=>"Valid until further notice.", "company"=>"Dollond & Aitchison", "phone"=>"(01483)570093 ‎ ", "email"=>"", "website"=>"http://www.danda.co.uk/", "facebook"=>"", "twitter"=>"", "address"=>"94 High St, \r\nGuildford,\r\nGU1 3HE.", "latitude"=>"51.235545", "longitude"=>"0.573203", "openingtimes"=>"", "metadata"=>"opticians", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"9"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 9 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "posts" SET "email" = '', "facebook" = '', "twitter" = '', "address" = '94 High St, 
+Guildford,
+GU1 3HE.', "openingtimes" = '', "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:32:11' WHERE "posts"."id" = 9[0m
+Redirected to http://localhost:3000/posts/9
+Completed 302 Found in 125ms
+
+
+Started GET "/posts/9" for 127.0.0.1 at Tue Mar 22 00:32:11 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 9 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 32ms (Views: 32.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/posts/7/edit" for 127.0.0.1 at Tue Mar 22 00:32:18 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 7 LIMIT 1[0m
+Rendered posts/_form.html.erb (31.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/7" for 127.0.0.1 at Tue Mar 22 00:32:25 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"£4 off on purchases of £45 at game.co.uk", "description"=>"Clever students save online at <a href=\"http://www.game.co.uk/nus/?cm_mmc=Partnerships-_-Voucher-_-NUSExtra-_-Link\" target=\"_blank\">GAME.co.uk</a>, the UK’s leading gaming specialist.\\r\\n\\r\\nVisit <a href=\"http://www.game.co.uk/nus/?cm_mmc=Partnerships-_-Voucher-_-NUSExtra-_-Link\" target=\"_blank\">GAME.co.uk</a> for the very latest exclusive student offers and to redeem your NUS Extra Card discounts.\\r\\n\\r\\n<strong>Terms and Conditions</strong> :\\r\\nVoucher valid from 05/08/2010 until 31/08/2011. Voucher only redeemable at Game.co.uk and not in any GAME Store. Minimum spend £45.\\r\\n\\r\\nThis promotion is only valid to NUS Extra Card members only and can not be redeemed via any cashback or point portals. Cannot be redeemed against gift vouchers, gift cards, preorder products, hardware, hardware inc Kinect and Move products and software bundles, GAME Rental, GAMEcare, GAME On Demand Download Service, GAME Download to own service, or mobile games.\\r\\n\\r\\nOrders not complying with these T''s and C''s will be cancelled by GAME Stores Group and no discussion entered into. Your email address will not be shared with any third parties. Cash value of the voucher is 0.001p. No alternative offered. GAME reserves the right to withdraw from this promotion at any time or cancel orders if the voucher is abused.", "validto"=>"2011-08-31", "validtonotes"=>"from 05/08/2010 until 31/08/2011", "company"=>"Game", "phone"=>"", "email"=>"", "website"=>"http://www.game.co.uk/nus/?cm_mmc=Partnerships-_-Voucher-_-NUSExtra-_-Link", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.2358382", "longitude"=>"-0.5720834", "openingtimes"=>"", "metadata"=>"video games online", "imgurl"=>"", "nus"=>"1", "web"=>"1"}, "commit"=>"Post Offer", "id"=>"7"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 7 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "posts" SET "nus" = '1', "updated_at" = '2011-03-22 00:32:26' WHERE "posts"."id" = 7[0m
+Redirected to http://localhost:3000/posts/7
+Completed 302 Found in 125ms
+
+
+Started GET "/posts/7" for 127.0.0.1 at Tue Mar 22 00:32:26 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 7 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/6/edit" for 127.0.0.1 at Tue Mar 22 00:32:33 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 6 LIMIT 1[0m
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 63ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/6" for 127.0.0.1 at Tue Mar 22 00:32:35 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"10% off at JJB Sports", "description"=>"Attention all Students! If you are heavily involved with your Uni sports teams or you just prefer watching the match down at the Union…Don’t forget your 10% student discount at JJB Sports! Go online or visit one of over 250 stores nationwide.\\r\\n\\r\\nAs a fully fledged student we know that you are going to need anything and everything to get you started. As a result JJB Sports are offering all NUS Extra cardholders a 10% discount in store and online, this will allow you to get fully kitted out for University or College. Whether it be a new pair of trainers to hit the Union in, or a new gym outfit to start a health kick, JJB has all the top brands from Nike to adidas, Umbro to Reebok and many more.\\r\\n\\r\\nJJB Sports stocks a wide selection of sports, leisurewear, footwear and fitness equipment. If you prefer to keep fit in the comfort of your own home JJB Sports has all the cycles, rowers, treadmills and multi-gyms you need to keep you trim and toned. So you can either shop online at <a href=\"http://www.jjbsports.com/\" target=\"_blank\">www.jjbsports.com</a> or in one of over 250 stores nationwide.", "validto"=>"", "validtonotes"=>"Valid until further notice.", "company"=>"JJB Sports", "phone"=>"", "email"=>"", "website"=>"http://www.jjbsports.com/", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.2362489", "longitude"=>"-0.5755066", "openingtimes"=>"", "metadata"=>"", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"6"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 6 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "posts" SET "phone" = '', "email" = '', "facebook" = '', "twitter" = '', "address" = '', "openingtimes" = '', "metadata" = '', "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:32:35' WHERE "posts"."id" = 6[0m
+Redirected to http://localhost:3000/posts/6
+Completed 302 Found in 94ms
+
+
+Started GET "/posts/6" for 127.0.0.1 at Tue Mar 22 00:32:36 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 6 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/5/edit" for 127.0.0.1 at Tue Mar 22 00:32:40 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 5 LIMIT 1[0m
+Rendered posts/_form.html.erb (31.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/5" for 127.0.0.1 at Tue Mar 22 00:32:43 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"25% off cinema ticket", "description"=>"See great new films for less on Mondays – Thursdays with ODEON and NUS Extra; Save an additional 25% off the price of a student/teen ticket by showing your NUS Extra card at any participating ODEON.\\r\\n\\r\\nThe offer just gets better and better as now 3D films are included. So what are you waiting for? Simply print out the voucher and head down to your local ODEON with your valid NUS Extra card to start watching fantastic films for less.", "validto"=>"", "validtonotes"=>"Valid until further notice.", "company"=>"Odeon", "phone"=>"", "email"=>"", "website"=>"", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.2384905", "longitude"=>"-0.578396", "openingtimes"=>"", "metadata"=>"cinema movie film", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"5"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 5 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "posts" SET "phone" = '', "email" = '', "website" = '', "facebook" = '', "twitter" = '', "address" = '', "openingtimes" = '', "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:32:43' WHERE "posts"."id" = 5[0m
+Redirected to http://localhost:3000/posts/5
+Completed 302 Found in 94ms
+
+
+Started GET "/posts/5" for 127.0.0.1 at Tue Mar 22 00:32:43 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 5 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/4/edit" for 127.0.0.1 at Tue Mar 22 00:32:47 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 4 LIMIT 1[0m
+Rendered posts/_form.html.erb (31.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/4" for 127.0.0.1 at Tue Mar 22 00:32:51 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"Free Medium Fries with a Big Mac® or McChicken® Sandwich", "description"=>"Get Free Medium Fries with the purchase of a Big Mac® or McChicken® Sandwich.\\r\\n\\r\\nWhen you present your NUS Extra card.\\r\\n\\r\\n<strong>Terms and Conditions</strong>\\r\\n\\r\\nPresent your valid NUS Extra card before ordering to redeem the offer.\\r\\n\\r\\nServed after 10:30am at participating restaurants. Products on sale may be restricted at different times. Cannot be used in conjunction with any other offer. One offer per person, per card, per visit. Valid between 1st September 2010 - 31st August 2011. ©2010 McDonalds", "validto"=>"2011-08-31", "validtonotes"=>"Valid between 1st September 2010 - 31st August 2011", "company"=>"McDonalds", "phone"=>"", "email"=>"", "website"=>"", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.2372187", "longitude"=>"-0.5679049", "openingtimes"=>"", "metadata"=>"fast food restaurant", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"4"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 4 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "posts" SET "phone" = '', "email" = '', "website" = '', "facebook" = '', "twitter" = '', "address" = '', "openingtimes" = '', "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:32:51' WHERE "posts"."id" = 4[0m
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 235ms
+
+
+Started GET "/posts/4" for 127.0.0.1 at Tue Mar 22 00:32:51 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 4 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 47ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/3/edit" for 127.0.0.1 at Tue Mar 22 00:32:56 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 3 LIMIT 1[0m
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/3" for 127.0.0.1 at Tue Mar 22 00:33:00 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"25% off when you spend £25 or more at Dominos", "description"=>"Get an outstanding 25% OFF when you spend £25 or more online at<span style=\"text-decoration: underline;\"><a href=\"http://www.dominos.co.uk/\" target=\"_blank\">www.dominos.co.uk</a>.</span>\\r\\n\\r\\n<strong>Working up an appetite?</strong>\\r\\n\\r\\nWith your NUS Extra card you can enjoy hot, fresh and delicious Domino’s pizza with 25% OFF whenever hunger strikes!\\r\\n\\r\\nWhat’s more, the next time your mum calls you can tell here there’s no need to worry as you’re eating well.\\r\\n\\r\\n<strong>Why?</strong>\\r\\n\\r\\nBecause only Domino’s pizza is made from the freshest ingredients cooked to perfection and served on your choice of hand-made dough base – so each and every slice delivers a meal your mum would be proud of.\\r\\n\\r\\nSo when mum calls, don’t lie – tell her you’ve been eating delicious Domino’s.\r\n\r\nEnter this code in the vouchers box at checkout online, not valid in conjunction with other offers.\r\nCODE: NUSEXTRA", "validto"=>"", "validtonotes"=>"Valid until further notice.", "company"=>"Dominos", "phone"=>"", "email"=>"", "website"=>"http://www.dominos.co.uk/", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.2449193", "longitude"=>"-0.5768789", "openingtimes"=>"", "metadata"=>"fast food pizza", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"3"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 3 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "posts" SET "description" = 'Get an outstanding 25% OFF when you spend £25 or more online at<span style="text-decoration: underline;"><a href="http://www.dominos.co.uk/" target="_blank">www.dominos.co.uk</a>.</span>\r\n\r\n<strong>Working up an appetite?</strong>\r\n\r\nWith your NUS Extra card you can enjoy hot, fresh and delicious Domino’s pizza with 25% OFF whenever hunger strikes!\r\n\r\nWhat’s more, the next time your mum calls you can tell here there’s no need to worry as you’re eating well.\r\n\r\n<strong>Why?</strong>\r\n\r\nBecause only Domino’s pizza is made from the freshest ingredients cooked to perfection and served on your choice of hand-made dough base – so each and every slice delivers a meal your mum would be proud of.\r\n\r\nSo when mum calls, don’t lie – tell her you’ve been eating delicious Domino’s.
+
+Enter this code in the vouchers box at checkout online, not valid in conjunction with other offers.
+CODE: NUSEXTRA', "phone" = '', "email" = '', "facebook" = '', "twitter" = '', "address" = '', "openingtimes" = '', "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:33:00' WHERE "posts"."id" = 3[0m
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 110ms
+
+
+Started GET "/posts/3" for 127.0.0.1 at Tue Mar 22 00:33:00 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 3 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 31ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/3/edit" for 127.0.0.1 at Tue Mar 22 00:33:20 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 3 LIMIT 1[0m
+Rendered posts/_form.html.erb (31.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/3" for 127.0.0.1 at Tue Mar 22 00:33:22 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"25% off when you spend £25 or more at Dominos", "description"=>"Get an outstanding 25% OFF when you spend £25 or more online at<span style=\"text-decoration: underline;\"><a href=\"http://www.dominos.co.uk/\" target=\"_blank\">www.dominos.co.uk</a>.</span>\\r\\n\\r\\n<strong>Working up an appetite?</strong>\\r\\n\\r\\nWith your NUS Extra card you can enjoy hot, fresh and delicious Domino’s pizza with 25% OFF whenever hunger strikes!\\r\\n\\r\\nWhat’s more, the next time your mum calls you can tell here there’s no need to worry as you’re eating well.\\r\\n\\r\\n<strong>Why?</strong>\\r\\n\\r\\nBecause only Domino’s pizza is made from the freshest ingredients cooked to perfection and served on your choice of hand-made dough base – so each and every slice delivers a meal your mum would be proud of.\\r\\n\\r\\nSo when mum calls, don’t lie – tell her you’ve been eating delicious Domino’s.\r\n\r\nEnter this code in the vouchers box at checkout online, not valid in conjunction with other offers.\r\nCODE: NUSEXTRA", "validto"=>"", "validtonotes"=>"Valid until further notice.", "company"=>"Dominos", "phone"=>"", "email"=>"", "website"=>"http://www.dominos.co.uk/", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.2449193", "longitude"=>"-0.5768789", "openingtimes"=>"", "metadata"=>"fast food pizza", "imgurl"=>"", "nus"=>"1", "web"=>"1"}, "commit"=>"Post Offer", "id"=>"3"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 3 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "posts" SET "web" = '1', "updated_at" = '2011-03-22 00:33:22' WHERE "posts"."id" = 3[0m
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 78ms
+
+
+Started GET "/posts/3" for 127.0.0.1 at Tue Mar 22 00:33:22 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 3 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at Tue Mar 22 00:33:28 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 2 LIMIT 1[0m
+Rendered posts/_form.html.erb (31.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/2" for 127.0.0.1 at Tue Mar 22 00:33:33 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"12.5% discount in Ryman", "description"=>"Exclusive 12.5% discount at Ryman with your NUS Extra card! Get discounts on a range of stationery products from folders and files to pens and pencils.\\r\\n\\r\\nRyman the stationers is delighted to offer a 12.5% discount on our fantastic range of over 4,000 products. See our range at <a href=\"http://www.ryman.co.uk/nusextra\" target=\"_blank\">www.ryman.co.uk/nusextra</a> - exclusively for NUS Extra cardholders.", "validto"=>"", "validtonotes"=>"Valid until further notice.", "company"=>"Ryman", "phone"=>"", "email"=>"", "website"=>"http://www.ryman.co.uk/nusextra", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"51.2368419", "longitude"=>"-0.5688869", "openingtimes"=>"", "metadata"=>"stationery", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"2"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 2 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "posts" SET "phone" = '', "email" = '', "facebook" = '', "twitter" = '', "address" = '', "openingtimes" = '', "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:33:33' WHERE "posts"."id" = 2[0m
+Redirected to http://localhost:3000/posts/2
+Completed 302 Found in 94ms
+
+
+Started GET "/posts/2" for 127.0.0.1 at Tue Mar 22 00:33:33 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 2 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at Tue Mar 22 00:33:40 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 1 LIMIT 1[0m
+Rendered posts/_form.html.erb (32.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 62ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/1" for 127.0.0.1 at Tue Mar 22 00:33:43 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4AiF4S1bGCzrXynR1/DJM/UiVEARoeGcWbFT1jDGx/4=", "post"=>{"offer"=>"20% Off At PizzaExpress", "description"=>"Famed for bringing authentic pizza to the UK in back in 1965, PizzaExpress is the nation’s favourite high street pizza restaurant. From classic favourites like the American Hot and Margherita, to our thinner, crispier Romana pizzas and our lighter ‘Leggera’ options, NUS Extra cardholders can enjoy 20% off their total food bill. This offer is valid Sunday-Thursday.\\r\\n\\r\\nFor a list of restaurants please visit<a href=\"http://www.pizzaexpress.com/\" target=\"_blank\">www.pizzaexpress.com</a>\\r\\n\\r\\n<strong>Terms and conditions</strong>\\r\\n\\r\\n•The NUS Extra Card entitles you to a 20% discount off total food bill at PizzaExpress\\r\\n\\r\\n•Valid Sunday – Thursday until 28th July 2011\\r\\n\\r\\n•Offer applies to food items only and does not include drinks\\r\\n\\r\\n•Valid on takeaway and restaurant sales\\r\\n\\r\\n•The NUS Extra Card offer cannot be used in conjunction with any other offer, voucher or set menu\\r\\n\\r\\n•Valid at every PizzaExpress restaurant in the UK. Please visit <a href=\"http://www.pizzaexpress.com/\" target=\"_blank\">www.pizzaexpress.com</a> for a full list of locations", "validto"=>"2011-07-28", "validtonotes"=>"Sunday – Thursday", "company"=>"PizzaExpress", "phone"=>"(01483)300122", "email"=>"", "website"=>"http://www.pizzaexpress.com/", "facebook"=>"http://www.facebook.com/pizzaexpress", "twitter"=>"http://twitter.com/pizzaexpress", "address"=>"237-241 High Street,\r\nGuildford,\r\nSurrey,\r\nGU1 3BJ. ", "latitude"=>"51.2375063", "longitude"=>"-0.56708", "openingtimes"=>"Mon: 11:30 AM - 11:00 PM\r\nTue: 11:30 AM - 11:00 PM\r\nWed: 11:30 AM - 11:00 PM\r\nThu: 11:30 AM - 11:30 PM\r\nFri: 11:30 AM - 11:30 PM\r\nSat: 11:30 AM - 11:30 PM\r\nSun: 11:30 AM - 11:00 PM", "metadata"=>"food restaurant pizza express pizzaexpress", "imgurl"=>"", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"1"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "posts" SET "email" = '', "address" = '237-241 High Street,
+Guildford,
+Surrey,
+GU1 3BJ. ', "openingtimes" = 'Mon: 11:30 AM - 11:00 PM
+Tue: 11:30 AM - 11:00 PM
+Wed: 11:30 AM - 11:00 PM
+Thu: 11:30 AM - 11:30 PM
+Fri: 11:30 AM - 11:30 PM
+Sat: 11:30 AM - 11:30 PM
+Sun: 11:30 AM - 11:00 PM', "imgurl" = '', "nus" = '1', "web" = '0', "updated_at" = '2011-03-22 00:33:43' WHERE "posts"."id" = 1[0m
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 125ms
+
+
+Started GET "/posts/1" for 127.0.0.1 at Tue Mar 22 00:33:44 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 1 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)

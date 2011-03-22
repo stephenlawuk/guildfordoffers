@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20110321234536) do
 
   create_table "posts", :force => true do |t|
     t.datetime "created_at"
@@ -30,6 +30,9 @@ ActiveRecord::Schema.define(:version => 0) do
     t.decimal  "longitude"
     t.text     "openingtimes"
     t.text     "metadata"
+    t.string   "imgurl"
+    t.string   "web"
+    t.string   "nus"
   end
 
 end
