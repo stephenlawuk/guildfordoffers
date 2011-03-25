@@ -13,6 +13,7 @@
 
     - Version 0.0   First github upload of basic project containing post model and layout including header and various css
     - Version 0.1   Adding web, nus tickboxes and image url to form and database.
+    - Version 0.2   Include image files for companies and move show, edit destroy about.
 
 == To Do List
 
@@ -23,6 +24,7 @@
     - search
     - footer
     - social network integration
+    - need to validate imgurl as invalid link causes crash
 
 == Description of Contents
 

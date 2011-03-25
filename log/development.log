@@ -8867,3 +8867,2172 @@ Started GET "/posts/1" for 127.0.0.1 at Tue Mar 22 00:33:44 +0000 2011
   [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 1 LIMIT 1
 Rendered posts/show.html.erb within layouts/application (16.0ms)
 Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 17:03:51 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (406.0ms)
+Completed 200 OK in 625ms (Views: 406.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/17/edit" for 127.0.0.1 at Fri Mar 25 17:04:07 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 17 LIMIT 1[0m
+Rendered posts/_form.html.erb (203.0ms)
+Rendered posts/edit.html.erb within layouts/application (250.0ms)
+Completed   in 406ms
+
+ActionView::Template::Error (undefined local variable or method `post' for #<#<Class:01xf917bd>:0x1857eeb>):
+    3: <%= render 'form' %>
+    4: 
+    5: <%= link_to 'Show', @post %> |
+    6: <%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %>
+    7: <%= link_to 'Back', posts_path %>
+  app/views/posts/edit.html.erb:6:in `_app_views_posts_edit_html_erb___1614899930_2248_0'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (46.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 17:09:30 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (171.0ms)
+Completed 200 OK in 187ms (Views: 171.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 17:09:33 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/_form.html.erb (78.0ms)
+Rendered posts/edit.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 93ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 17:09:42 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (15.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (110.0ms)
+Completed 200 OK in 125ms (Views: 110.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at Fri Mar 25 17:09:49 +0000 2011
+  Processing by PostsController#new as HTML
+Rendered posts/_form.html.erb (62.0ms)
+Rendered posts/new.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at Fri Mar 25 17:09:59 +0000 2011
+  Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pkgguw2oKGvjBl2yniSapECr7m9NJLjFwuPN1XOf048=", "post"=>{"offer"=>"destroy test", "description"=>"test", "validto"=>"", "validtonotes"=>"", "company"=>"test", "phone"=>"", "email"=>"", "website"=>"", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"", "longitude"=>"", "openingtimes"=>"", "metadata"=>"", "imgurl"=>"", "nus"=>"0", "web"=>"0"}, "commit"=>"Post Offer"}
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Redirected to http://localhost:3000/posts/36
+Completed 302 Found in 172ms
+
+
+Started GET "/posts/36" for 127.0.0.1 at Fri Mar 25 17:09:59 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 36 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 17:10:01 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 125ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/36/edit" for 127.0.0.1 at Fri Mar 25 17:10:03 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"36"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 36 LIMIT 1
+Rendered posts/_form.html.erb (62.0ms)
+Rendered posts/edit.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/36" for 127.0.0.1 at Fri Mar 25 17:10:06 +0000 2011
+  Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Pkgguw2oKGvjBl2yniSapECr7m9NJLjFwuPN1XOf048=", "id"=>"36"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 36 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "posts" WHERE "posts"."id" = 36
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 125ms
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 17:10:06 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 17:10:20 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/_form.html.erb (63.0ms)
+Rendered posts/edit.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 109ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 17:10:24 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 17:11:03 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 17:11:05 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at Fri Mar 25 17:11:09 +0000 2011
+  Processing by PostsController#new as HTML
+Rendered posts/_form.html.erb (46.0ms)
+Rendered posts/new.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 62ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 17:11:38 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 17:27:18 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 17:27:22 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 17:27:23 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 17:27:24 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/_form.html.erb (31.0ms)
+Rendered posts/edit.html.erb within layouts/application (79.0ms)
+Completed 200 OK in 94ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 17:28:35 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 17:28:38 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 17:28:40 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 17:28:53 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 17:31:50 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 17:31:58 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 47ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 17:32:00 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 17:33:09 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 17:33:12 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/_form.html.erb (31.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 17:33:13 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 17:33:16 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 17:33:21 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 17:33:23 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 17:33:26 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/_form.html.erb (46.0ms)
+Rendered posts/edit.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 17:33:28 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 17:33:30 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 17:33:32 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 17:33:35 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 17:35:44 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (15.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 17:35:46 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 46ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 17:35:55 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 17:35:58 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 17:35:59 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 17:36:02 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 62ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 17:49:12 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 46ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 17:49:15 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 17:55:50 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 79ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 17:55:51 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 125ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 18:00:05 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 125ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 18:00:08 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (625.0ms)
+Completed 200 OK in 687ms (Views: 656.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 18:00:35 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 18:01:22 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 18:01:45 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 18:02:08 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 18:03:06 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 46ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 18:03:45 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 18:05:18 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 18:05:20 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 20:41:12 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (188.0ms)
+Completed 200 OK in 266ms (Views: 203.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 20:41:17 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (203.0ms)
+Completed 200 OK in 234ms (Views: 218.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 21:08:03 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (219.0ms)
+Completed 200 OK in 235ms (Views: 219.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 21:08:05 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 21:12:07 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 21:13:41 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 21:15:29 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 21:16:19 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Fri Mar 25 21:16:25 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 21:16:36 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 110ms (Views: 78.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Fri Mar 25 21:16:43 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 1 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 21:19:47 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 21:19:49 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 94ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 21:22:10 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 21:22:13 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 62ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 21:22:27 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 21:22:28 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 21:23:09 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 93ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 21:23:15 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 46ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 21:25:29 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (15.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Fri Mar 25 21:25:34 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 1 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 21:26:43 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 79ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 21:26:45 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 21:28:42 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 21:28:44 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 21:28:58 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 21:30:03 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 79ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 21:30:07 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 21:30:09 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Fri Mar 25 21:30:13 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 1 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 21:47:32 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 79ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 21:47:34 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed   in 62ms
+
+ActionView::Template::Error (can't convert nil into String):
+    8: <div>
+    9: <div class="companyinfo">
+    10: 
+    11:   <%= image_tag(@post.imgurl, :alt => :company) %>
+    12:   <br/>
+    13:   Phone: <%= @post.phone %>
+    14:   <br/>
+  app/views/posts/show.html.erb:11:in `_app_views_posts_show_html_erb__2117293497_2584_0'
+  app/controllers/posts_controller.rb:18:in `show'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 21:48:27 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 21:48:31 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 21:48:34 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/_form.html.erb (94.0ms)
+Rendered posts/edit.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 109ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 21:54:52 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 21:54:53 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 21:54:55 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/_form.html.erb (62.0ms)
+Rendered posts/edit.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 21:55:23 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 21:55:25 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (218.0ms)
+Completed 200 OK in 234ms (Views: 218.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 21:55:27 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/_form.html.erb (62.0ms)
+Rendered posts/edit.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/35" for 127.0.0.1 at Fri Mar 25 21:55:35 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tic6u0qXNQyqXrynE0sXgIEU5mu2JEWqyXbUdO+cYF4=", "post"=>{"offer"=>"15% off first order", "description"=>"Web Exclusive Offer\r\n\r\n15 % of your first order at The Student Boutique \r\nhttp://www.thestudentboutique.co.uk/pages/clothes_86848.cfm\r\n\r\ndiscount code 'gimme15'", "validto"=>"", "validtonotes"=>"Valid until further notice", "company"=>"The Student Boutique", "phone"=>"(01617)231750", "email"=>"candice@thestudentboutique.co.uk", "website"=>"http://www.thestudentboutique.co.uk/pages/clothes_86848.cfm", "facebook"=>"http://www.facebook.com/group.php?gid=367743221340", "twitter"=>"http://twitter.com/CandiceTSBoutiq", "address"=>"", "latitude"=>"", "longitude"=>"", "openingtimes"=>"", "metadata"=>"clothes", "imgurl"=>"/images/nullimg.jpg", "nus"=>"0", "web"=>"1"}, "commit"=>"Post Offer", "id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "posts" SET "imgurl" = '/images/nullimg.jpg', "updated_at" = '2011-03-25 21:55:35' WHERE "posts"."id" = 35
+Redirected to http://localhost:3000/posts/35
+Completed 302 Found in 250ms
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 21:55:35 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 21:55:40 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 21:57:14 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 21:57:16 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/nullimg.jpg" for 127.0.0.1 at Fri Mar 25 21:57:17 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/nullimg.jpg"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/images/nullimg.jpg" for 127.0.0.1 at Fri Mar 25 21:57:17 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/nullimg.jpg"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 21:57:47 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (79.0ms)
+Completed 200 OK in 94ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/35" for 127.0.0.1 at Fri Mar 25 21:58:05 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tic6u0qXNQyqXrynE0sXgIEU5mu2JEWqyXbUdO+cYF4=", "post"=>{"offer"=>"15% off first order", "description"=>"Web Exclusive Offer\r\n\r\n15 % of your first order at The Student Boutique \r\nhttp://www.thestudentboutique.co.uk/pages/clothes_86848.cfm\r\n\r\ndiscount code 'gimme15'", "validto"=>"", "validtonotes"=>"Valid until further notice", "company"=>"The Student Boutique", "phone"=>"(01617)231750", "email"=>"candice@thestudentboutique.co.uk", "website"=>"http://www.thestudentboutique.co.uk/pages/clothes_86848.cfm", "facebook"=>"http://www.facebook.com/group.php?gid=367743221340", "twitter"=>"http://twitter.com/CandiceTSBoutiq", "address"=>"", "latitude"=>"", "longitude"=>"", "openingtimes"=>"", "metadata"=>"clothes", "imgurl"=>"/images/companylogos/nullimg.jpg", "nus"=>"0", "web"=>"1"}, "commit"=>"Post Offer", "id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "posts" SET "imgurl" = '/images/companylogos/nullimg.jpg', "updated_at" = '2011-03-25 21:58:05' WHERE "posts"."id" = 35[0m
+Redirected to http://localhost:3000/posts/35
+Completed 302 Found in 172ms
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 21:58:06 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 22:00:24 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 172ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 22:00:26 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 22:00:37 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 125ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Fri Mar 25 22:00:39 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed   in 47ms
+
+ActionView::Template::Error (can't convert nil into String):
+    8: <div>
+    9: <div class="companyinfo">
+    10: 
+    11:   <%= image_tag(@post.imgurl, :alt => @post.company) %>
+    12:   <br/>
+    13:   Phone: <%= @post.phone %>
+    14:   <br/>
+  app/views/posts/show.html.erb:11:in `_app_views_posts_show_html_erb__2117293497_2828_0'
+  app/controllers/posts_controller.rb:18:in `show'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 22:00:49 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 22:04:28 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 22:04:30 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed   in 63ms
+
+ActionView::Template::Error (undefined local variable or method `null' for #<#<Class:01x129b8b4>:0x1d447b>):
+    8: <div>
+    9: <div class="companyinfo">
+    10: 
+    11:       <% if @post.imgurl == null %>
+    12:         <%= image_tag("/images/companylogos/nullimg.jpg", :alt => @post.company) %>
+    13:       <% else %>
+    14:         <%= image_tag(@post.imgurl, :alt => @post.company) %>
+  app/views/posts/show.html.erb:11:in `_app_views_posts_show_html_erb__2117293497_2868_0'
+  app/controllers/posts_controller.rb:18:in `show'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 22:06:17 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 22:06:19 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 22:06:22 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Fri Mar 25 22:06:23 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (16.0ms)
+Completed   in 32ms
+
+ActionView::Template::Error (can't convert nil into String):
+    11:       <% if @post.imgurl == "" %>
+    12:         <%= image_tag("/images/companylogos/nullimg.jpg", :alt => @post.company) %>
+    13:       <% else %>
+    14:         <%= image_tag(@post.imgurl, :alt => @post.company) %>
+    15:       <% end %>
+    16:   
+    17:   <br/>
+  app/views/posts/show.html.erb:14:in `_app_views_posts_show_html_erb__2117293497_2918_0'
+  app/controllers/posts_controller.rb:18:in `show'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 22:12:19 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 22:12:22 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed   in 63ms
+
+ActionView::Template::Error (undefined local variable or method `agent' for #<#<Class:01x15093da>:0x11af3d7>):
+    8: <div>
+    9: <div class="companyinfo">
+    10: 
+    11:       <% if @post.imgurl == agent.cell.blank %>
+    12:         <%= image_tag("/images/companylogos/nullimg.jpg", :alt => @post.company) %>
+    13:       <% else %>
+    14:         <%= image_tag(@post.imgurl, :alt => @post.company) %>
+  app/views/posts/show.html.erb:11:in `_app_views_posts_show_html_erb__2117293497_2946_0'
+  app/controllers/posts_controller.rb:18:in `show'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 22:13:15 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 22:13:17 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed   in 235ms
+
+ActionView::Template::Error (undefined local variable or method `agent' for #<#<Class:01x1caa17e>:0x305e44>):
+    8: <div>
+    9: <div class="companyinfo">
+    10: 
+    11:       <% if @post.imgurl == agent.cell? %>
+    12:         <%= image_tag("/images/companylogos/nullimg.jpg", :alt => @post.company) %>
+    13:       <% else %>
+    14:         <%= image_tag(@post.imgurl, :alt => @post.company) %>
+  app/views/posts/show.html.erb:11:in `_app_views_posts_show_html_erb__2117293497_2974_0'
+  app/controllers/posts_controller.rb:18:in `show'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 22:15:45 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 22:15:47 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 47ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 22:15:51 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Fri Mar 25 22:15:53 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 22:15:56 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (15.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/posts/33" for 127.0.0.1 at Fri Mar 25 22:15:58 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 33 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 22:16:00 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 22:17:59 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (15.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 22:18:02 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 47ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 22:22:40 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 22:22:42 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 22:43:03 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (0.0ms)
+Completed   in 16ms
+
+ActionView::Template::Error (undefined method `offer' for nil:NilClass):
+    1: <h1>Listing posts</h1>
+    2: 
+    3: <% @posts.each do |post| %>
+    4:   <h1><%= @post.offer %></h1>
+    5:   <% unless post.imgurl.empty? %>
+    6:   <%= link_to image_tag(@posts.imgurl), post %>
+    7:   <% end %>
+  app/views/posts/index.html.erb:4:in `_app_views_posts_index_html_erb___17149519_3110_0'
+  app/views/posts/index.html.erb:3:in `each'
+  app/views/posts/index.html.erb:3:in `_app_views_posts_index_html_erb___17149519_3110_0'
+  app/controllers/posts_controller.rb:7:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (63.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (79.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 22:43:26 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (47.0ms)
+Completed   in 63ms
+
+ActionView::Template::Error (undefined method `imgurl' for #<Array:0xda3202>):
+    3: <% @posts.each do |post| %>
+    4:   <h1><%= post.offer %></h1>
+    5:   <% unless post.imgurl.empty? %>
+    6:   <%= link_to image_tag(@posts.imgurl), post %>
+    7:   <% end %>
+    8:   <table>
+    9:   <tr>
+  app/views/posts/index.html.erb:6:in `_app_views_posts_index_html_erb___17149519_3126_0'
+  app/views/posts/index.html.erb:3:in `each'
+  app/views/posts/index.html.erb:3:in `_app_views_posts_index_html_erb___17149519_3126_0'
+  app/controllers/posts_controller.rb:7:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (63.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (79.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 22:43:43 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (32.0ms)
+Completed   in 47ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?):
+    2: 
+    3: <% @posts.each do |post| %>
+    4:   <h1><%= post.offer %></h1>
+    5:   <% unless post.imgurl.empty? %>
+    6:   <%= link_to image_tag(post.imgurl), post %>
+    7:   <% end %>
+    8:   <table>
+  app/views/posts/index.html.erb:5:in `_app_views_posts_index_html_erb___17149519_3142_0'
+  app/views/posts/index.html.erb:3:in `each'
+  app/views/posts/index.html.erb:3:in `_app_views_posts_index_html_erb___17149519_3142_0'
+  app/controllers/posts_controller.rb:7:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 22:44:14 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 22:44:28 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 22:44:31 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 22:45:52 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 22:46:02 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 22:46:04 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 23:21:47 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (203.0ms)
+Completed 200 OK in 296ms (Views: 218.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at Fri Mar 25 23:22:17 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 2 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at Fri Mar 25 23:22:42 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 2 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:23:06 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (204.0ms)
+Completed 200 OK in 235ms (Views: 204.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 23:26:29 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:26:48 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:26:52 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Fri Mar 25 23:26:53 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:26:55 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (16.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 125ms (Views: 94.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/posts/33" for 127.0.0.1 at Fri Mar 25 23:26:56 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 33 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:26:58 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (15.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/posts/32" for 127.0.0.1 at Fri Mar 25 23:27:00 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 32 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:27:02 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 141ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:27:36 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:27:40 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (79.0ms)
+Completed 200 OK in 94ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:28:30 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 62ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 23:28:32 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/_form.html.erb (234.0ms)
+Rendered posts/edit.html.erb within layouts/application (266.0ms)
+Completed 200 OK in 281ms (Views: 281.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/35" for 127.0.0.1 at Fri Mar 25 23:28:38 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tic6u0qXNQyqXrynE0sXgIEU5mu2JEWqyXbUdO+cYF4=", "post"=>{"offer"=>"15% off first order", "description"=>"Web Exclusive Offer\r\n\r\n15 % of your first order at The Student Boutique \r\nhttp://www.thestudentboutique.co.uk/pages/clothes_86848.cfm\r\n\r\ndiscount code 'gimme15'", "validto"=>"", "validtonotes"=>"Valid until further notice", "company"=>"The Student Boutique", "phone"=>"(01617)231750", "email"=>"candice@thestudentboutique.co.uk", "website"=>"http://www.thestudentboutique.co.uk/pages/clothes_86848.cfm", "facebook"=>"http://www.facebook.com/group.php?gid=367743221340", "twitter"=>"http://twitter.com/CandiceTSBoutiq", "address"=>"", "latitude"=>"", "longitude"=>"", "openingtimes"=>"", "metadata"=>"clothes", "imgurl"=>"/images/companylogos/nullimg.jp", "nus"=>"0", "web"=>"1"}, "commit"=>"Post Offer", "id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "posts" SET "imgurl" = '/images/companylogos/nullimg.jp', "updated_at" = '2011-03-25 23:28:38' WHERE "posts"."id" = 35
+Redirected to http://localhost:3000/posts/35
+Completed 302 Found in 94ms
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:28:38 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:28:38 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:28:38 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:28:41 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (79.0ms)
+Completed 200 OK in 94ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:28:41 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:28:41 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:28:45 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:28:45 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (31.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:28:49 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:28:49 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:28:49 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:28:52 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:28:54 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:28:55 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:29:07 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 110ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:29:08 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:29:08 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:29:08 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 23:29:17 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 110ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:29:24 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:29:24 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:29:48 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Fri Mar 25 23:29:48 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:29:49 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:29:49 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:29:49 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:29:50 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 23:29:52 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/_form.html.erb (62.0ms)
+Rendered posts/edit.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:29:52 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (16.0ms)
+
+
+Started POST "/posts/35" for 127.0.0.1 at Fri Mar 25 23:29:56 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tic6u0qXNQyqXrynE0sXgIEU5mu2JEWqyXbUdO+cYF4=", "post"=>{"offer"=>"15% off first order", "description"=>"Web Exclusive Offer\r\n\r\n15 % of your first order at The Student Boutique \r\nhttp://www.thestudentboutique.co.uk/pages/clothes_86848.cfm\r\n\r\ndiscount code 'gimme15'", "validto"=>"", "validtonotes"=>"Valid until further notice", "company"=>"The Student Boutique", "phone"=>"(01617)231750", "email"=>"candice@thestudentboutique.co.uk", "website"=>"http://www.thestudentboutique.co.uk/pages/clothes_86848.cfm", "facebook"=>"http://www.facebook.com/group.php?gid=367743221340", "twitter"=>"http://twitter.com/CandiceTSBoutiq", "address"=>"", "latitude"=>"", "longitude"=>"", "openingtimes"=>"", "metadata"=>"clothes", "imgurl"=>"/images/companylogos/nullimg.jpg", "nus"=>"0", "web"=>"1"}, "commit"=>"Post Offer", "id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "posts" SET "imgurl" = '/images/companylogos/nullimg.jpg', "updated_at" = '2011-03-25 23:29:56' WHERE "posts"."id" = 35[0m
+Redirected to http://localhost:3000/posts/35
+Completed 302 Found in 110ms
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:29:56 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:29:58 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:30:35 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 46ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 23:30:40 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/_form.html.erb (62.0ms)
+Rendered posts/edit.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:30:44 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 265ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:31:23 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 23:31:32 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 79ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:32:07 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 23:32:09 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/_form.html.erb (46.0ms)
+Rendered posts/edit.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/35" for 127.0.0.1 at Fri Mar 25 23:32:12 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tic6u0qXNQyqXrynE0sXgIEU5mu2JEWqyXbUdO+cYF4=", "post"=>{"offer"=>"15% off first order", "description"=>"Web Exclusive Offer\r\n\r\n15 % of your first order at The Student Boutique \r\nhttp://www.thestudentboutique.co.uk/pages/clothes_86848.cfm\r\n\r\ndiscount code 'gimme15'", "validto"=>"", "validtonotes"=>"Valid until further notice", "company"=>"The Student Boutique", "phone"=>"(01617)231750", "email"=>"candice@thestudentboutique.co.uk", "website"=>"http://www.thestudentboutique.co.uk/pages/clothes_86848.cfm", "facebook"=>"http://www.facebook.com/group.php?gid=367743221340", "twitter"=>"http://twitter.com/CandiceTSBoutiq", "address"=>"", "latitude"=>"", "longitude"=>"", "openingtimes"=>"", "metadata"=>"clothes", "imgurl"=>"/images/companylogos/nullimg.jpg", "nus"=>"0", "web"=>"1"}, "commit"=>"Post Offer", "id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Redirected to http://localhost:3000/posts/35
+Completed 302 Found in 31ms
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:32:12 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 46ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:32:23 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:32:26 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 23:32:27 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/35" for 127.0.0.1 at Fri Mar 25 23:32:31 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tic6u0qXNQyqXrynE0sXgIEU5mu2JEWqyXbUdO+cYF4=", "post"=>{"offer"=>"15% off first order", "description"=>"Web Exclusive Offer\r\n\r\n15 % of your first order at The Student Boutique \r\nhttp://www.thestudentboutique.co.uk/pages/clothes_86848.cfm\r\n\r\ndiscount code 'gimme15'", "validto"=>"", "validtonotes"=>"Valid until further notice", "company"=>"The Student Boutique", "phone"=>"(01617)231750", "email"=>"candice@thestudentboutique.co.uk", "website"=>"http://www.thestudentboutique.co.uk/pages/clothes_86848.cfm", "facebook"=>"http://www.facebook.com/group.php?gid=367743221340", "twitter"=>"http://twitter.com/CandiceTSBoutiq", "address"=>"", "latitude"=>"", "longitude"=>"", "openingtimes"=>"", "metadata"=>"clothes", "imgurl"=>"/images/companylogos/nullimg.jp", "nus"=>"0", "web"=>"1"}, "commit"=>"Post Offer", "id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "posts" SET "imgurl" = '/images/companylogos/nullimg.jp', "updated_at" = '2011-03-25 23:32:31' WHERE "posts"."id" = 35[0m
+Redirected to http://localhost:3000/posts/35
+Completed 302 Found in 219ms
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:32:32 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:32:32 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:32:32 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:32:40 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:33:00 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 23:33:02 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (16.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 171ms (Views: 78.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:33:02 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:33:02 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:33:04 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:33:04 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/images/companylogos/nullimg.jp" for 127.0.0.1 at Fri Mar 25 23:33:04 +0000 2011
+
+ActionController::RoutingError (No route matches "/images/companylogos/nullimg.jp"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 23:33:05 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/_form.html.erb (31.0ms)
+Rendered posts/edit.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 63ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/35" for 127.0.0.1 at Fri Mar 25 23:33:09 +0000 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tic6u0qXNQyqXrynE0sXgIEU5mu2JEWqyXbUdO+cYF4=", "post"=>{"offer"=>"15% off first order", "description"=>"Web Exclusive Offer\r\n\r\n15 % of your first order at The Student Boutique \r\nhttp://www.thestudentboutique.co.uk/pages/clothes_86848.cfm\r\n\r\ndiscount code 'gimme15'", "validto"=>"", "validtonotes"=>"Valid until further notice", "company"=>"The Student Boutique", "phone"=>"(01617)231750", "email"=>"candice@thestudentboutique.co.uk", "website"=>"http://www.thestudentboutique.co.uk/pages/clothes_86848.cfm", "facebook"=>"http://www.facebook.com/group.php?gid=367743221340", "twitter"=>"http://twitter.com/CandiceTSBoutiq", "address"=>"", "latitude"=>"", "longitude"=>"", "openingtimes"=>"", "metadata"=>"clothes", "imgurl"=>"/images/companylogos/nullimg.jpg", "nus"=>"0", "web"=>"1"}, "commit"=>"Post Offer", "id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "posts" SET "imgurl" = '/images/companylogos/nullimg.jpg', "updated_at" = '2011-03-25 23:33:09' WHERE "posts"."id" = 35
+Redirected to http://localhost:3000/posts/35
+Completed 302 Found in 94ms
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:33:09 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:33:22 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (16.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 172ms (Views: 156.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:33:24 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 62ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 23:33:25 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/_form.html.erb (31.0ms)
+Rendered posts/edit.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:33:26 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 23:38:54 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:38:57 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 23:38:59 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/edit.html.erb within layouts/application (31.0ms)
+Completed   in 47ms
+
+ActionView::Template::Error (undefined method `show' for #<Post:0x2dbe0>):
+    1: <h1>Editing post</h1>
+    2: 
+    3: <%= link_to 'Back', @post.show %>
+    4: <%= render 'form' %>
+    5: 
+    6: <br/>
+  app/views/posts/edit.html.erb:3:in `_app_views_posts_edit_html_erb___1614899930_2984_0'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 23:40:00 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:40:01 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 23:40:03 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/edit.html.erb within layouts/application (16.0ms)
+Completed   in 31ms
+
+ActionView::Template::Error (undefined method `show_post_path' for #<#<Class:01xc5ceab>:0x837978>):
+    1: <h1>Editing post</h1>
+    2: 
+    3: <%= link_to 'Back', show_post_path(@post) %>
+    4: <%= render 'form' %>
+    5: 
+    6: <br/>
+  app/views/posts/edit.html.erb:3:in `_app_views_posts_edit_html_erb___1614899930_3022_0'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 23:40:41 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (16.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:40:43 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 23:40:45 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/edit.html.erb within layouts/application (16.0ms)
+Completed   in 31ms
+
+ActionView::Template::Error (undefined method `show' for #<#<Class:01x948da5>:0xdf897b>):
+    1: <h1>Editing post</h1>
+    2: 
+    3: <%= link_to 'Back', show(@post) %>
+    4: <%= render 'form' %>
+    5: 
+    6: <br/>
+  app/views/posts/edit.html.erb:3:in `_app_views_posts_edit_html_erb___1614899930_3062_0'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 23:40:57 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:40:58 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 23:41:00 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/edit.html.erb within layouts/application (15.0ms)
+Completed   in 31ms
+
+ActionView::Template::Error (undefined local variable or method `show_post_path' for #<#<Class:01xba05a0>:0xc76b8c>):
+    1: <h1>Editing post</h1>
+    2: 
+    3: <%= link_to 'Back', show_post_path %>
+    4: <%= render 'form' %>
+    5: 
+    6: <br/>
+  app/views/posts/edit.html.erb:3:in `_app_views_posts_edit_html_erb___1614899930_3102_0'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 23:45:32 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 79ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:45:34 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 23:45:36 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/edit.html.erb within layouts/application (15.0ms)
+Completed   in 31ms
+
+ActionView::Template::Error (undefined local variable or method `show_path' for #<#<Class:01x11793fc>:0xf4a9da>):
+    1: <h1>Editing post</h1>
+    2: 
+    3: <%= link_to 'Back', show_path %>
+    4: <%= render 'form' %>
+    5: 
+    6: <br/>
+  app/views/posts/edit.html.erb:3:in `_app_views_posts_edit_html_erb___1614899930_3144_0'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 23:46:00 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:46:01 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 23:46:06 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:46:08 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Mar 25 23:49:49 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:49:51 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 46ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Fri Mar 25 23:49:53 +0000 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/_form.html.erb (32.0ms)
+Rendered posts/edit.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 78ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Mar 25 23:49:55 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 78ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:49:57 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)

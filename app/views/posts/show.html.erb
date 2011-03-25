@@ -1,13 +1,53 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Offer:</b>
-  <%= @post.offer %>
-</p>
-<p>
+
+<h1><%= @post.company %></h1>
+<h1><%= @post.offer %></h1>
+<%= @post.nus %>
+<%= @post.web %>
+<div>
+<div class="companyinfo">
+  <div class="center">
+  <% if @post.imgurl.blank? %>
+    <%= image_tag("/images/companylogos/nullimg.jpg", :alt => @post.company) %>
+  <% else %>
+    <%= image_tag(@post.imgurl, :alt => @post.company) %>
+  <% end %>
+  </div>
+  <br/>
+  Phone: <%= @post.phone %>
+  <br/>
+  Email: <%= @post.email %>
+  <br/>
+  Website: <%= @post.website %>
+  <br/>
+  Facebook: <%= @post.facebook %>
+  <br/>
+  Twitter: <%= @post.twitter %>
+  <br/>
+  Opening Times:
+  <br/>
+  <%= @post.openingtimes %>
+  <br/>
+  Address:<br/>
+  <%= @post.address %>
+  <br/>
+  Lat: <%= @post.latitude %>
+  <br/>
+  Long: <%= @post.longitude %>
+</div>
+<div class="offerinfo">
   <b>Description:</b>
   <%= @post.description %>
-</p>
-
+  <br/>
+  <br/>
+  Valid To: <%= @post.validto %>
+  <br/>
+  Valid To Conditions: <%= @post.validtonotes %>
+  <br/>
+  <br/>
+  Tags: <%= @post.metadata %>
+</div>
+</div>
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>

@@ -87,6 +87,25 @@ div.footer {
     border-top: 3px solid #CCCCCC;
 }
 
+/* Divs for show offer */
+
+div.companyinfo {
+    width: 300px;
+    float: left;
+    text-align: left;
+    min-height: 30em;
+    height: auto;
+    border-right:1px solid #FFFFFF;
+}
+
+div.offerinfo {
+    margin-left: 320px;
+    text-align: left;
+    min-height: 30em;
+    height: auto;
+    border-left:1px solid #FFFFFF;
+}
+
 /* CSS for links */
 a { color: #000; }
 a:visited { color: #666; }
@@ -96,4 +115,8 @@ div.header a:hover { color: #fff; }
 /* Misc */
 .borderless {
     border:0;
+}
+
+.center {
+    text-align: center;
 }
