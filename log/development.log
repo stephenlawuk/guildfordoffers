@@ -11036,3 +11036,867 @@ Started GET "/posts" for 127.0.0.1 at Fri Mar 25 23:49:57 +0000 2011
   [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
 Rendered posts/index.html.erb within layouts/application (62.0ms)
 Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 18:28:28 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (328.0ms)
+Completed 200 OK in 500ms (Views: 359.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 18:32:00 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (234.0ms)
+Completed 200 OK in 265ms (Views: 234.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 18:37:15 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 141ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 18:38:15 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 18:39:10 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 18:43:23 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 110ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 18:46:27 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 110ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 18:49:19 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 18:49:47 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 125ms (Views: 93.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 18:50:23 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 110ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 18:51:28 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 79ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 18:52:07 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 110ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 18:53:05 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 125ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 18:53:31 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 18:53:44 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 18:55:07 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 18:57:55 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (79.0ms)
+Completed 200 OK in 125ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 18:59:43 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (15.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 19:00:09 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 19:05:59 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (16.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 19:21:44 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/your%20bottom%20image" for 127.0.0.1 at Sat Mar 26 19:21:45 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/your%20bottom%20image"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/stylesheets/your%20middle%20image" for 127.0.0.1 at Sat Mar 26 19:21:45 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/your%20middle%20image"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/stylesheets/your%20top%20image" for 127.0.0.1 at Sat Mar 26 19:21:45 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/your%20top%20image"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 19:23:17 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 110ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/your%20top%20image" for 127.0.0.1 at Sat Mar 26 19:23:18 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/your%20top%20image"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/stylesheets/your%20middle%20image" for 127.0.0.1 at Sat Mar 26 19:23:18 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/your%20middle%20image"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/stylesheets/your%20bottom%20image" for 127.0.0.1 at Sat Mar 26 19:23:18 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/your%20bottom%20image"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 19:26:53 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/your%20middle%20image" for 127.0.0.1 at Sat Mar 26 19:26:53 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/your%20middle%20image"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/stylesheets/your%20top%20image" for 127.0.0.1 at Sat Mar 26 19:26:53 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/your%20top%20image"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/stylesheets/your%20bottom%20image" for 127.0.0.1 at Sat Mar 26 19:26:53 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/your%20bottom%20image"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 19:28:13 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (15.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/stylesheets/your%20middle%20image" for 127.0.0.1 at Sat Mar 26 19:28:14 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/your%20middle%20image"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/stylesheets/your%20top%20image" for 127.0.0.1 at Sat Mar 26 19:28:14 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/your%20top%20image"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/stylesheets/your%20bottom%20image" for 127.0.0.1 at Sat Mar 26 19:28:14 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/your%20bottom%20image"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 19:28:42 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 140ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/your%20top%20image" for 127.0.0.1 at Sat Mar 26 19:28:43 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/your%20top%20image"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/stylesheets/your%20middle%20image" for 127.0.0.1 at Sat Mar 26 19:28:43 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/your%20middle%20image"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/stylesheets/your%20bottom%20image" for 127.0.0.1 at Sat Mar 26 19:28:43 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/your%20bottom%20image"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 19:32:25 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/your%20middle%20image" for 127.0.0.1 at Sat Mar 26 19:32:25 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/your%20middle%20image"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/stylesheets/your%20top%20image" for 127.0.0.1 at Sat Mar 26 19:32:25 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/your%20top%20image"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/stylesheets/your%20bottom%20image" for 127.0.0.1 at Sat Mar 26 19:32:25 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/your%20bottom%20image"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 19:34:23 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/twitter-bubble-bg.png" for 127.0.0.1 at Sat Mar 26 19:34:23 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/twitter-bubble-bg.png"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/stylesheets/your%20bottom%20image" for 127.0.0.1 at Sat Mar 26 19:34:23 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/your%20bottom%20image"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 19:45:47 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 19:54:34 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (79.0ms)
+Completed 200 OK in 94ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 20:06:16 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 20:06:53 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 20:09:33 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 20:19:02 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 20:19:54 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 20:21:01 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 20:22:29 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (15.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 20:26:45 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 20:28:43 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 20:29:57 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 20:36:14 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 20:47:18 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 20:47:46 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 20:48:03 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 20:56:37 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 20:58:14 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 20:59:01 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 21:10:08 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 21:26:59 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 21:39:04 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 21:40:58 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (16.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 344ms (Views: 156.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 21:42:24 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 21:44:09 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 21:45:11 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (79.0ms)
+Completed 200 OK in 94ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 21:47:21 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 21:47:46 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 21:48:28 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 21:49:51 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 21:50:23 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 21:51:04 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 21:51:38 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 21:52:33 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 21:54:49 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 21:55:52 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 21:59:28 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 79ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:00:22 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:02:11 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:03:06 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:04:54 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:05:58 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:07:27 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:07:58 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:09:44 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:09:58 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 79ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:11:43 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:21:25 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:22:25 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:29:19 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/images/twitterfollow.png" for 127.0.0.1 at Sat Mar 26 22:29:19 +0000 2011
+
+ActionController::RoutingError (No route matches "/stylesheets/images/twitterfollow.png"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:29:33 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:30:54 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:31:36 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:33:22 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:37:39 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:42:19 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:48:19 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:48:36 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:50:45 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:56:20 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:57:46 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 22:59:27 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 23:00:08 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Sat Mar 26 23:00:24 +0000 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 62ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Sat Mar 26 23:00:26 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 23:01:09 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (16.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 23:21:56 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Mar 26 23:22:39 +0000 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 79ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 28 00:18:50 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (453.0ms)
+Completed 200 OK in 672ms (Views: 500.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 28 00:20:05 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (235.0ms)
+Completed 200 OK in 266ms (Views: 235.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Mon Mar 28 00:21:22 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered posts/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)

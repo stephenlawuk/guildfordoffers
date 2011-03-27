@@ -52,7 +52,13 @@ div.banner {
     height: 150px;
     color: #FFFFFF;
     text-align: left;
-    padding-top: 15px;
+}
+
+div#fbarrow {
+    width: 700px;
+    background: url("/images/likeus.png") no-repeat;
+    height: 50px;
+    margin-left: 240px;
 }
 
 div.searchbg {
@@ -106,6 +112,47 @@ div.offerinfo {
     border-left:1px solid #FFFFFF;
 }
 
+/* Divs for twitter */
+
+#twitter_container {
+    width: 700px;
+    background: url("/images/bubble.png") no-repeat;
+    height: 70px;
+    margin-left: 240px;
+}
+
+#twitter_update_list {
+    width: 700px;
+    height: 60px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+    font-size: 12px;
+    font-style: italic;
+    color: #31353d;
+    font-family: Georgia;
+    font-weight: bold;
+    text-align: left;
+}
+
+#twitter_update_list a {
+    color: #5f6d76;
+    border-bottom: dotted 1px;
+    text-decoration: none;
+}
+
+#twitter_update_list a:hover {
+    color: #31353d;
+}
+
+#twitter_bottom {
+    display: block;
+    width: 700px;
+    height: 30px;
+    background: url("/images/twitterfollow.png") no-repeat;
+}
+
 /* CSS for links */
 a { color: #000; }
 a:visited { color: #666; }
@@ -120,3 +167,5 @@ div.header a:hover { color: #fff; }
 .center {
     text-align: center;
 }
+
+a.linkarea{display: block; width: 100%; height: 100%; text-decoration: none;}
