@@ -15,6 +15,7 @@
     - v0.1   Adding web, nus tickboxes and image url to form and database.
     - v0.2   Include image files for companies and move show, edit destroy about.
     - v0.3   Integrating twitter feed into header/banner.
+    - v0.4   Netbeans generator hack to get it to work by putting generator in lib folder. Also some new images.
 
 == To Do List
 

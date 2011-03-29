@@ -13,38 +13,38 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   <%= stylesheet_link_tag "scaffold", "stylesheet1", :cache => true, :concat => true %>
   <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4d80079f04c2aeff"></script>
-  <%= javascript_include_tag :all %>
+  <%= javascript_include_tag :defaults %>
 </head>
 <body>
   
   <div class="header">
     <div class="nav">
       <div class="logo">
-        <a href="http://www.guildfordoffers.com" target="_blank"><img alt="Guildford Student Offers" class="borderless" src="/images/gsologo.png"/></a>
+        <a title="Guildford Student Offers" href="http://www.guildfordoffers.com" target="_blank"><img alt="Guildford Student Offers" class="borderless" src="/images/gsologo.png"/></a>
       </div>
       <div class="socialbox">
-      <!-- AddThis Button BEGIN -->
+      <!-- AddThis Code BEGIN -->
         <div class="addthis_toolbox addthis_default_style">
         <a class="addthis_button_facebook_like" fb:like:layout="button_count" addthis:url="http://www.facebook.com/guildfordoffers"></a>
         <a class="addthis_button_tweet" addthis:url="http://www.guildfordoffers.com" tw:via="guildfordoffers" tw:text="Guilford Student Offers have loads of discounts check them out!!"></a>
         <a class="addthis_counter addthis_pill_style" addthis:url="http://www.guildfordoffers.com" addthis:title="Amazing Student Discounts At Guildford Student Offers Check them out!!"></a>
         </div>
-        <!-- AddThis Button END -->
+        <!-- AddThis Code END -->
       </div>
       <div class="links">
-        NAV BAR LINKS??
+        NAV BAR LINKS?? Or possibly sign ups / login
       </div>
     </div>
     <div class="banner">
       <div id="fbarrow">
-        <a class="linkarea" alt="guildfordoffers on facebook" href="http://www.facebook.com/guildfordoffers"></a>
+        <a class="linkarea" title="guildfordoffers on facebook" href="http://www.facebook.com/guildfordoffers"></a>
       </div>
       <div id="twitter_container">
         <div id="twitter_update_list">
           Twitter feed loading
         </div>
         <div id="twitter_bottom">
-          <a class="linkarea" alt="guildfordoffers on twitter" href="http://twitter.com/guildfordoffers"></a>
+          <a class="linkarea" title="guildfordoffers on twitter" href="http://twitter.com/guildfordoffers"></a>
         </div>
       </div>
       
@@ -66,8 +66,8 @@
     <br/>
     Subscribe To Receive Newsletters And Updates - Possibly chuck this in footer
   </div>
-
   <!-- twitter script doesnt work when in head -->
+  <script type="text/javascript" src="/javascripts/twitter.js"></script>
   <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/guildfordoffers.json?callback=twitterCallback2&amp;count=1"></script>
   <!-- twitter script END -->
 </body>

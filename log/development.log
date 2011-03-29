@@ -11900,3 +11900,344 @@ Started GET "/posts/35" for 127.0.0.1 at Mon Mar 28 00:21:22 +0100 2011
   [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
 Rendered posts/show.html.erb within layouts/application (47.0ms)
 Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 28 15:41:04 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (109.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (547.0ms)
+Completed 200 OK in 907ms (Views: 641.0ms | ActiveRecord: 109.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 28 15:47:53 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (16.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (218.0ms)
+Completed 200 OK in 250ms (Views: 234.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 28 15:55:11 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 140ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 28 15:55:36 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (297.0ms)
+Completed 200 OK in 312ms (Views: 297.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 28 16:01:46 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 28 16:03:59 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 109ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 28 16:07:33 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 109ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 28 16:10:12 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 110ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 28 16:19:59 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed   in 156ms
+
+ActionView::Template::Error (No expansion found for :default):
+    13:   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    14:   <%= stylesheet_link_tag "scaffold", "stylesheet1", :cache => true, :concat => true %>
+    15:   <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4d80079f04c2aeff"></script>
+    16:   <%= javascript_include_tag :default %>
+    17: </head>
+    18: <body>
+    19:   
+  app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___830604654_2332_0'
+  app/controllers/posts_controller.rb:7:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (46.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 28 16:20:19 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Mar 28 16:27:33 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 29 17:54:57 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPost Load (15.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (265.0ms)
+Completed 200 OK in 547ms (Views: 328.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Tue Mar 29 17:55:44 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 110ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Tue Mar 29 17:55:47 +0100 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/_form.html.erb (156.0ms)
+Rendered posts/edit.html.erb within layouts/application (203.0ms)
+Completed 200 OK in 266ms (Views: 203.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Tue Mar 29 17:56:13 +0100 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 110ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Tue Mar 29 17:56:28 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 63ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Tue Mar 29 17:56:31 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (172.0ms)
+Completed 200 OK in 234ms (Views: 187.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 29 18:09:36 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 109ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Tue Mar 29 18:09:43 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 78ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Tue Mar 29 18:09:46 +0100 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/edit.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 110ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/35" for 127.0.0.1 at Tue Mar 29 18:09:58 +0100 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c5gjedzOCgFxhVOZD5MAMP+BSj2t2erKvmJb4vJLNbQ=", "post"=>{"offer"=>"15% off first order", "description"=>"Web Exclusive Offer\r\n\r\n15 % of your first order at The Student Boutique \r\nhttp://www.thestudentboutique.co.uk/pages/clothes_86848.cfm\r\n\r\ndiscount code 'gimme15'", "validto"=>"", "validtonotes"=>"Valid until further notice", "company"=>"The Student Boutique", "phone"=>"(01617)231750", "email"=>"candice@thestudentboutique", "website"=>"http://www.thestudentboutique.co.uk/pages/clothes_86848.cfm", "facebook"=>"http://www.facebook.com/group.php?gid=367743221340", "twitter"=>"http://twitter.com/CandiceTSBoutiq", "address"=>"", "latitude"=>"", "longitude"=>"", "openingtimes"=>"", "metadata"=>"clothes", "imgurl"=>"/images/companylogos/nullimg.jpg", "nus"=>"0", "web"=>"1"}, "commit"=>"Post Offer", "id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: offer, description, validto, validtonotes, company, phone, email, website, facebook, twitter, address, latitude, longitude, openingtimes, metadata, imgurl, nus, web
+Redirected to http://localhost:3000/posts/35
+Completed 302 Found in 47ms
+
+
+Started GET "/posts/35" for 127.0.0.1 at Tue Mar 29 18:09:58 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 78ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35/edit" for 127.0.0.1 at Tue Mar 29 18:10:11 +0100 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/_form.html.erb (32.0ms)
+Rendered posts/edit.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 78ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/35" for 127.0.0.1 at Tue Mar 29 18:10:20 +0100 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c5gjedzOCgFxhVOZD5MAMP+BSj2t2erKvmJb4vJLNbQ=", "post"=>{"offer"=>"15% off first order", "description"=>"Web Exclusive Offer\r\n\r\n15 % of your first order at The Student Boutique \r\nhttp://www.thestudentboutique.co.uk/pages/clothes_86848.cfm\r\n\r\ndiscount code 'gimme15'", "validto"=>"", "validtonotes"=>"Valid until further notice", "company"=>"The Student Boutique", "phone"=>"(01617)231750", "email"=>"candice@thestudentboutique", "website"=>"http://www.thestudentboutique.co.uk/pages/clothes_86848.cfm", "facebook"=>"http://www.facebook.com/group.php?gid=367743221340", "twitter"=>"http://twitter.com/CandiceTSBoutiq", "address"=>"", "latitude"=>"", "longitude"=>"", "openingtimes"=>"", "metadata"=>"clothes", "imgurl"=>"/images/companylogos/nullimg.jpg", "nus"=>"0", "web"=>"1"}, "commit"=>"Post Offer", "id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: offer, description, validto, validtonotes, company, phone, email, website, facebook, twitter, address, latitude, longitude, openingtimes, metadata, imgurl, nus, web
+Redirected to http://localhost:3000/posts/35
+Completed 302 Found in 62ms
+
+
+Started GET "/posts/35" for 127.0.0.1 at Tue Mar 29 18:10:20 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (16.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 78ms (Views: 31.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Tue Mar 29 18:10:25 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 109ms (Views: 62.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Tue Mar 29 18:10:27 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 62ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 29 18:10:59 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Tue Mar 29 18:11:01 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Tue Mar 29 18:11:08 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (79.0ms)
+Completed 200 OK in 110ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at Tue Mar 29 18:11:12 +0100 2011
+  Processing by PostsController#new as HTML
+Rendered posts/_form.html.erb (47.0ms)
+Rendered posts/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 79ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at Tue Mar 29 18:11:14 +0100 2011
+  Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c5gjedzOCgFxhVOZD5MAMP+BSj2t2erKvmJb4vJLNbQ=", "post"=>{"offer"=>"", "description"=>"", "validto"=>"", "validtonotes"=>"", "company"=>"", "phone"=>"", "email"=>"", "website"=>"", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"", "longitude"=>"", "openingtimes"=>"", "metadata"=>"", "imgurl"=>"", "nus"=>"0", "web"=>"0"}, "commit"=>"Post Offer"}
+Rendered posts/_form.html.erb (16.0ms)
+Rendered posts/new.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 78ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Tue Mar 29 18:11:37 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at Tue Mar 29 18:11:41 +0100 2011
+  Processing by PostsController#new as HTML
+Rendered posts/_form.html.erb (46.0ms)
+Rendered posts/new.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 62ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Tue Mar 29 18:12:27 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 125ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-29 19:37:48 +0100
+
+RuntimeError (Please install the sqlite3 adapter: `gem install activerecord-sqlite3-adapter` (no such file to load -- java)):
+  
+
+Rendered C:/Program Files/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.6ms)
+Rendered C:/Program Files/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 29 19:41:14 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (219.0ms)
+Completed 200 OK in 281ms (Views: 219.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Mar 29 20:03:09 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (203.0ms)
+Completed 200 OK in 281ms (Views: 219.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Tue Mar 29 20:03:18 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered posts/show.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Tue Mar 29 20:03:21 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (219.0ms)
+Completed 200 OK in 250ms (Views: 235.0ms | ActiveRecord: 0.0ms)
