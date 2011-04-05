@@ -12,9 +12,10 @@ div {
     margin: 0 auto;
 }
 
+/* Nav + Banner Div height = header height */
 div.header {
     width: 100%;
-    height: 200px;
+    height: 230px;
     background: #153766 url(../images/navbg.jpg) repeat-x;
 }
 
@@ -23,31 +24,27 @@ div.logo {
 }
 
 div.nav {
-    border-left: 3px solid #CCCCCC;
-    border-right: 3px solid #CCCCCC;
     width: 1024px;
-    height: 50px;
+    height: 80px;
 }
 
 div.socialbox {
     width: 320px;
-    height: 35px;
-    padding-top: 15px;
+    height: 80px;
+    padding-top: 10px;
     text-align: left;
     float: left;
 }
 
 div.links {
     width: auto;
-    height: 50px;
+    height: 80px;
     color: #FFFFFF;
     text-align: right;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 div.banner {
-    border-left: 3px solid #CCCCCC;
-    border-right: 3px solid #CCCCCC;
     width: 1024px;
     height: 150px;
     color: #FFFFFF;
@@ -62,15 +59,11 @@ div#fbarrow {
 }
 
 div.searchbg {
-    border-top: 3px solid #CCCCCC;
-    border-bottom: 3px solid #CCCCCC;
     width: 100%;
     background: #ffffff;
 }
 
 div.search {
-    border-left: 3px solid #CCCCCC;
-    border-right: 3px solid #CCCCCC;
     width: 1024px;
     height: 50px;
 }
@@ -81,8 +74,6 @@ div.container {
     height: auto;
     padding-top: 15px;
     padding-bottom: 15px;
-    border-left: 3px solid #CCCCCC;
-    border-right: 3px solid #CCCCCC;
 }
 
 div.footer {
@@ -118,7 +109,7 @@ div.offerinfo {
     width: 700px;
     background: url("/images/bubble.png") no-repeat;
     height: 70px;
-    margin-left: 240px;
+    margin-left: 251px;
 }
 
 #twitter_update_list {

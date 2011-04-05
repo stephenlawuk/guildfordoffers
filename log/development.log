@@ -12241,3 +12241,115 @@ Started GET "/posts" for 127.0.0.1 at Tue Mar 29 20:03:21 +0100 2011
   [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
 Rendered posts/index.html.erb within layouts/application (219.0ms)
 Completed 200 OK in 250ms (Views: 235.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 05 22:18:25 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (203.0ms)
+Completed 200 OK in 281ms (Views: 219.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 05 22:18:41 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (375.0ms)
+Completed 200 OK in 406ms (Views: 375.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 05 22:19:39 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 125ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 05 22:20:02 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 125ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 05 22:23:10 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 05 22:24:06 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 05 22:24:20 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 05 22:25:38 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 05 22:27:27 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 05 22:28:57 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (16.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 78.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 05 22:29:19 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 79ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 05 22:29:29 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 05 22:34:33 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 125ms (Views: 109.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 05 22:34:37 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 05 22:35:01 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 05 22:36:17 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (15.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (79.0ms)
+Completed 200 OK in 94ms (Views: 79.0ms | ActiveRecord: 15.0ms)

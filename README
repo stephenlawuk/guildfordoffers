@@ -16,6 +16,7 @@
     - v0.2   Include image files for companies and move show, edit destroy about.
     - v0.3   Integrating twitter feed into header/banner.
     - v0.4   Netbeans generator hack to get it to work by putting generator in lib folder. Also some new images.
+    - v0.4.1 Netbeans generator hack removal as it doesn't work and a update to new addthis code. Also IE and Chrome Fixes as they dont like overlap.
 
 == To Do List
 
