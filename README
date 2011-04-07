@@ -18,6 +18,7 @@
     - v0.4   Netbeans generator hack to get it to work by putting generator in lib folder. Also some new images.
     - v0.4.1 Netbeans generator hack removal as it doesn't work and a update to new addthis code. Also IE and Chrome Fixes as they dont like overlap.
     - v0.5   Load up authlogic to 2.1.6 to setup logins
+    - v0.5.1 Setup users with authlogic, created database, user MVC's.
 
 == To Do List
 

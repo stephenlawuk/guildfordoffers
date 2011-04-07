@@ -12353,3 +12353,96 @@ Started GET "/" for 127.0.0.1 at Tue Apr 05 22:36:17 +0100 2011
   [1m[35mPost Load (15.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
 Rendered posts/index.html.erb within layouts/application (79.0ms)
 Completed 200 OK in 94ms (Views: 79.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 07 21:33:28 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (343.0ms)
+Completed 200 OK in 421ms (Views: 359.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Thu Apr 07 21:33:36 +0100 2011
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+
+ActiveRecord::JDBCError (query does not return ResultSet):
+  app/controllers/users_controller.rb:27:in `new'
+  app/controllers/users_controller.rb:27:in `new'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.0ms)
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to AddImgurlToPosts (20110321233949)
+Migrating to AddWebToPosts (20110321234536)
+Migrating to CreateUsers (20110407202806)
+  [1m[36mSQL (0.0ms)[0m  [1mCREATE TABLE "users" ("id" integer primary key autoincrement not null, "username" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  SELECT last_insert_rowid()
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name, sql FROM sqlite_master WHERE tbl_name = "posts" AND type = 'index'[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT name, sql FROM sqlite_master WHERE tbl_name = "users" AND type = 'index'
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 07 21:34:41 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (15.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (360.0ms)
+Completed 200 OK in 422ms (Views: 360.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Thu Apr 07 21:34:56 +0100 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (32.0ms)
+Rendered users/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 110ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Thu Apr 07 21:35:06 +0100 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h2TEZSJWkp99+Km0MKg+ZPMJhyx+t7q9YsptODfSh+g=", "user"=>{"username"=>"admin", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."username") = LOWER('admin')) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users"."id" FROM "users" WHERE ("users"."persistence_token" = '9483c90b23dcecba712e73513103823e9af12ce237d0870d2b008a2b385ffb1652443542696bb8ef39a5080dca53de6725d6a19f90de478dbbe82708ec57dfb4') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 171ms
+
+
+Started GET "/users/1" for 127.0.0.1 at Thu Apr 07 21:35:06 +0100 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 63ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Thu Apr 07 21:35:31 +0100 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered users/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 63ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Thu Apr 07 21:35:47 +0100 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 07 21:36:32 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (172.0ms)
+Completed 200 OK in 203ms (Views: 187.0ms | ActiveRecord: 0.0ms)
