@@ -1,28 +1,21 @@
 <h1>Listing users</h1>
 
-<table>
-  <tr>
-    <th>Username</th>
-    <th>Crypted password</th>
-    <th>Password salt</th>
-    <th>Persistence token</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
 <% @users.each do |user| %>
+  <div class="users">
+   <b>Username: </b><%= user.username %><br/>
+   <b>Crypted password: </b><%= user.crypted_password %><br/>
+   <b>Password salt: </b><%= user.password_salt %><br/>
+   <b>Persistence token: </b><%= user.persistence_token %><br/>
+  <table>
   <tr>
-    <td><%= user.username %></td>
-    <td><%= user.crypted_password %></td>
-    <td><%= user.password_salt %></td>
-    <td><%= user.persistence_token %></td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
     <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
+  </table>
+  </div>
 <% end %>
-</table>
+
 
 <br />
 

@@ -12446,3 +12446,204 @@ Started GET "/" for 127.0.0.1 at Thu Apr 07 21:36:32 +0100 2011
   [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
 Rendered posts/index.html.erb within layouts/application (172.0ms)
 Completed 200 OK in 203ms (Views: 187.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 07 22:00:33 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (203.0ms)
+Completed 200 OK in 266ms (Views: 203.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Thu Apr 07 22:00:44 +0100 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (47.0ms)
+Rendered users/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 110ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Thu Apr 07 22:03:33 +0100 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 63ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 07 22:10:08 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (219.0ms)
+Completed 200 OK in 265ms (Views: 234.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Thu Apr 07 22:10:12 +0100 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (31.0ms)
+Rendered users/new.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 78ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Thu Apr 07 22:10:13 +0100 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 62ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 07 22:46:11 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Thu Apr 07 22:46:13 +0100 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (31.0ms)
+Rendered users/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 63ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Thu Apr 07 22:46:15 +0100 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 63ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 07 23:10:41 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Thu Apr 07 23:10:44 +0100 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (31.0ms)
+Rendered users/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 63ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Thu Apr 07 23:10:48 +0100 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 78ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Thu Apr 07 23:10:54 +0100 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 62ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Thu Apr 07 23:11:03 +0100 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 62ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Thu Apr 07 23:11:28 +0100 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 63ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 07 23:14:48 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (15.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Thu Apr 07 23:14:50 +0100 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (31.0ms)
+Rendered users/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 63ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Thu Apr 07 23:14:53 +0100 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 62ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at Thu Apr 07 23:15:01 +0100 2011
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered users/_form.html.erb (16.0ms)
+Rendered users/edit.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Thu Apr 07 23:15:03 +0100 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 47ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Thu Apr 07 23:15:04 +0100 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered users/show.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 07 23:16:33 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 110ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Thu Apr 07 23:16:37 +0100 2011
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (15.0ms)
+Rendered users/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 63ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Thu Apr 07 23:16:38 +0100 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at Thu Apr 07 23:16:54 +0100 2011
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/_form.html.erb (16.0ms)
+Rendered users/edit.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 78ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Thu Apr 07 23:16:55 +0100 2011
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 46ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Thu Apr 07 23:16:57 +0100 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)

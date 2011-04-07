@@ -199,6 +199,19 @@ div.offerinfo {
     border-left:1px solid #FFFFFF;
 }
 
+/*
+Divs for listing users
+word-wrap: break-word;
+is available in IE7+, FF 3.5 and Webkit enabled browsers (Safari/Chrome etc).
+To handle IE6 also need to declare word-wrap: break-all;
+*/
+
+div.users {
+    width: 100%;
+    text-align: left;
+    word-wrap: break-word;
+}
+
 /* Divs for twitter */
 
 #twitter_container {
