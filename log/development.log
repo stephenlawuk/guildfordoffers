@@ -12647,3 +12647,1025 @@ Started GET "/users/1" for 127.0.0.1 at Thu Apr 07 23:16:57 +0100 2011
   [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
 Rendered users/show.html.erb within layouts/application (16.0ms)
 Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to AddImgurlToPosts (20110321233949)
+Migrating to AddWebToPosts (20110321234536)
+Migrating to CreateUsers (20110407202806)
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name, sql FROM sqlite_master WHERE tbl_name = "posts" AND type = 'index'[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT name, sql FROM sqlite_master WHERE tbl_name = "users" AND type = 'index'
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateUsers (20110407202806)
+  [1m[35mSQL (16.0ms)[0m  DROP TABLE "users"
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20110407202806'[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT name, sql FROM sqlite_master WHERE tbl_name = "posts" AND type = 'index'
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to AddImgurlToPosts (20110321233949)
+Migrating to AddWebToPosts (20110321234536)
+Migrating to CreateUsers (20110407202806)
+  [1m[36mSQL (0.0ms)[0m  [1mCREATE TABLE "users" ("id" integer primary key autoincrement not null, "username" varchar(255), "crypted_password" varchar(255), "password_salt" varchar(255), "persistence_token" varchar(255), "login_count" integer DEFAULT 0 NOT NULL, "failed_login_count" integer DEFAULT 0 NOT NULL, "last_request_at" datetime, "current_login_at" datetime, "last_login_at" datetime, "current_login_ip" varchar(255), "last_login_ip" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  SELECT last_insert_rowid()
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name, sql FROM sqlite_master WHERE tbl_name = "posts" AND type = 'index'[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT name, sql FROM sqlite_master WHERE tbl_name = "users" AND type = 'index'
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 08 15:57:12 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (15.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (344.0ms)
+Completed 200 OK in 563ms (Views: 391.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Fri Apr 08 16:06:19 +0100 2011
+  Processing by UsersController#new as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered users/_form.html.erb (47.0ms)
+Rendered users/new.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 219ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Apr 08 16:06:22 +0100 2011
+  Processing by UsersController#index as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 63ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 08 16:08:20 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (234.0ms)
+Completed 200 OK in 266ms (Views: 234.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 08 16:09:24 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Rendered posts/index.html.erb within layouts/application (79.0ms)
+Completed 200 OK in 110ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 08 16:32:06 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (15.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Fri Apr 08 16:32:09 +0100 2011
+  Processing by UsersController#new as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered users/_form.html.erb (31.0ms)
+Rendered users/new.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 78ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Fri Apr 08 16:34:19 +0100 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T/+UXnPDCBLEmPUIe/YsKTAztTz8mSqQECnF/eXfCnc=", "user"=>{"username"=>"admin", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."username") = LOWER('admin')) LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users"."id" FROM "users" WHERE ("users"."persistence_token" = 'ee9cac2e391bc4661561b58c80053a7eec689278af278c4994c932f393bdffc283e284b1f1f6e362582808e8e7cb64242a933ec590ab4c6397ca468eb39b5619') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 219ms
+
+
+Started GET "/users/1" for 127.0.0.1 at Fri Apr 08 16:34:19 +0100 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+Rendered users/show.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 79ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Apr 08 16:34:25 +0100 2011
+  Processing by UsersController#index as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 62ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Fri Apr 08 16:34:27 +0100 2011
+  Processing by UsersController#new as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered users/_form.html.erb (31.0ms)
+Rendered users/new.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Fri Apr 08 16:34:34 +0100 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T/+UXnPDCBLEmPUIe/YsKTAztTz8mSqQECnF/eXfCnc=", "user"=>{"username"=>"user", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."username") = LOWER('user')) LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE ("users"."persistence_token" = 'b6c2437db29fd260accd25fbb7568f3316873e3ab82eacbab7b6663754a4f2f8d2fdc19368eff1178784fb8ff59846bf4265e5ad7f1363e1a58cfa5100be4d7c') LIMIT 1[0m
+Rendered users/_form.html.erb (15.0ms)
+Rendered users/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 109ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Fri Apr 08 16:34:57 +0100 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T/+UXnPDCBLEmPUIe/YsKTAztTz8mSqQECnF/eXfCnc=", "user"=>{"username"=>"user", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."username") = LOWER('user')) LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE ("users"."persistence_token" = '52cb85bc04cd0d2facac6eebf08b84806274a80bc157cf9efd3d7a894e713b76a1b1583e39d304ffc6492fb8fff82bfc0ff4156694da83e1d920086aabc9dd71') LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."persistence_token" = 'ee9cac2e391bc4661561b58c80053a7eec689278af278c4994c932f393bdffc283e284b1f1f6e362582808e8e7cb64242a933ec590ab4c6397ca468eb39b5619' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."persistence_token" = 'ee9cac2e391bc4661561b58c80053a7eec689278af278c4994c932f393bdffc283e284b1f1f6e362582808e8e7cb64242a933ec590ab4c6397ca468eb39b5619' LIMIT 1[0m
+DEPRECATION WARNING: save(false) is deprecated, please give save(:validate => false) instead. (called from create at C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/users_controller.rb:46)
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-04-08 15:34:58.171000', "updated_at" = '2011-04-08 15:34:58.171000' WHERE "users"."id" = 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 281ms
+
+
+Started GET "/users/2" for 127.0.0.1 at Fri Apr 08 16:34:58 +0100 2011
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+Rendered users/show.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 78ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Apr 08 16:35:01 +0100 2011
+  Processing by UsersController#index as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 62ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Fri Apr 08 16:35:09 +0100 2011
+
+ActionController::RoutingError (uninitialized constant UserSessionsController):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 08 16:39:43 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Rendered posts/index.html.erb within layouts/application (344.0ms)
+Completed 200 OK in 407ms (Views: 344.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Fri Apr 08 16:39:48 +0100 2011
+
+ActionController::RoutingError (uninitialized constant UserSessionsController):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 08 16:43:55 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."persistence_token" = 'ee9cac2e391bc4661561b58c80053a7eec689278af278c4994c932f393bdffc283e284b1f1f6e362582808e8e7cb64242a933ec590ab4c6397ca468eb39b5619' LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: save(false) is deprecated, please give save(:validate => false) instead. (called from current_user_session at C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/application_controller.rb:10)
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-04-08 15:43:56.281000', "updated_at" = '2011-04-08 15:43:56.281000' WHERE "users"."id" = 1
+Rendered posts/index.html.erb within layouts/application (547.0ms)
+Completed 200 OK in 578ms (Views: 547.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Fri Apr 08 16:44:02 +0100 2011
+
+ActionController::RoutingError (uninitialized constant UserSessionsController):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 08 16:47:49 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."persistence_token" = 'ee9cac2e391bc4661561b58c80053a7eec689278af278c4994c932f393bdffc283e284b1f1f6e362582808e8e7cb64242a933ec590ab4c6397ca468eb39b5619' LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: save(false) is deprecated, please give save(:validate => false) instead. (called from current_user_session at C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/application_controller.rb:10)
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-04-08 15:47:50.062000', "updated_at" = '2011-04-08 15:47:50.062000' WHERE "users"."id" = 1
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 266ms (Views: 266.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Fri Apr 08 16:47:52 +0100 2011
+
+ActionController::RoutingError (uninitialized constant UserSessionsController):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 08 16:50:35 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."persistence_token" = 'ee9cac2e391bc4661561b58c80053a7eec689278af278c4994c932f393bdffc283e284b1f1f6e362582808e8e7cb64242a933ec590ab4c6397ca468eb39b5619' LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: save(false) is deprecated, please give save(:validate => false) instead. (called from current_user_session at C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/application_controller.rb:10)
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-04-08 15:50:36.484000', "updated_at" = '2011-04-08 15:50:36.484000' WHERE "users"."id" = 1[0m
+Rendered posts/index.html.erb within layouts/application (593.0ms)
+Completed 200 OK in 656ms (Views: 593.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Fri Apr 08 16:50:40 +0100 2011
+  Processing by UserSessionsController#destroy as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."persistence_token" = 'ee9cac2e391bc4661561b58c80053a7eec689278af278c4994c932f393bdffc283e284b1f1f6e362582808e8e7cb64242a933ec590ab4c6397ca468eb39b5619' LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: save(false) is deprecated, please give save(:validate => false) instead. (called from destroy at C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/user_sessions_controller.rb:33)
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-04-08 15:50:40.515000', "updated_at" = '2011-04-08 15:50:40.531000' WHERE "users"."id" = 1
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 188ms
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Apr 08 16:50:40 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 282ms (Views: 266.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Fri Apr 08 16:50:47 +0100 2011
+  Processing by UsersController#new as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered users/_form.html.erb (31.0ms)
+Rendered users/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 94ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Apr 08 16:50:49 +0100 2011
+  Processing by UsersController#index as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 94ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Fri Apr 08 16:50:54 +0100 2011
+  Processing by UserSessionsController#new as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Completed   in 63ms
+
+ActionView::MissingTemplate (Missing template user_sessions/new with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/views"):
+  app/controllers/user_sessions_controller.rb:8:in `new'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 08 16:55:26 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (110.0ms)
+Completed 200 OK in 125ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Fri Apr 08 16:55:29 +0100 2011
+  Processing by UserSessionsController#new as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered user_sessions/_form.html.erb (15.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 63ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at Fri Apr 08 16:55:35 +0100 2011
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T/+UXnPDCBLEmPUIe/YsKTAztTz8mSqQECnF/eXfCnc=", "user_session"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Create User session"}
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE (LOWER("users".username) = 'admin') LIMIT 1
+DEPRECATION WARNING: save(false) is deprecated, please give save(:validate => false) instead. (called from create at C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/user_sessions_controller.rb:20)
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "login_count" = 2, "last_login_at" = '2011-04-08 15:34:19.500000', "current_login_at" = '2011-04-08 15:55:36.109000', "last_login_ip" = '127.0.0.1', "last_request_at" = '2011-04-08 15:55:36.109000', "updated_at" = '2011-04-08 15:55:36.109000' WHERE "users"."id" = 1[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 312ms
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Apr 08 16:55:36 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: save(false) is deprecated, please give save(:validate => false) instead. (called from current_user_session at C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/application_controller.rb:10)
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-04-08 15:55:36.468000', "updated_at" = '2011-04-08 15:55:36.468000' WHERE "users"."id" = 1[0m
+Rendered posts/index.html.erb within layouts/application (234.0ms)
+Completed 200 OK in 266ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Fri Apr 08 16:55:44 +0100 2011
+  Processing by UserSessionsController#destroy as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: save(false) is deprecated, please give save(:validate => false) instead. (called from destroy at C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/user_sessions_controller.rb:33)
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-04-08 15:55:44.500000', "updated_at" = '2011-04-08 15:55:44.500000' WHERE "users"."id" = 1
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 156ms
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Apr 08 16:55:44 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (110.0ms)
+Completed 200 OK in 312ms (Views: 297.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Fri Apr 08 16:55:48 +0100 2011
+  Processing by UserSessionsController#new as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered user_sessions/_form.html.erb (0.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 63ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at Fri Apr 08 16:55:51 +0100 2011
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T/+UXnPDCBLEmPUIe/YsKTAztTz8mSqQECnF/eXfCnc=", "user_session"=>{"username"=>"adsjk", "password"=>"[FILTERED]"}, "commit"=>"Create User session"}
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE (LOWER("users".username) = 'adsjk') LIMIT 1
+Rendered user_sessions/_form.html.erb (0.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (16.0ms)
+Completed   in 47ms
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= form_for(@user_session) do |f| %>
+    2:   <% if @user_session.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@user.errors.count, "error") %> Error in creating user session:</h2>
+    5: 
+    6:       <ul>
+    7:       <% @user_session.errors.full_messages.each do |msg| %>
+  app/views/user_sessions/_form.html.erb:4:in `_app_views_user_sessions__form_html_erb__1763949566_2394_5456'
+  app/views/user_sessions/_form.html.erb:1:in `_app_views_user_sessions__form_html_erb__1763949566_2394_5456'
+  app/views/user_sessions/new.html.erb:3:in `_app_views_user_sessions_new_html_erb__1503448460_2392_0'
+  app/controllers/user_sessions_controller.rb:24:in `create'
+  app/controllers/user_sessions_controller.rb:19:in `create'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (78.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 08 16:56:39 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (110.0ms)
+Completed 200 OK in 125ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Fri Apr 08 16:56:41 +0100 2011
+  Processing by UserSessionsController#new as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+ERROR: compiling _app_views_user_sessions__form_html_erb__1763949566_2426_5456 RAISED C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/views/user_sessions/_form.html.erb:14: syntax error, unexpected kENSURE
+
+          ensure
+               ^
+Function body:           def _app_views_user_sessions__form_html_erb__1763949566_2426_5456(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "user_sessions/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('  <div class="field">
+    ');@output_buffer.append= ( f.label :username );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.text_field :username );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+  <div class="field">
+    ');@output_buffer.append= ( f.label :password );@output_buffer.safe_concat('<br />
+    ');@output_buffer.append= ( f.password_field :password );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+  <div class="actions">
+    ');@output_buffer.append= ( f.submit );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+'); end 
+@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:255:in `module_eval'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:255:in `compile'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:134:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:54:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:127:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/partials.rb:333:in `render_partial'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/partials.rb:262:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/partials.rb:260:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/partials.rb:378:in `_render_partial'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:31:in `render'
+C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/views/user_sessions/new.html.erb:3:in `_app_views_user_sessions_new_html_erb__1503448460_2424_0'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:135:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:54:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:127:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:59:in `_render_template'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:56:in `_render_template'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:26:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:115:in `_render_template'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:93:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:17:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:39:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/user_sessions_controller.rb:8:in `new'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:150:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:11:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:18:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:443:in `_run__1703293750__process_action__943997142__callbacks'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:424:in `_run_process_action_callbacks'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:93:in `run_callbacks'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rescue.rb:17:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:119:in `process'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:41:in `process'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:138:in `dispatch'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:178:in `action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:27:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:111:in `recognize'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:73:in `optimized_each'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:110:in `recognize'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:492:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/head.rb:14:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/flash.rb:182:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:32:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:12:in `cache'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:31:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:430:in `_run_call_callbacks'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/logger.rb:13:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/cache/strategy/local_cache.rb:90:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/static.rb:30:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:168:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:77:in `method_missing'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/log_tailer.rb:14:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:162:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:95:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:92:in `each'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:92:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:23:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:82:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands/server.rb:65:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:30
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27:in `tap'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:6:in `require'
+script\rails:6
+Rendered user_sessions/_form.html.erb (0.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (0.0ms)
+Completed   in 31ms
+
+ActionView::Template::Error (C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/views/user_sessions/_form.html.erb:14: syntax error, unexpected kENSURE
+
+          ensure
+               ^):
+    11:   </div>
+    12: <% end %>
+  app/views/user_sessions/new.html.erb:3:in `_app_views_user_sessions_new_html_erb__1503448460_2424_0'
+  app/controllers/user_sessions_controller.rb:8:in `new'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 08 16:57:11 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 140ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Fri Apr 08 16:57:14 +0100 2011
+  Processing by UserSessionsController#new as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered user_sessions/_form.html.erb (0.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 62ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at Fri Apr 08 16:57:18 +0100 2011
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T/+UXnPDCBLEmPUIe/YsKTAztTz8mSqQECnF/eXfCnc=", "user_session"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Create User session"}
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE (LOWER("users".username) = 'admin') LIMIT 1[0m
+DEPRECATION WARNING: save(false) is deprecated, please give save(:validate => false) instead. (called from create at C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/user_sessions_controller.rb:20)
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "login_count" = 3, "last_login_at" = '2011-04-08 15:55:36.109000', "current_login_at" = '2011-04-08 15:57:18.312000', "last_request_at" = '2011-04-08 15:57:18.312000', "updated_at" = '2011-04-08 15:57:18.312000' WHERE "users"."id" = 1
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 140ms
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Apr 08 16:57:18 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: save(false) is deprecated, please give save(:validate => false) instead. (called from current_user_session at C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/application_controller.rb:10)
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-04-08 15:57:18.593000', "updated_at" = '2011-04-08 15:57:18.593000' WHERE "users"."id" = 1
+Rendered posts/index.html.erb within layouts/application (313.0ms)
+Completed 200 OK in 344ms (Views: 328.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Fri Apr 08 16:57:21 +0100 2011
+  Processing by UserSessionsController#destroy as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: save(false) is deprecated, please give save(:validate => false) instead. (called from destroy at C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/user_sessions_controller.rb:33)
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-04-08 15:57:21.796000', "updated_at" = '2011-04-08 15:57:21.812000' WHERE "users"."id" = 1[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 156ms
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Apr 08 16:57:21 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 125ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Fri Apr 08 16:57:25 +0100 2011
+  Processing by UserSessionsController#new as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered user_sessions/_form.html.erb (0.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 62ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at Fri Apr 08 16:57:27 +0100 2011
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T/+UXnPDCBLEmPUIe/YsKTAztTz8mSqQECnF/eXfCnc=", "user_session"=>{"username"=>"ad", "password"=>"[FILTERED]"}, "commit"=>"Create User session"}
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered user_sessions/_form.html.erb (16.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at Fri Apr 08 16:57:35 +0100 2011
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T/+UXnPDCBLEmPUIe/YsKTAztTz8mSqQECnF/eXfCnc=", "user_session"=>{"username"=>"ad", "password"=>"[FILTERED]"}, "commit"=>"Create User session"}
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE (LOWER("users".username) = 'ad') LIMIT 1[0m
+Rendered user_sessions/_form.html.erb (0.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 78ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Apr 08 16:57:38 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (16.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 109ms (Views: 93.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 08 16:59:54 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (15.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Fri Apr 08 16:59:58 +0100 2011
+  Processing by UserSessionsController#new as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered user_sessions/_form.html.erb (0.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 46ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at Fri Apr 08 17:00:01 +0100 2011
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T/+UXnPDCBLEmPUIe/YsKTAztTz8mSqQECnF/eXfCnc=", "user_session"=>{"username"=>"a", "password"=>"[FILTERED]"}, "commit"=>"Create User session"}
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered user_sessions/_form.html.erb (0.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (15.0ms)
+Completed   in 46ms
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= form_for(@user_session) do |f| %>
+    2:   <% if @user_session.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@user.errors.count, "error") %> Error in creating user session:</h2>
+    5: 
+    6:       <ul>
+    7:       <% @user_session.errors.full_messages.each do |msg| %>
+  app/views/user_sessions/_form.html.erb:4:in `_app_views_user_sessions__form_html_erb__1763949566_2588_5456'
+  app/views/user_sessions/_form.html.erb:1:in `_app_views_user_sessions__form_html_erb__1763949566_2588_5456'
+  app/views/user_sessions/new.html.erb:3:in `_app_views_user_sessions_new_html_erb__1503448460_2586_0'
+  app/controllers/user_sessions_controller.rb:24:in `create'
+  app/controllers/user_sessions_controller.rb:19:in `create'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 08 17:06:43 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 125ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Fri Apr 08 17:06:45 +0100 2011
+  Processing by UserSessionsController#new as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered user_sessions/_form.html.erb (16.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 47ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at Fri Apr 08 17:06:47 +0100 2011
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T/+UXnPDCBLEmPUIe/YsKTAztTz8mSqQECnF/eXfCnc=", "user_session"=>{"username"=>"", "password"=>"[FILTERED]"}, "commit"=>"Create User session"}
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered user_sessions/_form.html.erb (0.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 63ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at Fri Apr 08 17:06:52 +0100 2011
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T/+UXnPDCBLEmPUIe/YsKTAztTz8mSqQECnF/eXfCnc=", "user_session"=>{"username"=>"asd", "password"=>"[FILTERED]"}, "commit"=>"Create User session"}
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered user_sessions/_form.html.erb (0.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 47ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at Fri Apr 08 17:06:56 +0100 2011
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T/+UXnPDCBLEmPUIe/YsKTAztTz8mSqQECnF/eXfCnc=", "user_session"=>{"username"=>"asd", "password"=>"[FILTERED]"}, "commit"=>"Create User session"}
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE (LOWER("users".username) = 'asd') LIMIT 1[0m
+Rendered user_sessions/_form.html.erb (15.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 79ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Apr 08 17:07:02 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 109ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 08 17:09:47 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 157ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Fri Apr 08 17:09:51 +0100 2011
+  Processing by UserSessionsController#new as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered user_sessions/_form.html.erb (0.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 47ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at Fri Apr 08 17:09:56 +0100 2011
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T/+UXnPDCBLEmPUIe/YsKTAztTz8mSqQECnF/eXfCnc=", "user_session"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Create User session"}
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE (LOWER("users".username) = 'admin') LIMIT 1
+DEPRECATION WARNING: save(false) is deprecated, please give save(:validate => false) instead. (called from create at C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/user_sessions_controller.rb:20)
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "login_count" = 4, "last_login_at" = '2011-04-08 15:57:18.312000', "current_login_at" = '2011-04-08 16:09:56.531000', "last_request_at" = '2011-04-08 16:09:56.531000', "updated_at" = '2011-04-08 16:09:56.531000' WHERE "users"."id" = 1[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 157ms
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Apr 08 17:09:56 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: save(false) is deprecated, please give save(:validate => false) instead. (called from current_user_session at C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/application_controller.rb:10)
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-04-08 16:09:56.812000', "updated_at" = '2011-04-08 16:09:56.812000' WHERE "users"."id" = 1[0m
+Rendered posts/index.html.erb within layouts/application (219.0ms)
+Completed 200 OK in 235ms (Views: 219.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 08 17:15:24 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+DEPRECATION WARNING: save(false) is deprecated, please give save(:validate => false) instead. (called from current_user_session at C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/application_controller.rb:10)
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-04-08 16:15:24.562000', "updated_at" = '2011-04-08 16:15:24.562000' WHERE "users"."id" = 1[0m
+Rendered posts/index.html.erb within layouts/application (297.0ms)
+Completed 200 OK in 313ms (Views: 313.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Fri Apr 08 17:15:30 +0100 2011
+  Processing by UserSessionsController#destroy as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: save(false) is deprecated, please give save(:validate => false) instead. (called from destroy at C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/user_sessions_controller.rb:33)
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-04-08 16:15:30.250000', "updated_at" = '2011-04-08 16:15:30.250000' WHERE "users"."id" = 1
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 140ms
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Apr 08 17:15:30 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 110ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Fri Apr 08 17:15:36 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/show.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Apr 08 17:15:38 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 125ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Fri Apr 08 17:15:40 +0100 2011
+  Processing by UsersController#new as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered users/_form.html.erb (15.0ms)
+Rendered users/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Apr 08 17:15:41 +0100 2011
+  Processing by UsersController#index as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+Rendered users/index.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Fri Apr 08 17:16:15 +0100 2011
+  Processing by UsersController#new as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered users/_form.html.erb (31.0ms)
+Rendered users/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 63ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Apr 08 17:16:17 +0100 2011
+  Processing by UsersController#index as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered users/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 78ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Fri Apr 08 17:16:37 +0100 2011
+  Processing by UserSessionsController#new as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered user_sessions/_form.html.erb (0.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 47ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at Fri Apr 08 17:16:42 +0100 2011
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T/+UXnPDCBLEmPUIe/YsKTAztTz8mSqQECnF/eXfCnc=", "user_session"=>{"username"=>"user", "password"=>"[FILTERED]"}, "commit"=>"Create User session"}
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE (LOWER("users".username) = 'user') LIMIT 1
+DEPRECATION WARNING: save(false) is deprecated, please give save(:validate => false) instead. (called from create at C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/user_sessions_controller.rb:20)
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "login_count" = 1, "current_login_at" = '2011-04-08 16:16:42.703000', "current_login_ip" = '127.0.0.1', "last_request_at" = '2011-04-08 16:16:42.703000', "updated_at" = '2011-04-08 16:16:42.703000' WHERE "users"."id" = 2[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 219ms
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Apr 08 17:16:42 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+DEPRECATION WARNING: save(false) is deprecated, please give save(:validate => false) instead. (called from current_user_session at C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/application_controller.rb:10)
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-04-08 16:16:43.015000', "updated_at" = '2011-04-08 16:16:43.015000' WHERE "users"."id" = 2[0m
+Rendered posts/index.html.erb within layouts/application (219.0ms)
+Completed 200 OK in 234ms (Views: 234.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 08 17:28:22 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+DEPRECATION WARNING: save(false) is deprecated, please give save(:validate => false) instead. (called from current_user_session at C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/application_controller.rb:10)
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-04-08 16:28:23.937000', "updated_at" = '2011-04-08 16:28:23.937000' WHERE "users"."id" = 2[0m
+Rendered posts/index.html.erb within layouts/application (578.0ms)
+Completed 200 OK in 640ms (Views: 593.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Apr 08 17:34:22 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+DEPRECATION WARNING: save(false) is deprecated, please give save(:validate => false) instead. (called from current_user_session at C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/application_controller.rb:10)
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-04-08 16:34:22.890000', "updated_at" = '2011-04-08 16:34:22.890000' WHERE "users"."id" = 2[0m
+Rendered posts/index.html.erb within layouts/application (422.0ms)
+Completed 200 OK in 469ms (Views: 422.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Fri Apr 08 17:34:26 +0100 2011
+  Processing by UserSessionsController#destroy as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+DEPRECATION WARNING: save(false) is deprecated, please give save(:validate => false) instead. (called from destroy at C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/user_sessions_controller.rb:33)
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-04-08 16:34:26.171000', "updated_at" = '2011-04-08 16:34:26.171000' WHERE "users"."id" = 2
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 141ms
+
+
+Started GET "/posts" for 127.0.0.1 at Fri Apr 08 17:34:26 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (15.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 156ms (Views: 141.0ms | ActiveRecord: 15.0ms)

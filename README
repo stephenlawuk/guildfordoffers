@@ -2,6 +2,7 @@
 
     Required
     - Rails v3.0.5
+    - Authlogic v2.1.6
     - Sqlite3 v3.7.3 (semi req, can be changed)
     - Netbeans v6.9.1 (netbeans project but can be worked into other forms)
     Optional
@@ -19,8 +20,11 @@
     - v0.4.1 Netbeans generator hack removal as it doesn't work and a update to new addthis code. Also IE and Chrome Fixes as they dont like overlap.
     - v0.5   Load up authlogic to 2.1.6 to setup logins
     - v0.5.1 Setup users with authlogic, created database, user MVC's.
+    - v0.5.2 Sessions created with authlogic and login/logout/register created (will remove register later)
 
 == To Do List
+
+    - Authlogic - beforefilters for access. Format layout and CSS on new forms.
 
     - 404/422/500 html pages
     - format the show and index representation of posts
@@ -31,6 +35,10 @@
     - social network integration
     - need to validate imgurl as invalid link causes crash
     - twitter speech bubble may need some graphics work
+
+== Known Bugs
+
+    -- Deprecation warning on model/user.rb due to acts_as_authentic but im not sure if there is any way to solve this while using Authlogic
 
 == Description of Contents
 
