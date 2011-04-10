@@ -1,5 +1,9 @@
 == Config
 
+    -logins
+    admin pass
+    user password
+
     Required
     - Rails v3.0.5
     - Authlogic v2.1.6
@@ -22,6 +26,7 @@
     - v0.5.1    Setup users with authlogic, created database, user MVC's.
     - v0.5.2    Sessions created with authlogic and login/logout/register created (will remove register later)
     - v0.5.2.1  Some footer divs for use later in email submission for newsletter
+    - v0.5.3    Before filters on posts actions implemented, cant create, edit or delete unless logged in. View index and show available to all.
 
 == To Do List
 
