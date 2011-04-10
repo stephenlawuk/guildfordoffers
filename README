@@ -16,17 +16,26 @@
 
 == Version History
 
-    - v0.0      First github upload of basic project containing post model and layout including header and various css
+    - v0.0      First github upload of basic project containing post model
+                and layout including header and various css
     - v0.1      Adding web, nus tickboxes and image url to form and database.
-    - v0.2      Include image files for companies and move show, edit destroy about.
+    - v0.2      Include image files for companies and move show, edit, destroy.
     - v0.3      Integrating twitter feed into header/banner.
-    - v0.4      Netbeans generator hack to get it to work by putting generator in lib folder. Also some new images.
-    - v0.4.1    Netbeans generator hack removal as it doesn't work and a update to new addthis code. Also IE and Chrome Fixes as they dont like overlap.
+    - v0.4      Netbeans generator hack to get it to work by putting generator
+                in lib folder. Also some new images.
+    - v0.4.1    Netbeans generator hack removal as it doesn't work and a update
+                to new addthis code. Also IE and Chrome Fixes as they dont
+                like overlaping divs.
     - v0.5      Load up authlogic to 2.1.6 to setup logins
     - v0.5.1    Setup users with authlogic, created database, user MVC's.
-    - v0.5.2    Sessions created with authlogic and login/logout/register created (will remove register later)
-    - v0.5.2.1  Some footer divs for use later in email submission for newsletter
-    - v0.5.3    Before filters on posts actions implemented, cant create, edit or delete unless logged in. View index and show available to all.
+    - v0.5.2    Sessions created with authlogic and login/logout/register
+                created (will remove register later)
+    - v0.5.2.1  Some footer divs for use later in email submission for
+                newsletter
+    - v0.5.3    Before filters on posts actions implemented, cant create, edit 
+                or delete unless logged in. View index and show can be seen by
+                all.
+    - v0.5.3.1  IE fix for return to top link which was cause display issue.
 
 == To Do List
 
