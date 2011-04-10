@@ -78,10 +78,68 @@ div.container {
 
 div.footer {
     width: 100%;
-    height: 150px;
+    height: 200px;
     background: #000000;
     color: #FFFFFF;
     border-top: 3px solid #CCCCCC;
+}
+
+div.footercontainer {
+    width: 1024px;
+    height: 200px;
+}
+
+div.newsletter {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 12px;
+    width: 300px;
+    height: 100px;
+    text-align: left;
+    float: left;
+}
+
+div.footerlinks {
+    padding-top: 10px;
+    width: 300px;
+    height: 100px;
+    text-align: left;
+    float: left;
+}
+
+div.footernetworks {
+    padding-top: 10px;
+    padding-left: 30px;
+    width: 300px;
+    height: 100px;
+    text-align: left;
+    float: left;
+}
+
+div.columnleft {
+    width: 150px;
+    float: left;
+    text-align: left;
+}
+
+div.columnright {
+    padding-left: 5px;
+    width: 145px;
+    float: right;
+    text-align: left;
+}
+
+div.footertitle {
+    font-size: 15px;
+    border-bottom: 3px solid #3366ff;
+}
+
+div.footercopyright {
+    clear: both;
+    width: 1024px;
+    font-size: 60%;
+    padding-top: 30px;
 }
 
 /* Divs for show offer */
@@ -158,10 +216,13 @@ div.users {
 }
 
 /* CSS for links */
-a { color: #000; }
+a { color: #000; text-decoration: none;}
 a:visited { color: #666; }
-div.container a:hover { color: #fff; background-color: #718eff; }
-div.header a:hover { color: #fff; }
+div.header a:hover { color: #fff; text-decoration: underline; }
+div.container a:hover { color: #fff; text-decoration: underline; background-color: #718eff; }
+div.footer a {color: #FFFFFF}
+div.footer a:hover {color: #000000; background-color: #FFFFFF;}
+a.return {font-size: 11px;}
 
 /* Misc */
 .borderless {
@@ -170,6 +231,10 @@ div.header a:hover { color: #fff; }
 
 .center {
     text-align: center;
+}
+
+.small {
+    font-size: 12px;
 }
 
 a.linkarea{display: block; width: 100%; height: 100%; text-decoration: none;}

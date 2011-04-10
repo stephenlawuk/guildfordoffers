@@ -9,14 +9,14 @@
   <meta name="keywords" content="Guildford, Student, Offers, Deals, Bargains, Discounts, iGeolise, facebook" />
   <meta name="author" content="iGeolise (http://www.igeolise.com) Stephen Law (http://www.stephenlaw.co.uk)" />
   <%= csrf_meta_tag %>
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
   <%= stylesheet_link_tag "scaffold", "stylesheet1", :cache => true, :concat => true %>
   <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4d80079f04c2aeff"></script>
   <%= javascript_include_tag :defaults %>
 </head>
 <body>
-  
+  <a name="top"/>
   <div class="header">
     <div class="nav">
       <div class="logo">
@@ -67,9 +67,47 @@
   </div>
 
   <div class="footer">
-    Copyright, links back to top etc etc etc
+    <div class="footercontainer">
+      <a class="return" href='#top'>Return to Top of Page</a>
     <br/>
-    Subscribe To Receive Newsletters And Updates - Possibly chuck this in footer
+    <div class="footernetworks">
+      <div class="footertitle">
+        Our Network
+      </div>
+      <span class="small">
+      Feel free to stalk us on one or more social networks. We would love to hear what you think!
+      </span>
+      <br/>
+      <a href="http://www.facebook.com/guildfordoffers">&#187;Facebook</a><br/>
+      <a href="http://twitter.com/guildfordoffers">&#187;Twitter</a><br/>
+      <a href="http://www.guildfordoffers.com">&#187;LinkedIn</a><br/>
+    </div>
+    <div class="newsletter">
+      <div class="footertitle">
+        Newsletter
+      </div>
+      The best student offers delivered straight to your inbox.
+      Enter your email address to recieve newsletters and updates on the best offers.
+    </div>
+    <div class="footerlinks">
+      <div class="footertitle">
+        Places
+      </div>
+      <div class="columnleft">
+      <a href="http://www.guildfordoffers.com">&#187;Home</a><br/>
+      <a href="http://www.guildfordoffers.com">&#187;Want To Advertise Here?</a><br/>
+      </div>
+      <div class="columnright">
+      <a href="http://www.guildfordoffers.com">&#187;FAQ</a><br/>
+      <a href="http://www.guildfordoffers.com">&#187;Contact</a><br/>
+      <a href="http://www.guildfordoffers.com">&#187;About</a><br/>
+      </div>
+    </div>
+    <div class="footercopyright">
+      Copyright &#169; 2010 - 2011 | <a href="http://www.stephenlaw.co.uk" target="_blank">A Stephen Law Production</a> | All Rights Reserved <br/>
+      <a href="http://www.igeolise.com/" target="_blank">Powered by iGeolise Ltd</a>
+    </div>
+    </div>
   </div>
   <!-- twitter script doesnt work when in head -->
   <script type="text/javascript" src="/javascripts/twitter.js"></script>
