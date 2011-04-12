@@ -1955,3 +1955,354 @@ ActionController::RoutingError (No route matches "/blank.gif"):
   
 
 Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Apr 11 14:32:24 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (109.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (891.0ms)
+Completed 200 OK in 1594ms (Views: 984.0ms | ActiveRecord: 109.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Mon Apr 11 14:39:15 +0100 2011
+  Processing by UserSessionsController#new as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered user_sessions/_form.html.erb (15.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 94ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Mon Apr 11 14:39:18 +0100 2011
+  Processing by UsersController#new as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered users/_form.html.erb (47.0ms)
+Rendered users/new.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 140ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Mon Apr 11 14:46:53 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/show.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 172ms (Views: 172.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 14:08:25 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (31.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (563.0ms)
+Completed 200 OK in 766ms (Views: 594.0ms | ActiveRecord: 31.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 14:33:24 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (297.0ms)
+Completed 200 OK in 328ms (Views: 313.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 15:04:31 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 172ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 15:04:52 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 140ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 15:43:23 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (437.0ms)
+Completed 200 OK in 500ms (Views: 453.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 15:46:30 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (16.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (281.0ms)
+Completed 200 OK in 313ms (Views: 297.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 16:26:10 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (406.0ms)
+Completed 200 OK in 484ms (Views: 422.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at Tue Apr 12 16:26:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/about"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at Tue Apr 12 16:26:15 +0100 2011
+
+ActionController::RoutingError (No route matches "/favicon.ico"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at Tue Apr 12 16:26:18 +0100 2011
+
+ActionController::RoutingError (No route matches "/favicon.ico"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at Tue Apr 12 16:26:21 +0100 2011
+
+AbstractController::ActionNotFound (The action 'show' could not be found for PagesController):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 16:27:40 +0100 2011
+
+ArgumentError (missing :controller):
+  config/routes.rb:5
+  config/routes.rb:1
+  config/routes.rb:235:in `load'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (94.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 16:28:06 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (266.0ms)
+Completed 200 OK in 297ms (Views: 282.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at Tue Apr 12 16:28:10 +0100 2011
+
+ActionController::RoutingError (No route matches "/about"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at Tue Apr 12 16:28:16 +0100 2011
+  Processing by PagesController#about as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered pages/about.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 16:29:01 +0100 2011
+
+NameError (undefined local variable or method `as' for #<ActionDispatch::Routing::Mapper:0xa8eb85>):
+  config/routes.rb:5
+  config/routes.rb:1
+  config/routes.rb:235:in `load'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 16:29:38 +0100 2011
+
+NameError (undefined local variable or method `as' for #<ActionDispatch::Routing::Mapper:0xe916a1>):
+  config/routes.rb:5
+  config/routes.rb:1
+  config/routes.rb:235:in `load'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 16:30:50 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 157ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Apr 12 16:30:55 +0100 2011
+  Processing by UserSessionsController#new as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered user_sessions/_form.html.erb (0.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 94ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 16:30:57 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 140ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 16:32:42 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (15.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 140ms (Views: 125.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at Tue Apr 12 16:32:47 +0100 2011
+
+ActionController::RoutingError (uninitialized constant Pages):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 16:33:01 +0100 2011
+
+NoMethodError (undefined method `to_sym' for #<ActionDispatch::Routing::Mapper:0xccf6bc>):
+  config/routes.rb:5
+  config/routes.rb:1
+  config/routes.rb:235:in `load'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 16:33:55 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 125ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at Tue Apr 12 16:34:01 +0100 2011
+
+ActionController::RoutingError (uninitialized constant Pages):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at Tue Apr 12 16:34:06 +0100 2011
+  Processing by PagesController#about as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered pages/about.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 16:36:26 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 156ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at Tue Apr 12 16:36:30 +0100 2011
+  Processing by PagesController#about as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered pages/about.html.erb within layouts/application (203.0ms)
+Completed 200 OK in 219ms (Views: 219.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 16:47:40 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (16.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 125ms (Views: 109.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at Tue Apr 12 16:47:45 +0100 2011
+  Processing by PagesController#about as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered pages/about.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at Tue Apr 12 16:47:50 +0100 2011
+  Processing by PagesController#about as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered pages/about.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/partners" for 127.0.0.1 at Tue Apr 12 16:47:59 +0100 2011
+  Processing by PagesController#partners as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered pages/partners.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/FAQ" for 127.0.0.1 at Tue Apr 12 16:48:04 +0100 2011
+
+ActionController::RoutingError (No route matches "/FAQ"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/faq" for 127.0.0.1 at Tue Apr 12 16:48:09 +0100 2011
+  Processing by PagesController#faq as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered pages/faq.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/partners" for 127.0.0.1 at Tue Apr 12 16:48:32 +0100 2011
+  Processing by PagesController#partners as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered pages/partners.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)

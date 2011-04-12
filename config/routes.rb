@@ -2,7 +2,14 @@ Guildfordoffers::Application.routes.draw do
   resources :posts  
   resources :users
   resources :user_sessions
-
+  get "pages/about"
+  get "pages/contact"
+  get "pages/faq"
+  get "pages/partners"
+  match 'about' => "pages#about"
+  match 'contact' => "pages#contact"
+  match 'faq' => "pages#faq"
+  match 'partners' => "pages#partners"
   match 'login' => 'user_sessions#new', :as => :login
   match 'logout' => 'user_sessions#destroy', :as => :logout
 

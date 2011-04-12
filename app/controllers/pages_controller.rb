@@ -1,0 +1,15 @@
+class PagesController < ApplicationController
+
+  def about
+  end
+ 
+  def contact 
+  end
+
+  def faq
+  end
+
+  def partners
+  end
+
+end

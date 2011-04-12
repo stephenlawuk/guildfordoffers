@@ -36,23 +36,24 @@
                 or delete unless logged in. View index and show can be seen by
                 all.
     - v0.5.3.1  IE fix for return to top link which was cause display issue.
+    - v0.6      Static pages implemented, shall come back to page access.
 
 == To Do List
 
-    - Authlogic - beforefilters for access. Format layout and CSS on new forms.
+    - Format layout and CSS on login forms and user creation forms.
     - RSS feeds (atom feed?)
-    - 404/422/500 html pages
+    - 404/422/500 html pages (force them into yield?)
     - format the show and index representation of posts
-    - about / for businesses page
+    - about / for businesses page (created need info)
     - email submission
     - search
-    - footer
-    - social network integration
-    - need to validate imgurl as invalid link causes crash
+    - social network integration (share and comments to do)
     - twitter speech bubble may need some graphics work
 
 == Known Bugs
 
+    -- Need to validate imgurl as invalid link causes crash
+    -- difference in caps/noncaps in page url causes error
     -- Deprecation warning on model/user.rb due to acts_as_authentic but im not sure if there is any way to solve this while using Authlogic
 
 == Description of Contents
