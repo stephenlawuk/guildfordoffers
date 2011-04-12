@@ -6,6 +6,7 @@ Guildfordoffers::Application.routes.draw do
   get "pages/contact"
   get "pages/faq"
   get "pages/partners"
+  match 'feed' => "posts#feed", :as => :feed, :defaults => {:format => 'rss'}
   match 'about' => "pages#about"
   match 'contact' => "pages#contact"
   match 'faq' => "pages#faq"

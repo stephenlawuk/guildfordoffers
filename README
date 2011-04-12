@@ -37,6 +37,7 @@
                 all.
     - v0.5.3.1  IE fix for return to top link which was cause display issue.
     - v0.6      Static pages implemented, shall come back to page access.
+    - v0.6.1    RSS feed for posts implemented, available at /feed
 
 == To Do List
 

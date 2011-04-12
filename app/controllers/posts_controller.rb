@@ -83,4 +83,14 @@ class PostsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  # RSS feed
+  def feed
+    @posts = Post.all(:select => "id, offer, description, created_at", :order => "created_at DESC", :limit => 20)
+
+    respond_to do |format|
+      format.rss { render :layout => false } #index.rss.builder
+    end
+  end
+
 end

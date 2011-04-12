@@ -2306,3 +2306,417 @@ DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope
 DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
 Rendered pages/partners.html.erb within layouts/application (63.0ms)
 Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 17:21:48 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (407.0ms)
+Completed 200 OK in 485ms (Views: 422.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index.rss" for 127.0.0.1 at Tue Apr 12 17:22:09 +0100 2011
+
+ActionController::RoutingError (No route matches "/index.rss"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/feed" for 127.0.0.1 at Tue Apr 12 17:22:27 +0100 2011
+
+ActionController::RoutingError (No route matches "/feed"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at Tue Apr 12 17:23:32 +0100 2011
+
+ActionController::RoutingError (No route matches "/index"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/.rss" for 127.0.0.1 at Tue Apr 12 17:23:39 +0100 2011
+  Processing by PostsController#index as RSS
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+Completed 406 Not Acceptable in 16ms
+
+
+Started GET "/.rss" for 127.0.0.1 at Tue Apr 12 17:23:39 +0100 2011
+  Processing by PostsController#index as RSS
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+Completed 406 Not Acceptable in 0ms
+
+
+Started GET "/rss" for 127.0.0.1 at Tue Apr 12 17:23:43 +0100 2011
+
+ActionController::RoutingError (No route matches "/rss"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 17:25:14 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (407.0ms)
+Completed 200 OK in 469ms (Views: 407.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/feed.rss" for 127.0.0.1 at Tue Apr 12 17:25:20 +0100 2011
+
+ActionController::RoutingError (No route matches "/feed.rss"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/feed" for 127.0.0.1 at Tue Apr 12 17:25:23 +0100 2011
+
+ActionController::RoutingError (No route matches "/feed"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 17:25:57 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (282.0ms)
+Completed 200 OK in 297ms (Views: 282.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/feed" for 127.0.0.1 at Tue Apr 12 17:26:07 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"feed"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 0 LIMIT 1
+Completed   in 16ms
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=feed):
+  app/controllers/posts_controller.rb:19:in `show'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/posts/feed.rss" for 127.0.0.1 at Tue Apr 12 17:26:11 +0100 2011
+  Processing by PostsController#show as RSS
+  Parameters: {"id"=>"feed"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 0 LIMIT 1[0m
+Completed   in 15ms
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=feed):
+  app/controllers/posts_controller.rb:19:in `show'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 17:30:37 +0100 2011
+
+NameError (undefined local variable or method `map' for #<ActionDispatch::Routing::Mapper:0xeeddbf>):
+  config/routes.rb:5
+  config/routes.rb:1
+  config/routes.rb:235:in `load'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 17:30:53 +0100 2011
+
+NoMethodError (undefined method `feed' for #<ActionDispatch::Routing::Mapper:0xf3a12e>):
+  config/routes.rb:5
+  config/routes.rb:1
+  config/routes.rb:235:in `load'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 17:33:47 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 156ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/feed" for 127.0.0.1 at Tue Apr 12 17:34:36 +0100 2011
+
+ActionController::RoutingError (No route matches "/feed"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/posts/feed" for 127.0.0.1 at Tue Apr 12 17:34:44 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"feed"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 0 LIMIT 1[0m
+Completed   in 16ms
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=feed):
+  app/controllers/posts_controller.rb:19:in `show'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/posts/feed.rss" for 127.0.0.1 at Tue Apr 12 17:34:48 +0100 2011
+  Processing by PostsController#show as RSS
+  Parameters: {"id"=>"feed"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 0 LIMIT 1
+Completed   in 0ms
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=feed):
+  app/controllers/posts_controller.rb:19:in `show'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 17:38:27 +0100 2011
+
+NameError (undefined local variable or method `as' for #<ActionDispatch::Routing::Mapper:0x1f9f197>):
+  config/routes.rb:9
+  config/routes.rb:1
+  config/routes.rb:235:in `load'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 17:39:00 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 172ms (Views: 157.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/feed.rss" for 127.0.0.1 at Tue Apr 12 17:39:21 +0100 2011
+
+ActionController::RoutingError (No route matches "/feed.rss"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/feed" for 127.0.0.1 at Tue Apr 12 17:39:24 +0100 2011
+
+ActionController::RoutingError (No route matches "/feed"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/posts/feed" for 127.0.0.1 at Tue Apr 12 17:39:33 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"feed"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 0 LIMIT 1
+Completed   in 15ms
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=feed):
+  app/controllers/posts_controller.rb:19:in `show'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.0ms)
+
+
+Started GET "/posts/feed.rss" for 127.0.0.1 at Tue Apr 12 17:39:38 +0100 2011
+  Processing by PostsController#show as RSS
+  Parameters: {"id"=>"feed"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 0 LIMIT 1[0m
+Completed   in 31ms
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=feed):
+  app/controllers/posts_controller.rb:19:in `show'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 17:39:55 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 125ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rss" for 127.0.0.1 at Tue Apr 12 17:39:58 +0100 2011
+  Processing by PostsController#feed as ATOM
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT id, offer, description, created_at FROM "posts" ORDER BY created_at DESC LIMIT 20[0m
+Completed 406 Not Acceptable in 16ms
+
+
+Started GET "/rss" for 127.0.0.1 at Tue Apr 12 17:39:58 +0100 2011
+  Processing by PostsController#feed as ATOM
+  [1m[35mPost Load (0.0ms)[0m  SELECT id, offer, description, created_at FROM "posts" ORDER BY created_at DESC LIMIT 20
+Completed 406 Not Acceptable in 16ms
+
+
+Started GET "/feed" for 127.0.0.1 at Tue Apr 12 17:40:05 +0100 2011
+
+ActionController::RoutingError (No route matches "/feed"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/rss" for 127.0.0.1 at Tue Apr 12 17:40:13 +0100 2011
+  Processing by PostsController#feed as ATOM
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT id, offer, description, created_at FROM "posts" ORDER BY created_at DESC LIMIT 20[0m
+Completed 406 Not Acceptable in 16ms
+
+
+Started GET "/rss" for 127.0.0.1 at Tue Apr 12 17:40:13 +0100 2011
+  Processing by PostsController#feed as ATOM
+  [1m[35mPost Load (0.0ms)[0m  SELECT id, offer, description, created_at FROM "posts" ORDER BY created_at DESC LIMIT 20
+Completed 406 Not Acceptable in 15ms
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 17:41:06 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 125ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/feed" for 127.0.0.1 at Tue Apr 12 17:41:11 +0100 2011
+  Processing by PostsController#feed as ATOM
+  [1m[35mPost Load (0.0ms)[0m  SELECT id, offer, description, created_at FROM "posts" ORDER BY created_at DESC LIMIT 20
+Completed 406 Not Acceptable in 15ms
+
+
+Started GET "/feed" for 127.0.0.1 at Tue Apr 12 17:41:11 +0100 2011
+  Processing by PostsController#feed as ATOM
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT id, offer, description, created_at FROM "posts" ORDER BY created_at DESC LIMIT 20[0m
+Completed 406 Not Acceptable in 15ms
+
+
+Started GET "/posts/feed.rss" for 127.0.0.1 at Tue Apr 12 17:41:35 +0100 2011
+  Processing by PostsController#show as RSS
+  Parameters: {"id"=>"feed"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 0 LIMIT 1
+Completed   in 16ms
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=feed):
+  app/controllers/posts_controller.rb:19:in `show'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 17:46:11 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 140ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/feed" for 127.0.0.1 at Tue Apr 12 17:46:16 +0100 2011
+  Processing by PostsController#feed as ATOM
+  [1m[35mPost Load (0.0ms)[0m  SELECT id, offer, description, created_at FROM "posts" ORDER BY created_at DESC LIMIT 20
+Completed 406 Not Acceptable in 16ms
+
+
+Started GET "/feed" for 127.0.0.1 at Tue Apr 12 17:46:16 +0100 2011
+  Processing by PostsController#feed as ATOM
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT id, offer, description, created_at FROM "posts" ORDER BY created_at DESC LIMIT 20[0m
+Completed 406 Not Acceptable in 15ms
+
+
+Started GET "/feed.rss" for 127.0.0.1 at Tue Apr 12 17:46:19 +0100 2011
+  Processing by PostsController#feed as RSS
+  [1m[35mPost Load (0.0ms)[0m  SELECT id, offer, description, created_at FROM "posts" ORDER BY created_at DESC LIMIT 20
+Rendered posts/feed.rss.builder (187.0ms)
+Completed 200 OK in 219ms (Views: 203.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 17:46:54 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 125ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/feed" for 127.0.0.1 at Tue Apr 12 17:46:58 +0100 2011
+  Processing by PostsController#feed as RSS
+  [1m[35mPost Load (0.0ms)[0m  SELECT id, offer, description, created_at FROM "posts" ORDER BY created_at DESC LIMIT 20
+Rendered posts/feed.rss.builder (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 17:47:24 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 140ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/feed" for 127.0.0.1 at Tue Apr 12 17:47:27 +0100 2011
+  Processing by PostsController#feed as RSS
+  [1m[35mPost Load (0.0ms)[0m  SELECT id, offer, description, created_at FROM "posts" ORDER BY created_at DESC LIMIT 20
+Rendered posts/feed.rss.builder (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 17:47:38 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 125ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 17:48:51 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (15.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 125ms (Views: 110.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/feed" for 127.0.0.1 at Tue Apr 12 17:48:56 +0100 2011
+  Processing by PostsController#feed as RSS
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT id, offer, description, created_at FROM "posts" ORDER BY created_at DESC LIMIT 20[0m
+Rendered posts/feed.rss.builder (62.0ms)
+Completed 200 OK in 62ms (Views: 62.0ms | ActiveRecord: 0.0ms)
