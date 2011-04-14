@@ -1,0 +1,43 @@
+/* 
+    Document   : print
+    Created on : 14-Apr-2011, 16:43:27
+    Author     : Stephen
+    Description:
+        Print Page display
+*/
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.noprint {
+    display: none;
+} 
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+img {
+    border: 0px;
+}
+
+div.companyinfo {
+    width: 300px;
+    float: left;
+    text-align: left;
+    min-height: 30em;
+    height: auto;
+    border-right:1px solid #000000;
+}
+
+div.offerinfo {
+    margin-left: 320px;
+    text-align: left;
+    min-height: 30em;
+    height: auto;
+}

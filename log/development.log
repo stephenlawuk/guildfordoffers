@@ -2720,3 +2720,309 @@ Started GET "/feed" for 127.0.0.1 at Tue Apr 12 17:48:56 +0100 2011
   [1m[36mPost Load (0.0ms)[0m  [1mSELECT id, offer, description, created_at FROM "posts" ORDER BY created_at DESC LIMIT 20[0m
 Rendered posts/feed.rss.builder (62.0ms)
 Completed 200 OK in 62ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 21:55:36 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (406.0ms)
+Completed 200 OK in 469ms (Views: 406.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Tue Apr 12 21:56:24 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/show.html.erb within layouts/application (110.0ms)
+Completed 200 OK in 141ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Tue Apr 12 21:56:31 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (266.0ms)
+Completed 200 OK in 297ms (Views: 266.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Tue Apr 12 21:56:58 +0100 2011
+  Processing by UserSessionsController#new as HTML
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered user_sessions/_form.html.erb (16.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 63ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 12 21:57:05 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 156ms (Views: 140.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 14 16:44:27 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (609.0ms)
+Completed 200 OK in 812ms (Views: 656.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 14 16:46:15 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (313.0ms)
+Completed 200 OK in 344ms (Views: 313.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 14 16:57:43 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 172ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Thu Apr 14 16:58:03 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/show.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 125ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 14 17:00:49 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 157ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 14 17:01:55 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 141ms (Views: 125.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 14 17:04:30 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 125ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 14 17:06:14 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 141ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Thu Apr 14 17:07:33 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/show.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 110ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 14 17:08:38 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 141ms (Views: 125.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Thu Apr 14 17:08:42 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/show.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Thu Apr 14 17:08:52 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 125ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Thu Apr 14 17:08:53 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/show.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 125ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 14 17:10:55 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 125ms (Views: 109.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Thu Apr 14 17:10:57 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/show.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 14 17:26:29 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (266.0ms)
+Completed 200 OK in 281ms (Views: 281.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Thu Apr 14 17:26:32 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/show.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Thu Apr 14 17:26:44 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/show.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 94ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 14 17:28:15 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 125ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Thu Apr 14 17:28:17 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/show.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 14 17:29:16 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 125ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Thu Apr 14 17:29:20 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/show.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 14 17:36:50 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 109ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Thu Apr 14 17:36:52 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/show.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at Thu Apr 14 17:37:51 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (234.0ms)
+Completed 200 OK in 266ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at Thu Apr 14 17:37:56 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 1 LIMIT 1[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/show.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 14 17:41:23 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+DEPRECATION WARNING: Base.named_scope has been deprecated, please use Base.scope instead. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/models/user.rb:2)
+Rendered posts/index.html.erb within layouts/application (421.0ms)
+Completed 200 OK in 484ms (Views: 421.0ms | ActiveRecord: 16.0ms)

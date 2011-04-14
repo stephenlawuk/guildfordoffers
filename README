@@ -38,11 +38,16 @@
     - v0.5.3.1  IE fix for return to top link which was cause display issue.
     - v0.6      Static pages implemented, shall come back to page access.
     - v0.6.1    RSS feed for posts implemented, available at /feed
+                Google analytics javascript taken from current site.
+                Addthis analytics enabled (live needs to change public id link
+                found at for example #pubid=ra-4d9b75737cae2342)
+    - v0.6.2    Print offer working but needs some formatting on the offers
 
 == To Do List
 
+    - RSS feed needs a little formatting
+    - Print page working but needs some formatting on the offers anyway
     - Format layout and CSS on login forms and user creation forms.
-    - RSS feeds (atom feed?)
     - 404/422/500 html pages (force them into yield?)
     - format the show and index representation of posts
     - about / for businesses page (created need info)
@@ -50,6 +55,9 @@
     - search
     - social network integration (share and comments to do)
     - twitter speech bubble may need some graphics work
+    - print page
+    - index pagination
+    - map
 
 == Known Bugs
 
