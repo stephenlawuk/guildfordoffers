@@ -1,22 +1,20 @@
+<%= link_to 'New Post', new_post_path %>
 <p id="notice"><%= notice %></p>
 <h1>Listing Offers</h1>
 
 <% @posts.each do |post| %>
-  <h1><%= post.offer %></h1>
   <% if post.imgurl.blank? %>
     <%= link_to image_tag("/images/companylogos/nullimg.jpg", :alt => post.offer), post, :title => post.offer %>
   <% else %>
     <%= link_to image_tag(post.imgurl, :alt => post.offer), post, :title => post.offer %>
   <% end %>
-  <br/>
-  <% if post.created_at.to_date == Date.today %>
-    Posted <%=time_ago_in_words(post.created_at)%> ago.
-  <% else %>
-    Posted <%= display_date(post.created_at) %>.
-  <% end %>
-  <hr />
 <% end %>
 
 <br />
+<div class="page_info">
+  <%= page_entries_info @posts, :entry_name => 'Offers' %>
+</div>
+<%= will_paginate @posts, :previous_label => '&#171;Previous', :next_label => '&#187;Next' %>
 
-<%= link_to 'New Post', new_post_path %>
+<br/>
+

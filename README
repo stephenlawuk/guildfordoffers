@@ -7,6 +7,8 @@
     Required
     - Rails v3.0.5
     - Authlogic v2.1.6
+    - Will_paginate v3.0.pre2 (installed manually into netbeans via download at
+        http://rubygems.org/gems/will_paginate/versions/3.0.pre2)
     - Sqlite3 v3.7.3 (semi req, can be changed)
     - Netbeans v6.9.1 (netbeans project but can be worked into other forms)
     Optional
@@ -42,6 +44,10 @@
                 Addthis analytics enabled (live needs to change public id link
                 found at for example #pubid=ra-4d9b75737cae2342)
     - v0.6.2    Print offer working but needs some formatting on the offers
+    - v0.6.3    Pagination install and CSS fix on Addthis. Override on
+                will_paginate method page_entries_info to change display found
+                in config>initialisers. Redesign front page layout and added
+                page rendering times.
 
 == To Do List
 
@@ -55,15 +61,15 @@
     - search
     - social network integration (share and comments to do)
     - twitter speech bubble may need some graphics work
-    - print page
-    - index pagination
     - map
 
 == Known Bugs
 
     -- Need to validate imgurl as invalid link causes crash
     -- difference in caps/noncaps in page url causes error
-    -- Deprecation warning on model/user.rb due to acts_as_authentic but im not sure if there is any way to solve this while using Authlogic
+    -- Deprecation warning on model/user.rb due to acts_as_authentic
+        There are some patches by users but not by main author for now i have
+        suppressed the warning as it is not a big deal.
 
 == Description of Contents
 

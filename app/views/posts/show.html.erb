@@ -3,6 +3,12 @@
 
 <p id="notice"><%= notice %></p>
 
+  <% if @post.created_at.to_date == Date.today %>
+    Posted <%=time_ago_in_words(@post.created_at)%> ago.
+  <% else %>
+    Posted <%= display_date(@post.created_at) %>.
+  <% end %>
+
 <h1><%= @post.company %></h1>
 <h1><%= @post.offer %></h1>
 <%= @post.nus %>

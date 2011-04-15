@@ -1,6 +1,12 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
+  before_filter :timer
+
+  def timer
+    @start_time = Time.now
+  end
+
   helper_method :current_user_session, :current_user
 
   private

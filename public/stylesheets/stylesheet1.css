@@ -215,6 +215,14 @@ div.users {
     background: url("/images/twitterfollow.png") no-repeat;
 }
 
+/* CSS for Addthis alignment */
+.addthis_button_facebook_like {
+ margin-top: 1px;
+}
+.addthis_button_tweet {
+margin-right: 2px;
+}
+
 /* CSS for links */
 a { color: #000; text-decoration: none;}
 a:visited { color: #666; }
