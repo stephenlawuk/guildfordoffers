@@ -41,7 +41,17 @@ input {
     font-family: verdana, arial, helvetica, sans-serif;
 }
 
+input#email_email {
+    width: 300px;
+    font-size: 12px;
+    font-family: verdana, arial, helvetica, sans-serif;
+}
+
 #post_submit {
+    width: 100px;
+}
+
+#email_submit {
     width: 100px;
 }
 

@@ -48,16 +48,18 @@
                 will_paginate method page_entries_info to change display found
                 in config>initialisers. Redesign front page layout and added
                 page rendering times.
+    - v0.7      Email MVC introduced. Partial render using additional form in
+                application layout. Also added basic email format validation.
 
 == To Do List
-
+    - Email access rights, redirects in controller, welcome mail using actionmail?
+    - admin control panel/menu
     - RSS feed needs a little formatting
     - Print page working but needs some formatting on the offers anyway
     - Format layout and CSS on login forms and user creation forms.
     - 404/422/500 html pages (force them into yield?)
     - format the show and index representation of posts
     - about / for businesses page (created need info)
-    - email submission
     - search
     - social network integration (share and comments to do)
     - twitter speech bubble may need some graphics work

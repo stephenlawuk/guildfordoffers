@@ -4052,3 +4052,1637 @@ Started GET "/" for 127.0.0.1 at Fri Apr 15 19:51:25 +0100 2011
   [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
 Rendered posts/index.html.erb within layouts/application (219.0ms)
 Completed 200 OK in 250ms (Views: 219.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 14:36:47 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/_form.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (406.0ms)
+Completed   in 422ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@post) do |f| %>
+    2:   <% if @post.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+  app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb__1262425893_2256_5470'
+  app/views/layouts/application.html.erb:74:in `_app_views_layouts_application_html_erb___830604654_2250_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (47.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at Sat Apr 16 14:36:49 +0100 2011
+
+ActionController::RoutingError (No route matches "/favicon.ico"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at Sat Apr 16 14:36:52 +0100 2011
+
+ActionController::RoutingError (No route matches "/favicon.ico"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 14:38:04 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/index.html.erb within layouts/application (187.0ms)
+Completed 200 OK in 219ms (Views: 187.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 14:40:25 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/_form.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed   in 172ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@post) do |f| %>
+    2:   <% if @post.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+  app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb__1262425893_2306_5470'
+  app/views/layouts/application.html.erb:76:in `_app_views_layouts_application_html_erb___830604654_2300_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 14:44:40 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/index.html.erb within layouts/application (93.0ms)
+Completed   in 141ms
+
+ActionView::Template::Error (Missing partial /views/posts/form with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/views"):
+    73:     <%= "Page rendered in #{Time.now - @start_time} seconds" %>
+    74:   </div>
+    75: 
+    76:   <%= render "/views/posts/form" %>
+    77: 
+    78:   <div class="footer">
+    79:     <div class="footercontainer">
+  app/views/layouts/application.html.erb:76:in `_app_views_layouts_application_html_erb___830604654_2326_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 14:45:47 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed   in 125ms
+
+ActionView::Template::Error (Missing partial /views/posts/form.html with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/views"):
+    73:     <%= "Page rendered in #{Time.now - @start_time} seconds" %>
+    74:   </div>
+    75: 
+    76:   <%= render "/views/posts/form.html" %>
+    77: 
+    78:   <div class="footer">
+    79:     <div class="footercontainer">
+  app/views/layouts/application.html.erb:76:in `_app_views_layouts_application_html_erb___830604654_2350_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 14:46:04 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed   in 125ms
+
+ActionView::Template::Error (Missing partial /views/posts/_form.html with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/views"):
+    73:     <%= "Page rendered in #{Time.now - @start_time} seconds" %>
+    74:   </div>
+    75: 
+    76:   <%= render "/views/posts/_form.html.erb" %>
+    77: 
+    78:   <div class="footer">
+    79:     <div class="footercontainer">
+  app/views/layouts/application.html.erb:76:in `_app_views_layouts_application_html_erb___830604654_2372_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 14:46:42 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed   in 125ms
+
+ActionView::Template::Error (Missing partial /views/posts/show with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/views"):
+    73:     <%= "Page rendered in #{Time.now - @start_time} seconds" %>
+    74:   </div>
+    75: 
+    76:   <%= render "/views/posts/show" %>
+    77: 
+    78:   <div class="footer">
+    79:     <div class="footercontainer">
+  app/views/layouts/application.html.erb:76:in `_app_views_layouts_application_html_erb___830604654_2396_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 14:53:16 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/_form.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed   in 125ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@post) do |f| %>
+    2:   <% if @post.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+  app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb__1262425893_2426_10660'
+  app/views/layouts/application.html.erb:76:in `_app_views_layouts_application_html_erb___830604654_2420_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 14:53:31 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/_form.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (110.0ms)
+Completed   in 141ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@post) do |f| %>
+    2:   <% if @post.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+  app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb__1262425893_2450_5470'
+  app/views/layouts/application.html.erb:76:in `_app_views_layouts_application_html_erb___830604654_2444_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 14:59:10 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered users/_form.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (93.0ms)
+Completed   in 125ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@user) do |f| %>
+    2:   <% if @user.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+  app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb__563177090_2476_5470'
+  app/views/layouts/application.html.erb:69:in `_app_views_layouts_application_html_erb___830604654_2470_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 14:59:31 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/index.html.erb within layouts/application (93.0ms)
+Completed   in 109ms
+
+ActionView::Template::Error (Missing template users/form with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/views"):
+    66:       Search Box To Go Here
+    67:     </div>
+    68:   </div>
+    69:   <%= render :template => 'users/form' %>
+    70:   <div class="container">
+    71:     <%= yield %>
+    72:     <br/>
+  app/views/layouts/application.html.erb:69:in `_app_views_layouts_application_html_erb___830604654_2494_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 14:59:48 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed   in 110ms
+
+ActionView::Template::Error (Missing template /users/form with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/views"):
+    66:       Search Box To Go Here
+    67:     </div>
+    68:   </div>
+    69:   <%= render :template => '/users/form' %>
+    70:   <div class="container">
+    71:     <%= yield %>
+    72:     <br/>
+  app/views/layouts/application.html.erb:69:in `_app_views_layouts_application_html_erb___830604654_2516_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:00:45 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/index.html.erb within layouts/application (110.0ms)
+Completed   in 141ms
+
+ActionView::Template::Error (Missing partial /users/new with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/views"):
+    66:       Search Box To Go Here
+    67:     </div>
+    68:   </div>
+    69:   <%= render '/users/new' %>
+    70:   <div class="container">
+    71:     <%= yield %>
+    72:     <br/>
+  app/views/layouts/application.html.erb:69:in `_app_views_layouts_application_html_erb___830604654_2540_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:07:51 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/_form.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed   in 110ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@post) do |f| %>
+    2:   <% if @post.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+  app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb__1262425893_2570_6194'
+  app/views/layouts/application.html.erb:69:in `_app_views_layouts_application_html_erb___830604654_2564_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:09:23 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+ERROR: compiling _app_views_layouts_application_html_erb___830604654_2590_0 RAISED C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/views/layouts/application.html.erb:140: syntax error, unexpected kENSURE
+
+          ensure
+               ^
+Function body:           def _app_views_layouts_application_html_erb___830604654_2590_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Guildford Student Offers</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-language" content="en" />
+  <meta name="description" content="Guildford Student Offers - We find the deals so you don\'t have to. Connecting the businesses of Guildford with the students of Guildford. Surrey University. BETA Version." />
+  <meta name="keywords" content="Guildford, Student, Offers, Deals, Bargains, Discounts, iGeolise, facebook" />
+  <meta name="author" content="iGeolise (http://www.igeolise.com) Stephen Law (http://www.stephenlaw.co.uk)" />
+  ');@output_buffer.append= ( auto_discovery_link_tag(:rss, "/feed.rss") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( csrf_meta_tag );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+  ');@output_buffer.append= ( stylesheet_link_tag "scaffold", "stylesheet1", :cache => true, :concat => true );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( stylesheet_link_tag "print", :media => 'print' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( javascript_include_tag :defaults );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4d9b75737cae2342"></script>
+</head>
+<body>
+  <a name="top"></a>
+  <div class="header noprint">
+    <div class="nav">
+      <div class="logo">
+        <a title="Guildford Student Offers" href="http://www.guildfordoffers.com" target="_blank"><img alt="Guildford Student Offers" class="borderless" src="/images/gsologo.png"/></a>
+      </div>
+      <div class="socialbox">
+        <!-- AddThis Code BEGIN -->
+        <div class="addthis_default_style">
+        <a class="addthis_button_facebook_like" fb:like:layout="box_count" fb:like:width="46" fb:like:height="100" addthis:url="http://www.facebook.com/guildfordoffers"></a>
+        <a class="addthis_button_tweet" tw:count="vertical" addthis:url="http://www.guildfordoffers.com" tw:via="guildfordoffers" tw:text="Guilford Student Offers have loads of discounts check them out!!"></a>
+        <a class="addthis_counter" addthis:url="http://www.guildfordoffers.com" addthis:title="Amazing Student Discounts At Guildford Student Offers Check them out!!"></a>
+        </div>
+        <!-- AddThis Code END -->
+      </div>
+      <div class="links">
+');         if current_user 
+@output_buffer.safe_concat('          Signed in as ');@output_buffer.append= ( current_user.username );@output_buffer.safe_concat(' | ');@output_buffer.append= ( link_to "Logout", :logout);@output_buffer.safe_concat('
+');         else 
+@output_buffer.safe_concat('          ');@output_buffer.append= ( link_to "Register", new_user_path);@output_buffer.safe_concat(' |
+          ');@output_buffer.append= ( link_to "Login", :login );@output_buffer.safe_concat('
+');         end 
+@output_buffer.safe_concat('        <br/>
+        ');@output_buffer.append= ( link_to "Home", root_url);@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </div>
+    </div>
+    <div class="banner">
+      <div id="fbarrow">
+        <a class="linkarea" title="guildfordoffers on facebook" href="http://www.facebook.com/guildfordoffers"></a>
+      </div>
+      <div id="twitter_container">
+        <div id="twitter_update_list">
+          Twitter feed loading
+        </div>
+        <div id="twitter_bottom">
+          <a class="linkarea" title="guildfordoffers on twitter" href="http://twitter.com/guildfordoffers"></a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="searchbg noprint">
+    <div class="search">
+      Search Box To Go Here
+    </div>
+  </div>
+');@output_buffer.append_if_string=    form_for Post.new do |f| 
+@output_buffer.safe_concat('  <div class="container">
+    ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    <br/>
+    ');@output_buffer.append= ( "Page rendered in #{Time.now - @start_time} seconds" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+
+  <div class="footer">
+    <div class="footercontainer">
+      <a class="return noprint" href=\'#top\'>Return to Top of Page</a>
+    <br/>
+    <div class="footernetworks noprint">
+      <div class="footertitle">
+        Our Network
+      </div>
+      <span class="small">
+      Feel free to stalk us on one or more social networks. We would love to hear what you think!
+      </span>
+      <br/>
+      <a href="http://www.facebook.com/guildfordoffers">&#187;Facebook</a><br/>
+      <a href="http://twitter.com/guildfordoffers">&#187;Twitter</a><br/>
+      <a href="http://www.guildfordoffers.com">&#187;LinkedIn</a><br/>
+    </div>
+    <div class="newsletter noprint">
+      <div class="footertitle">
+        Newsletter
+      </div>
+      The best student offers delivered straight to your inbox.
+      Enter your email address to recieve newsletters and updates on the best offers.
+    </div>
+    <div class="footerlinks noprint">
+      <div class="footertitle">
+        Places
+      </div>
+      <div class="columnleft">
+      <a href="http://www.guildfordoffers.com">&#187;Home</a><br/>
+      <a href="http://www.guildfordoffers.com">&#187;Want To Advertise Here?</a><br/>
+      </div>
+      <div class="columnright">
+      <a href="http://www.guildfordoffers.com">&#187;FAQ</a><br/>
+      <a href="http://www.guildfordoffers.com">&#187;Contact</a><br/>
+      <a href="http://www.guildfordoffers.com">&#187;About</a><br/>
+      </div>
+    </div>
+    <div class="footercopyright">
+      Copyright &#169; 2010 - 2011 | <a href="http://www.stephenlaw.co.uk" target="_blank">A Stephen Law Production</a> | All Rights Reserved <br/>
+      <a href="http://www.igeolise.com/" target="_blank">Powered by iGeolise Ltd</a>
+    </div>
+    </div>
+  </div>
+  <!-- twitter script doesnt work when in head -->
+  <script type="text/javascript" src="/javascripts/twitter.js"></script>
+  <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/guildfordoffers.json?callback=twitterCallback2&amp;count=1"></script>
+  <!-- twitter script END -->
+  <!-- Google Analytics needs to run after page is loaded -->
+  <script type="text/javascript" >
+    //Google Analytics
+    var _gaq = _gaq || [];
+    _gaq.push([\'_setAccount\', \'UA-11627306-3\']);
+    _gaq.push([\'_trackPageview\']);
+
+    (function() {
+      var ga = document.createElement(\'script\'); ga.type = \'text/javascript\'; ga.async = true;
+      ga.src = (\'https:\' == document.location.protocol ? \'https://ssl\' : \'http://www\') + \'.google-analytics.com/ga.js\';
+      var s = document.getElementsByTagName(\'script\')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <!-- Google Analytics END -->
+</body>
+</html>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:255:in `module_eval'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:255:in `compile'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:134:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:54:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:127:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/layouts.rb:80:in `_render_layout'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:62:in `_render_template'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:56:in `_render_template'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:26:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:115:in `_render_template'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:93:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:17:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:39:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/posts_controller.rb:11:in `index'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:150:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:11:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:18:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:448:in `_run__84203013__process_action__199225275__callbacks'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:424:in `_run_process_action_callbacks'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:93:in `run_callbacks'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rescue.rb:17:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:119:in `process'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:41:in `process'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:138:in `dispatch'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:178:in `action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:27:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:111:in `recognize'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:73:in `optimized_each'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:110:in `recognize'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:492:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/head.rb:14:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/flash.rb:182:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:32:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:12:in `cache'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:31:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:430:in `_run_call_callbacks'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/logger.rb:13:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/cache/strategy/local_cache.rb:90:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/static.rb:30:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:168:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:77:in `method_missing'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/log_tailer.rb:14:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:162:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:95:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:92:in `each'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:92:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:23:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:82:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands/server.rb:65:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:30
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27:in `tap'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:6:in `require'
+script\rails:6
+Rendered posts/index.html.erb within layouts/application (47.0ms)
+Completed   in 78ms
+
+ActionView::Template::Error (C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/views/layouts/application.html.erb:140: syntax error, unexpected kENSURE
+
+          ensure
+               ^):
+    137: </body>
+    138: </html>
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (187.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:10:00 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+ERROR: compiling _app_views_layouts_application_html_erb___830604654_2610_0 RAISED C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/views/layouts/application.html.erb:140: syntax error, unexpected kENSURE
+
+          ensure
+               ^
+Function body:           def _app_views_layouts_application_html_erb___830604654_2610_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Guildford Student Offers</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-language" content="en" />
+  <meta name="description" content="Guildford Student Offers - We find the deals so you don\'t have to. Connecting the businesses of Guildford with the students of Guildford. Surrey University. BETA Version." />
+  <meta name="keywords" content="Guildford, Student, Offers, Deals, Bargains, Discounts, iGeolise, facebook" />
+  <meta name="author" content="iGeolise (http://www.igeolise.com) Stephen Law (http://www.stephenlaw.co.uk)" />
+  ');@output_buffer.append= ( auto_discovery_link_tag(:rss, "/feed.rss") );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( csrf_meta_tag );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+  ');@output_buffer.append= ( stylesheet_link_tag "scaffold", "stylesheet1", :cache => true, :concat => true );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( stylesheet_link_tag "print", :media => 'print' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( javascript_include_tag :defaults );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4d9b75737cae2342"></script>
+</head>
+<body>
+  <a name="top"></a>
+  <div class="header noprint">
+    <div class="nav">
+      <div class="logo">
+        <a title="Guildford Student Offers" href="http://www.guildfordoffers.com" target="_blank"><img alt="Guildford Student Offers" class="borderless" src="/images/gsologo.png"/></a>
+      </div>
+      <div class="socialbox">
+        <!-- AddThis Code BEGIN -->
+        <div class="addthis_default_style">
+        <a class="addthis_button_facebook_like" fb:like:layout="box_count" fb:like:width="46" fb:like:height="100" addthis:url="http://www.facebook.com/guildfordoffers"></a>
+        <a class="addthis_button_tweet" tw:count="vertical" addthis:url="http://www.guildfordoffers.com" tw:via="guildfordoffers" tw:text="Guilford Student Offers have loads of discounts check them out!!"></a>
+        <a class="addthis_counter" addthis:url="http://www.guildfordoffers.com" addthis:title="Amazing Student Discounts At Guildford Student Offers Check them out!!"></a>
+        </div>
+        <!-- AddThis Code END -->
+      </div>
+      <div class="links">
+');         if current_user 
+@output_buffer.safe_concat('          Signed in as ');@output_buffer.append= ( current_user.username );@output_buffer.safe_concat(' | ');@output_buffer.append= ( link_to "Logout", :logout);@output_buffer.safe_concat('
+');         else 
+@output_buffer.safe_concat('          ');@output_buffer.append= ( link_to "Register", new_user_path);@output_buffer.safe_concat(' |
+          ');@output_buffer.append= ( link_to "Login", :login );@output_buffer.safe_concat('
+');         end 
+@output_buffer.safe_concat('        <br/>
+        ');@output_buffer.append= ( link_to "Home", root_url);@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </div>
+    </div>
+    <div class="banner">
+      <div id="fbarrow">
+        <a class="linkarea" title="guildfordoffers on facebook" href="http://www.facebook.com/guildfordoffers"></a>
+      </div>
+      <div id="twitter_container">
+        <div id="twitter_update_list">
+          Twitter feed loading
+        </div>
+        <div id="twitter_bottom">
+          <a class="linkarea" title="guildfordoffers on twitter" href="http://twitter.com/guildfordoffers"></a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="searchbg noprint">
+    <div class="search">
+      Search Box To Go Here
+    </div>
+  </div>
+  ');@output_buffer.append=  form_for(@post) do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <div class="container">
+    ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    <br/>
+    ');@output_buffer.append= ( "Page rendered in #{Time.now - @start_time} seconds" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+
+  <div class="footer">
+    <div class="footercontainer">
+      <a class="return noprint" href=\'#top\'>Return to Top of Page</a>
+    <br/>
+    <div class="footernetworks noprint">
+      <div class="footertitle">
+        Our Network
+      </div>
+      <span class="small">
+      Feel free to stalk us on one or more social networks. We would love to hear what you think!
+      </span>
+      <br/>
+      <a href="http://www.facebook.com/guildfordoffers">&#187;Facebook</a><br/>
+      <a href="http://twitter.com/guildfordoffers">&#187;Twitter</a><br/>
+      <a href="http://www.guildfordoffers.com">&#187;LinkedIn</a><br/>
+    </div>
+    <div class="newsletter noprint">
+      <div class="footertitle">
+        Newsletter
+      </div>
+      The best student offers delivered straight to your inbox.
+      Enter your email address to recieve newsletters and updates on the best offers.
+    </div>
+    <div class="footerlinks noprint">
+      <div class="footertitle">
+        Places
+      </div>
+      <div class="columnleft">
+      <a href="http://www.guildfordoffers.com">&#187;Home</a><br/>
+      <a href="http://www.guildfordoffers.com">&#187;Want To Advertise Here?</a><br/>
+      </div>
+      <div class="columnright">
+      <a href="http://www.guildfordoffers.com">&#187;FAQ</a><br/>
+      <a href="http://www.guildfordoffers.com">&#187;Contact</a><br/>
+      <a href="http://www.guildfordoffers.com">&#187;About</a><br/>
+      </div>
+    </div>
+    <div class="footercopyright">
+      Copyright &#169; 2010 - 2011 | <a href="http://www.stephenlaw.co.uk" target="_blank">A Stephen Law Production</a> | All Rights Reserved <br/>
+      <a href="http://www.igeolise.com/" target="_blank">Powered by iGeolise Ltd</a>
+    </div>
+    </div>
+  </div>
+  <!-- twitter script doesnt work when in head -->
+  <script type="text/javascript" src="/javascripts/twitter.js"></script>
+  <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/guildfordoffers.json?callback=twitterCallback2&amp;count=1"></script>
+  <!-- twitter script END -->
+  <!-- Google Analytics needs to run after page is loaded -->
+  <script type="text/javascript" >
+    //Google Analytics
+    var _gaq = _gaq || [];
+    _gaq.push([\'_setAccount\', \'UA-11627306-3\']);
+    _gaq.push([\'_trackPageview\']);
+
+    (function() {
+      var ga = document.createElement(\'script\'); ga.type = \'text/javascript\'; ga.async = true;
+      ga.src = (\'https:\' == document.location.protocol ? \'https://ssl\' : \'http://www\') + \'.google-analytics.com/ga.js\';
+      var s = document.getElementsByTagName(\'script\')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <!-- Google Analytics END -->
+</body>
+</html>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:255:in `module_eval'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:255:in `compile'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:134:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:54:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/template.rb:127:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/layouts.rb:80:in `_render_layout'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:62:in `_render_template'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:56:in `_render_template'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_view/render/rendering.rb:26:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:115:in `_render_template'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:109:in `render_to_body'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:102:in `render_to_string'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:93:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:17:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:40:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:39:in `render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:261:in `retrieve_response_from_mimes'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/mime_responds.rb:192:in `respond_to'
+C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/posts_controller.rb:11:in `index'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:150:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rendering.rb:11:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:18:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:448:in `_run__84203013__process_action__199225275__callbacks'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:424:in `_run_process_action_callbacks'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:93:in `run_callbacks'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/notifications.rb:52:in `instrument'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rescue.rb:17:in `process_action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/base.rb:119:in `process'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/abstract_controller/rendering.rb:41:in `process'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:138:in `dispatch'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_controller/metal.rb:178:in `action'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:27:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:111:in `recognize'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:73:in `optimized_each'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:110:in `recognize'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:492:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/head.rb:14:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/flash.rb:182:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:32:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:12:in `cache'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/query_cache.rb:31:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activerecord-3.0.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:354:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/callbacks.rb:430:in `_run_call_callbacks'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/logger.rb:13:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/activesupport-3.0.5/lib/active_support/cache/strategy/local_cache.rb:90:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/static.rb:30:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:168:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/application.rb:77:in `method_missing'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/rack/log_tailer.rb:14:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:162:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:95:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:92:in `each'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:92:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:23:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/1.8/webrick/server.rb:82:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands/server.rb:65:in `start'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:30
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27:in `tap'
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:27
+C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/railties-3.0.5/lib/rails/commands.rb:6:in `require'
+script\rails:6
+Rendered posts/index.html.erb within layouts/application (47.0ms)
+Completed   in 63ms
+
+ActionView::Template::Error (C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/views/layouts/application.html.erb:140: syntax error, unexpected kENSURE
+
+          ensure
+               ^):
+    137: </body>
+    138: </html>
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:12:35 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/_form.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed   in 141ms
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: 
+    2: <% form_for Post.new do |f| -%>
+    3:   <% if @post.errors.any? %>
+    4:     <div id="error_explanation">
+    5:       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+    6: 
+  app/views/posts/_form.html.erb:3:in `_app_views_posts__form_html_erb__1262425893_2636_5470'
+  app/views/posts/_form.html.erb:2:in `_app_views_posts__form_html_erb__1262425893_2636_5470'
+  app/views/layouts/application.html.erb:69:in `_app_views_layouts_application_html_erb___830604654_2630_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:16:42 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed   in 172ms
+
+ActionView::Template::Error (undefined local variable or method `locals' for #<#<Class:01x2a4dd7>:0x15c77fb>):
+    66:       Search Box To Go Here
+    67:     </div>
+    68:   </div>
+    69: <%= render :partial => 'users/form', locals => { :user => @users } %>
+    70:   <div class="container">
+    71:     <%= yield %>
+    72:     <br/>
+  app/views/layouts/application.html.erb:69:in `_app_views_layouts_application_html_erb___830604654_2656_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:28:22 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/index.html.erb within layouts/application (156.0ms)
+Completed   in 171ms
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:01x198a09e>:0x158ef1f>):
+    66:       Search Box To Go Here
+    67:     </div>
+    68:   </div>
+    69:   <%= render :partial => "users/form", :collection => @posts, :locals => { "f" => f } %>
+    70:   <div class="container">
+    71:     <%= yield %>
+    72:     <br/>
+  app/views/layouts/application.html.erb:69:in `_app_views_layouts_application_html_erb___830604654_2680_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:29:07 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered users/_form.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed   in 94ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@user) do |f| %>
+    2:   <% if @user.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+  app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb__563177090_2710_14024'
+  app/views/layouts/application.html.erb:69:in `_app_views_layouts_application_html_erb___830604654_2704_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:29:34 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/_form.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed   in 110ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@post) do |f| %>
+    2:   <% if @post.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+  app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb__1262425893_2734_14024'
+  app/views/layouts/application.html.erb:69:in `_app_views_layouts_application_html_erb___830604654_2728_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:30:25 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed   in 110ms
+
+ActionView::Template::Error (undefined method `new' for #<WillPaginate::Collection:0xa7f915>):
+    66:       Search Box To Go Here
+    67:     </div>
+    68:   </div>
+    69:   <%= render :partial => "posts/form", :collection => @posts.new, :locals => { :x => 2 } %>
+    70:   <div class="container">
+    71:     <%= yield %>
+    72:     <br/>
+  app/views/layouts/application.html.erb:69:in `_app_views_layouts_application_html_erb___830604654_2754_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:33:15 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed   in 109ms
+
+ActionView::Template::Error (Missing partial posts/new with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/views"):
+    66:       Search Box To Go Here
+    67:     </div>
+    68:   </div>
+    69:   <%= render 'posts/new' %>
+    70:   <div class="container">
+    71:     <%= yield %>
+    72:     <br/>
+  app/views/layouts/application.html.erb:69:in `_app_views_layouts_application_html_erb___830604654_2778_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:33:37 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed   in 109ms
+
+ActionView::Template::Error (Missing partial users/new with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/views"):
+    66:       Search Box To Go Here
+    67:     </div>
+    68:   </div>
+    69:   <%= render 'users/new' %>
+    70:   <div class="container">
+    71:     <%= yield %>
+    72:     <br/>
+  app/views/layouts/application.html.erb:69:in `_app_views_layouts_application_html_erb___830604654_2800_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:33:55 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed   in 187ms
+
+ActionView::Template::Error (Missing partial users/new with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/views"):
+    66:       Search Box To Go Here
+    67:     </div>
+    68:   </div>
+    69:   <%= render 'users/new' %>
+    70:   <div class="container">
+    71:     <%= yield %>
+    72:     <br/>
+  app/views/layouts/application.html.erb:69:in `_app_views_layouts_application_html_erb___830604654_2822_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:34:10 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed   in 156ms
+
+ActionView::Template::Error (Missing partial users/new with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/views"):
+    66:       Search Box To Go Here
+    67:     </div>
+    68:   </div>
+    69:   <%= render 'users/new' %>
+    70:   <div class="container">
+    71:     <%= yield %>
+    72:     <br/>
+  app/views/layouts/application.html.erb:69:in `_app_views_layouts_application_html_erb___830604654_2844_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:34:31 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered users/_form.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (156.0ms)
+Completed   in 172ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@user) do |f| %>
+    2:   <% if @user.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+  app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb__563177090_2872_5470'
+  app/views/layouts/application.html.erb:69:in `_app_views_layouts_application_html_erb___830604654_2866_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:38:56 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/_formhack.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 125ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:39:13 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/_formhack.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (79.0ms)
+Completed   in 110ms
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= form_for Post.new do |f| %>
+    2:   <% if @post.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+    5: 
+  app/views/posts/_formhack.html.erb:2:in `_app_views_posts__formhack_html_erb___1794328468_2914_8736'
+  app/views/posts/_formhack.html.erb:1:in `_app_views_posts__formhack_html_erb___1794328468_2914_8736'
+  app/views/layouts/application.html.erb:69:in `_app_views_layouts_application_html_erb___830604654_2908_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:39:32 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/_formhack.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed   in 125ms
+
+ActionView::Template::Error (undefined method `errors' for #<Class:0x1fe883b>):
+    1: <%= form_for Post.new do |f| %>
+    2:   <% if Post.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+    5: 
+  app/views/posts/_formhack.html.erb:2:in `_app_views_posts__formhack_html_erb___1794328468_2938_8736'
+  app/views/posts/_formhack.html.erb:1:in `_app_views_posts__formhack_html_erb___1794328468_2938_8736'
+  app/views/layouts/application.html.erb:69:in `_app_views_layouts_application_html_erb___830604654_2932_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:39:51 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/_formhack.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed   in 110ms
+
+ActionView::Template::Error (undefined method `errors' for #<Class:0x4ee543>):
+    1: <%= form_for Post.new do |f| %>
+    2:   <% if Post.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(Post.errors.count, "error") %> prohibited this post from being saved:</h2>
+    5: 
+  app/views/posts/_formhack.html.erb:2:in `_app_views_posts__formhack_html_erb___1794328468_2962_8736'
+  app/views/posts/_formhack.html.erb:1:in `_app_views_posts__formhack_html_erb___1794328468_2962_8736'
+  app/views/layouts/application.html.erb:69:in `_app_views_layouts_application_html_erb___830604654_2956_0'
+  app/controllers/posts_controller.rb:11:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:40:17 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered posts/_formhack.html.erb (32.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 141ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to AddImgurlToPosts (20110321233949)
+Migrating to AddWebToPosts (20110321234536)
+Migrating to CreateUsers (20110407202806)
+Migrating to CreateEmails (20110416144339)
+  [1m[36mSQL (0.0ms)[0m  [1mCREATE TABLE "emails" ("id" integer primary key autoincrement not null, "email" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.0ms)[0m  SELECT last_insert_rowid()
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name, sql FROM sqlite_master WHERE tbl_name = "emails" AND type = 'index'[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT name, sql FROM sqlite_master WHERE tbl_name = "posts" AND type = 'index'
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT name, sql FROM sqlite_master WHERE tbl_name = "users" AND type = 'index'[0m
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:48:45 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (110.0ms)
+Completed 200 OK in 125ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:50:03 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 125ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at Sat Apr 16 15:53:55 +0100 2011
+  Processing by PostsController#new as HTML
+Redirected to http://localhost:3000/user_sessions/new
+Completed 302 Found in 16ms
+
+
+Started GET "/user_sessions/new" for 127.0.0.1 at Sat Apr 16 15:53:55 +0100 2011
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/_form.html.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 78ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at Sat Apr 16 15:54:02 +0100 2011
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vm6cnC3qJVNfHzQQEr17dlNNF8ILFrlvNHGo2uK0Snw=", "user_session"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Create User session"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE (LOWER("users".username) = 'admin') LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "login_count" = 8, "last_login_at" = '2011-04-10 20:13:50.003000', "current_login_at" = '2011-04-16 14:54:03.093000', "last_request_at" = '2011-04-16 14:54:03.171000', "persistence_token" = '8b6aa681e34601a5fb3d658489129fe60827906110660cb8c10f2127a680093bd621103957c473dd39ceaf4a1eb0bee9d0b284e52545f3f6d38fc592e8f10338', "updated_at" = '2011-04-16 14:54:03.171000' WHERE "users"."id" = 1[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 641ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sat Apr 16 15:54:03 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-04-16 14:54:03.500000', "updated_at" = '2011-04-16 14:54:03.500000' WHERE "users"."id" = 1
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (234.0ms)
+Completed 200 OK in 266ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at Sat Apr 16 15:54:06 +0100 2011
+  Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-04-16 14:54:06.078000', "updated_at" = '2011-04-16 14:54:06.078000' WHERE "users"."id" = 1[0m
+Rendered posts/_form.html.erb (63.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered posts/new.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 265ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Sat Apr 16 15:54:25 +0100 2011
+  Processing by UserSessionsController#destroy as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-04-16 14:54:25.203000', "updated_at" = '2011-04-16 14:54:25.218000' WHERE "users"."id" = 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "persistence_token" = '204a8d26b21a1e1f27ad34d2ef7167cf8177578a4f554446907e603ba0fb088a6b8427e18910d41062b852eefba3e362646bbe995299e532cf6a28b6ea62e9d2', "updated_at" = '2011-04-16 14:54:25.312000' WHERE "users"."id" = 1[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 234ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sat Apr 16 15:54:25 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 109ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:55:04 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 125ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:56:39 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (15.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (110.0ms)
+Completed 200 OK in 125ms (Views: 110.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:57:42 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sat Apr 16 15:57:47 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vm6cnC3qJVNfHzQQEr17dlNNF8ILFrlvNHGo2uK0Snw=", "email"=>{"email"=>"test"}, "commit"=>"Subscribe"}
+  [1m[35mSQL (0.0ms)[0m  SELECT last_insert_rowid()
+Redirected to http://localhost:3000/emails/1
+Completed 302 Found in 94ms
+
+
+Started GET "/emails/1" for 127.0.0.1 at Sat Apr 16 15:57:47 +0100 2011
+  Processing by EmailsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails" WHERE "emails"."id" = 1 LIMIT 1[0m
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sat Apr 16 15:58:11 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 62ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/1" for 127.0.0.1 at Sat Apr 16 15:58:17 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vm6cnC3qJVNfHzQQEr17dlNNF8ILFrlvNHGo2uK0Snw=", "id"=>"1"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails" WHERE "emails"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "emails" WHERE "emails"."id" = 1
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 79ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sat Apr 16 15:58:17 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:58:23 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (15.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 15:59:26 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered posts/index.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 140ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sat Apr 16 15:59:31 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vm6cnC3qJVNfHzQQEr17dlNNF8ILFrlvNHGo2uK0Snw=", "email"=>{"email"=>"test"}, "commit"=>"Subscribe"}
+Rendered emails/_form.html.erb (16.0ms)
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sat Apr 16 15:59:59 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 16:03:10 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 156ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Sat Apr 16 16:03:12 +0100 2011
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/_form.html.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 125ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at Sat Apr 16 16:03:19 +0100 2011
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vm6cnC3qJVNfHzQQEr17dlNNF8ILFrlvNHGo2uK0Snw=", "user_session"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Create User session"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE (LOWER("users".username) = 'admin') LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "login_count" = 9, "last_login_at" = '2011-04-16 14:54:03.093000', "current_login_at" = '2011-04-16 15:03:19.875000', "last_request_at" = '2011-04-16 15:03:19.875000', "persistence_token" = '777ddcb1d9114d299fb5d31d8166d3199cca68ee5baccbbd3a5ac77bf6fed6531ae5facf83ac8aa307b52de4665e3510d9c179de6238fa81d65e83995f5bac9d', "updated_at" = '2011-04-16 15:03:19.875000' WHERE "users"."id" = 1
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 156ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sat Apr 16 16:03:20 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-04-16 15:03:20.156000', "updated_at" = '2011-04-16 15:03:20.156000' WHERE "users"."id" = 1[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (235.0ms)
+Completed 200 OK in 250ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Sat Apr 16 16:03:24 +0100 2011
+  Processing by UserSessionsController#destroy as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (15.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-04-16 15:03:24.203000', "updated_at" = '2011-04-16 15:03:24.203000' WHERE "users"."id" = 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "persistence_token" = '8b4101dc07b4ba67de4507de4b0cd3ec6bada9a3debab6a4097bd191081dd67ec97652a421a2641479e877c5363fbebc55fe1764f3f2e8844fd4c7f07701b901', "updated_at" = '2011-04-16 15:03:24.328000' WHERE "users"."id" = 1[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 250ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sat Apr 16 16:03:24 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 140ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 16:04:07 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered posts/index.html.erb within layouts/application (296.0ms)
+Completed 200 OK in 312ms (Views: 296.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sat Apr 16 16:04:12 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vm6cnC3qJVNfHzQQEr17dlNNF8ILFrlvNHGo2uK0Snw=", "email"=>{"email"=>"test"}, "commit"=>"Subscribe"}
+Rendered emails/_form.html.erb (0.0ms)
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sat Apr 16 16:04:23 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vm6cnC3qJVNfHzQQEr17dlNNF8ILFrlvNHGo2uK0Snw=", "email"=>{"email"=>"test@email.com"}, "commit"=>"Create Email"}
+  [1m[35mSQL (0.0ms)[0m  SELECT last_insert_rowid()
+Redirected to http://localhost:3000/emails/2
+Completed 302 Found in 63ms
+
+
+Started GET "/emails/2" for 127.0.0.1 at Sat Apr 16 16:04:23 +0100 2011
+  Processing by EmailsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails" WHERE "emails"."id" = 2 LIMIT 1[0m
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sat Apr 16 16:04:36 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 62ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 16:08:54 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 109ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sat Apr 16 16:09:03 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vm6cnC3qJVNfHzQQEr17dlNNF8ILFrlvNHGo2uK0Snw=", "email"=>{"email"=>"email.16@email.com"}, "commit"=>"Subscribe"}
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 94ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sat Apr 16 16:09:03 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sat Apr 16 16:09:12 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vm6cnC3qJVNfHzQQEr17dlNNF8ILFrlvNHGo2uK0Snw=", "email"=>{"email"=>"email.16@email.com"}, "commit"=>"Subscribe"}
+  [1m[35mSQL (0.0ms)[0m  SELECT last_insert_rowid()
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 125ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sat Apr 16 16:09:12 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered posts/index.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 109ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 16:11:03 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sat Apr 16 16:11:09 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vm6cnC3qJVNfHzQQEr17dlNNF8ILFrlvNHGo2uK0Snw=", "email"=>{"email"=>"test@email.com"}, "commit"=>"Subscribe"}
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 78ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sat Apr 16 16:11:09 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 187ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 16:12:35 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 110ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sat Apr 16 16:12:47 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vm6cnC3qJVNfHzQQEr17dlNNF8ILFrlvNHGo2uK0Snw=", "email"=>{"email"=>"anotherjunkemail@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[35mSQL (0.0ms)[0m  SELECT last_insert_rowid()
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 93ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sat Apr 16 16:12:47 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 109ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 16 16:13:15 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 109ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sat Apr 16 16:13:20 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vm6cnC3qJVNfHzQQEr17dlNNF8ILFrlvNHGo2uK0Snw=", "email"=>{"email"=>"test@email.com"}, "commit"=>"Subscribe"}
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 94ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sat Apr 16 16:13:20 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)

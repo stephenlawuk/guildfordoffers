@@ -1,4 +1,5 @@
 Guildfordoffers::Application.routes.draw do
+  resources :emails
   resources :posts  
   resources :users
   resources :user_sessions
