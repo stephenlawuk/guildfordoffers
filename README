@@ -9,6 +9,8 @@
     - Authlogic v2.1.6
     - Will_paginate v3.0.pre2 (installed manually into netbeans via download at
         http://rubygems.org/gems/will_paginate/versions/3.0.pre2)
+    - Mail server - config found in config>initializers>setup_mail.rb and also
+      the environment folder needs a few action mailer lines setup.
     - Sqlite3 v3.7.3 (semi req, can be changed)
     - Netbeans v6.9.1 (netbeans project but can be worked into other forms)
     Optional
@@ -50,15 +52,14 @@
                 page rendering times.
     - v0.7      Email MVC introduced. Partial render using additional form in
                 application layout. Also added basic email format validation.
+    - v0.7.1    Welcome mail upon newsletter subscribe (doesnt send as no valid
+                mail server). Access rights on controllers setup.
 
 == To Do List
-    - Email access rights, redirects in controller, welcome mail using actionmail?
     - admin control panel/menu
     - RSS feed needs a little formatting
-    - Print page working but needs some formatting on the offers anyway
-    - Format layout and CSS on login forms and user creation forms.
+    - Format layout and CSS forms/index/shows/new/edit/update
     - 404/422/500 html pages (force them into yield?)
-    - format the show and index representation of posts
     - about / for businesses page (created need info)
     - search
     - social network integration (share and comments to do)

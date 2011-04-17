@@ -1,4 +1,7 @@
 class EmailsController < ApplicationController
+
+  before_filter :require_user, :only => [:index, :show, :edit, :update, :destroy]
+
   # GET /emails
   # GET /emails.xml
   def index
@@ -44,6 +47,7 @@ class EmailsController < ApplicationController
 
     respond_to do |format|
       if @email.save
+        Mailer.registration_confirmation(@email).deliver
         format.html { redirect_to(:posts, :notice => "#{@email.email} Successfully subscribed to newsletter.") }
         format.xml  { render :xml => @email, :status => :created, :location => @email }
       else

@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+
+  before_filter :require_user, :only => [:new, :create, :index, :edit, :update, :destroy]
+
   # GET /users
   # GET /users.xml
   def index

@@ -5686,3 +5686,2308 @@ Started GET "/posts" for 127.0.0.1 at Sat Apr 16 16:13:20 +0100 2011
 Rendered emails/_formmini.html.erb (15.0ms)
 Rendered posts/index.html.erb within layouts/application (94.0ms)
 Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 15:00:30 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered posts/index.html.erb within layouts/application (375.0ms)
+Completed 200 OK in 453ms (Views: 407.0ms | ActiveRecord: 16.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 15:01:08 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>""}, "commit"=>"Subscribe"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mEmail Load (31.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = '') LIMIT 1
+Rendered emails/_form.html.erb (16.0ms)
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/new.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 234ms (Views: 94.0ms | ActiveRecord: 31.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 15:01:12 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (218.0ms)
+Completed 200 OK in 250ms (Views: 218.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 15:01:50 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>""}, "commit"=>"Subscribe"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = '') LIMIT 1[0m
+Rendered emails/_form.html.erb (16.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/new.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 141ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails/index" for 127.0.0.1 at Sun Apr 17 15:02:03 +0100 2011
+  Processing by EmailsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails" WHERE "emails"."id" = 0 LIMIT 1
+Completed   in 16ms
+
+ActiveRecord::RecordNotFound (Couldn't find Email with ID=index):
+  app/controllers/emails_controller.rb:16:in `show'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (47.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at Sun Apr 17 15:02:03 +0100 2011
+
+ActionController::RoutingError (No route matches "/favicon.ico"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at Sun Apr 17 15:02:06 +0100 2011
+
+ActionController::RoutingError (No route matches "/favicon.ico"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/emails/" for 127.0.0.1 at Sun Apr 17 15:02:19 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/7" for 127.0.0.1 at Sun Apr 17 15:02:24 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"7"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails" WHERE "emails"."id" = 7 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM "emails" WHERE "emails"."id" = 7[0m
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 141ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:02:24 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 79ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/6" for 127.0.0.1 at Sun Apr 17 15:02:26 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"6"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails" WHERE "emails"."id" = 6 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "emails" WHERE "emails"."id" = 6
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 110ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:02:26 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/5" for 127.0.0.1 at Sun Apr 17 15:02:28 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"5"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails" WHERE "emails"."id" = 5 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM "emails" WHERE "emails"."id" = 5[0m
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 93ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:02:28 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/4" for 127.0.0.1 at Sun Apr 17 15:02:30 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"4"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails" WHERE "emails"."id" = 4 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "emails" WHERE "emails"."id" = 4
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 94ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:02:30 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 94ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/3" for 127.0.0.1 at Sun Apr 17 15:02:32 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"3"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails" WHERE "emails"."id" = 3 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM "emails" WHERE "emails"."id" = 3[0m
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 109ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:02:32 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/2" for 127.0.0.1 at Sun Apr 17 15:02:34 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"2"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails" WHERE "emails"."id" = 2 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "emails" WHERE "emails"."id" = 2
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 78ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:02:34 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 15:02:53 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 140ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 15:04:00 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (328.0ms)
+Completed 200 OK in 344ms (Views: 328.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 15:05:58 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Rendered mailer/registration_confirmation.text.erb (32.0ms)
+
+Sent mail to stevo_star2004@hotmail.com (891ms)
+Date: Sun, 17 Apr 2011 15:05:59 +0100
+From: noreply@guildfordoffers.com
+To: stevo_star2004@hotmail.com
+Message-ID: <4daaf3c739210_7809ec-47a@StephensPC.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for subscribing to the Guildford Student Offers newsletter!
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 1235ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sun Apr 17 15:06:00 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (110.0ms)
+Completed 200 OK in 141ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 15:12:33 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 281ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 15:12:40 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"guildfordstudentoffers@gmail.com"}, "commit"=>"Subscribe"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'guildfordstudentoffers@gmail.com') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to guildfordstudentoffers@gmail.com (500ms)
+Date: Sun, 17 Apr 2011 15:12:41 +0100
+From: noreply@guildfordoffers.com
+To: guildfordstudentoffers@gmail.com
+Message-ID: <4daaf55948440_8b48be4604a@StephensPC.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for subscribing to the Guildford Student Offers newsletter!
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 875ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sun Apr 17 15:12:41 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (16.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (219.0ms)
+Completed 200 OK in 250ms (Views: 219.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:14:23 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/9" for 127.0.0.1 at Sun Apr 17 15:14:25 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"9"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails" WHERE "emails"."id" = 9 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "emails" WHERE "emails"."id" = 9
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 203ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:14:26 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/index.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 109ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails/8" for 127.0.0.1 at Sun Apr 17 15:14:27 +0100 2011
+  Processing by EmailsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails" WHERE "emails"."id" = 8 LIMIT 1
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/show.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 110ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:14:29 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:14:38 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/8" for 127.0.0.1 at Sun Apr 17 15:14:41 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"8"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails" WHERE "emails"."id" = 8 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "emails" WHERE "emails"."id" = 8
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 110ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:14:41 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 15:26:17 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 297ms (Views: 265.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 15:29:34 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to stevo_star2004@hotmail.com (500ms)
+Date: Sun, 17 Apr 2011 15:29:35 +0100
+From: noreply@guildfordoffers.com
+To: stevo_star2004@hotmail.com
+Message-ID: <4daaf94f35390_d048d6322bc@StephensPC.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for subscribing to the Guildford Student Offers newsletter!
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 735ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sun Apr 17 15:29:35 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered posts/index.html.erb within layouts/application (219.0ms)
+Completed 200 OK in 266ms (Views: 235.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 15:30:59 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"guildfordstudentoffers@gmail.com"}, "commit"=>"Subscribe"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'guildfordstudentoffers@gmail.com') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to guildfordstudentoffers@gmail.com (1422ms)
+Date: Sun, 17 Apr 2011 15:30:59 +0100
+From: noreply@guildfordoffers.com
+To: guildfordstudentoffers@gmail.com
+Message-ID: <4daaf9a3b6dc8_d048f2323bc@StephensPC.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for subscribing to the Guildford Student Offers newsletter!
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 1594ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sun Apr 17 15:31:01 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (156.0ms)
+Completed 200 OK in 172ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 15:35:13 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 172ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:35:19 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/11" for 127.0.0.1 at Sun Apr 17 15:35:22 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"11"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails" WHERE "emails"."id" = 11 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "emails" WHERE "emails"."id" = 11
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 141ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:35:22 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails/10" for 127.0.0.1 at Sun Apr 17 15:35:25 +0100 2011
+  Processing by EmailsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails" WHERE "emails"."id" = 10 LIMIT 1
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/show.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:35:28 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/10" for 127.0.0.1 at Sun Apr 17 15:35:30 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"10"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails" WHERE "emails"."id" = 10 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM "emails" WHERE "emails"."id" = 10[0m
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 93ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:35:30 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 15:35:46 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT last_insert_rowid()
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to stevo_star2004@hotmail.com (16ms)
+
+Completed   in 157ms
+
+NoMethodError (undefined method `index' for Sun Apr 17 15:35:46 +0100 2011:Time):
+  app/controllers/emails_controller.rb:47:in `create'
+  app/controllers/emails_controller.rb:45:in `create'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 15:36:47 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (110.0ms)
+Completed 200 OK in 125ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Sun Apr 17 15:36:52 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/show.html.erb within layouts/application (156.0ms)
+Completed 200 OK in 187ms (Views: 172.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 15:37:00 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1
+Rendered emails/_form.html.erb (0.0ms)
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:37:09 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/12" for 127.0.0.1 at Sun Apr 17 15:37:12 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"12"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails" WHERE "emails"."id" = 12 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM "emails" WHERE "emails"."id" = 12[0m
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 78ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:37:12 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered emails/index.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 109ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 15:37:18 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (110.0ms)
+Completed 200 OK in 125ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/14" for 127.0.0.1 at Sun Apr 17 15:37:24 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 14 LIMIT 1[0m
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered posts/show.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 15:37:33 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to stevo_star2004@hotmail.com (15ms)
+
+Completed   in 125ms
+
+NoMethodError (undefined method `index' for Sun Apr 17 15:37:33 +0100 2011:Time):
+  app/controllers/emails_controller.rb:47:in `create'
+  app/controllers/emails_controller.rb:45:in `create'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 15:42:26 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 156ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 15:42:33 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1
+Rendered emails/_form.html.erb (0.0ms)
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/new.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 79ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 15:42:39 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1[0m
+Rendered emails/_form.html.erb (0.0ms)
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/new.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:42:43 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 62ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/13" for 127.0.0.1 at Sun Apr 17 15:42:45 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"13"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails" WHERE "emails"."id" = 13 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "emails" WHERE "emails"."id" = 13
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 125ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:42:45 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 15:42:54 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Completed   in 109ms
+
+NameError (undefined local variable or method `email' for #<EmailsController:0x10fb02f>):
+  app/controllers/emails_controller.rb:47:in `create'
+  app/controllers/emails_controller.rb:45:in `create'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 15:45:12 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 141ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 15:45:22 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"##"}, "commit"=>"Subscribe"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = '##') LIMIT 1
+Rendered emails/_form.html.erb (15.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/new.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 93ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 15:45:32 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1[0m
+Rendered emails/_form.html.erb (0.0ms)
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/new.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 79ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:45:36 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 110ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/14" for 127.0.0.1 at Sun Apr 17 15:45:38 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"14"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails" WHERE "emails"."id" = 14 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "emails" WHERE "emails"."id" = 14
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 78ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:45:39 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 15:45:46 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 125ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sun Apr 17 15:45:46 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 110ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 15:45:50 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>""}, "commit"=>"Subscribe"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = '') LIMIT 1
+Rendered emails/_form.html.erb (16.0ms)
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/new.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:45:52 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/15" for 127.0.0.1 at Sun Apr 17 15:45:55 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"15"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails" WHERE "emails"."id" = 15 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM "emails" WHERE "emails"."id" = 15[0m
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 125ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:45:55 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 62ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 15:52:57 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 281ms (Views: 266.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 15:53:08 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to stevo_star2004@hotmail.com (47ms)
+
+Completed   in 297ms
+
+NoMethodError (undefined method `index' for Sun Apr 17 15:53:08 +0100 2011:Time):
+  app/controllers/emails_controller.rb:47:in `create'
+  app/controllers/emails_controller.rb:45:in `create'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 15:54:46 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered posts/index.html.erb within layouts/application (219.0ms)
+Completed 200 OK in 250ms (Views: 219.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 15:54:55 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1
+Rendered emails/_form.html.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/new.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:54:59 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 125ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/16" for 127.0.0.1 at Sun Apr 17 15:55:01 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"16"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails" WHERE "emails"."id" = 16 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM "emails" WHERE "emails"."id" = 16[0m
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 125ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 15:55:02 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 109ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 15:55:05 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 157ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 15:55:16 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (110.0ms)
+Completed 200 OK in 141ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 15:55:35 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 281ms (Views: 266.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 15:56:19 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to stevo_star2004@hotmail.com (62ms)
+
+Completed   in 375ms
+
+NoMethodError (undefined method `index' for Sun Apr 17 15:56:19 +0100 2011:Time):
+  app/controllers/emails_controller.rb:47:in `create'
+  app/controllers/emails_controller.rb:45:in `create'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:00:21 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered posts/index.html.erb within layouts/application (203.0ms)
+Completed 200 OK in 250ms (Views: 219.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:00:34 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1
+Rendered emails/_form.html.erb (16.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/new.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:00:37 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 141ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/17" for 127.0.0.1 at Sun Apr 17 16:00:40 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"17"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails" WHERE "emails"."id" = 17 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM "emails" WHERE "emails"."id" = 17[0m
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 141ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:00:40 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:00:59 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 156ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:01:09 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 140ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:01:17 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT last_insert_rowid()
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to stevo_star2004@hotmail.com (31ms)
+
+Completed   in 172ms
+
+NoMethodError (undefined method `index' for Sun Apr 17 16:01:17 +0100 2011:Time):
+  app/controllers/emails_controller.rb:47:in `create'
+  app/controllers/emails_controller.rb:45:in `create'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (203.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:01:53 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 157ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:01:58 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>""}, "commit"=>"Subscribe"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = '') LIMIT 1[0m
+Rendered emails/_form.html.erb (16.0ms)
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 94ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:02:01 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/18" for 127.0.0.1 at Sun Apr 17 16:02:03 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"18"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails" WHERE "emails"."id" = 18 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "emails" WHERE "emails"."id" = 18
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 78ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:02:03 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:02:04 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (110.0ms)
+Completed 200 OK in 125ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:02:31 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered posts/index.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 156ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:02:40 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to stevo_star2004@hotmail.com (453ms)
+Date: Sun, 17 Apr 2011 16:02:40 +0100
+From: noreply@guildfordoffers.com
+To: stevo_star2004@hotmail.com
+Message-ID: <4dab0110a7b98_e289a859030@StephensPC.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for subscribing to the Guildford Student Offers newsletter!
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 625ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sun Apr 17 16:02:41 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 141ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/32" for 127.0.0.1 at Sun Apr 17 16:03:01 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 32 LIMIT 1
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/show.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 125ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:03:09 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"guildfordstudentoffers@gmail.com"}, "commit"=>"Subscribe"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'guildfordstudentoffers@gmail.com') LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT last_insert_rowid()
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to guildfordstudentoffers@gmail.com (375ms)
+Date: Sun, 17 Apr 2011 16:03:09 +0100
+From: noreply@guildfordoffers.com
+To: guildfordstudentoffers@gmail.com
+Message-ID: <4dab012dec540_e289b0591a8@StephensPC.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for subscribing to the Guildford Student Offers newsletter!
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 516ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sun Apr 17 16:03:10 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 125ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:03:20 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>""}, "commit"=>"Subscribe"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = '') LIMIT 1[0m
+Rendered emails/_form.html.erb (16.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/new.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:03:25 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/20" for 127.0.0.1 at Sun Apr 17 16:03:28 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"20"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails" WHERE "emails"."id" = 20 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "emails" WHERE "emails"."id" = 20
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 141ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:03:28 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 63ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/19" for 127.0.0.1 at Sun Apr 17 16:03:31 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"19"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails" WHERE "emails"."id" = 19 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM "emails" WHERE "emails"."id" = 19[0m
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 94ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:03:31 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 78ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:03:35 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"guildfordstudentoffers@gmail.com"}, "commit"=>"Subscribe"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'guildfordstudentoffers@gmail.com') LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT last_insert_rowid()
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to guildfordstudentoffers@gmail.com (391ms)
+Date: Sun, 17 Apr 2011 16:03:35 +0100
+From: noreply@guildfordoffers.com
+To: guildfordstudentoffers@gmail.com
+Message-ID: <4dab014729bf8_e289d4592a9@StephensPC.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for subscribing to the Guildford Student Offers newsletter!
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 531ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sun Apr 17 16:03:35 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (16.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 157ms (Views: 125.0ms | ActiveRecord: 16.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:03:40 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>""}, "commit"=>"Subscribe"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = '') LIMIT 1[0m
+Rendered emails/_form.html.erb (15.0ms)
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/new.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:03:42 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 62ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/21" for 127.0.0.1 at Sun Apr 17 16:03:45 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"21"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails" WHERE "emails"."id" = 21 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "emails" WHERE "emails"."id" = 21
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 94ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:03:45 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 79ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:04:25 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (157.0ms)
+Completed 200 OK in 188ms (Views: 172.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:04:33 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to stevo_star2004@hotmail.com (453ms)
+Date: Sun, 17 Apr 2011 16:04:33 +0100
+From: guildfordstudentoffers@gmail.com
+To: stevo_star2004@hotmail.com
+Message-ID: <4dab0181e4c28_e28ad0593b0@StephensPC.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for subscribing to the Guildford Student Offers newsletter!
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 593ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sun Apr 17 16:04:34 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered posts/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 125ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:08:29 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 281ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:10:09 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1
+Rendered emails/_form.html.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/new.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 156ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:10:13 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/22" for 127.0.0.1 at Sun Apr 17 16:10:16 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"22"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails" WHERE "emails"."id" = 22 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM "emails" WHERE "emails"."id" = 22[0m
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 188ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:10:16 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered emails/index.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 140ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:10:23 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT last_insert_rowid()
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to stevo_star2004@hotmail.com (484ms)
+Date: Sun, 17 Apr 2011 16:10:23 +0100
+From: guildfordstudentoffers@gmail.com
+To: stevo_star2004@hotmail.com
+Message-ID: <4dab02dfa3d18_4709146086b@StephensPC.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for subscribing to the Guildford Student Offers newsletter!
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 688ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sun Apr 17 16:10:24 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (172.0ms)
+Completed 200 OK in 203ms (Views: 172.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:12:00 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 156ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:13:42 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 141ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:14:04 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 281ms (Views: 265.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:15:42 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>""}, "commit"=>"Subscribe"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = '') LIMIT 1
+Rendered emails/_form.html.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/new.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 156ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:15:45 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/23" for 127.0.0.1 at Sun Apr 17 16:15:47 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"23"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails" WHERE "emails"."id" = 23 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM "emails" WHERE "emails"."id" = 23[0m
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 141ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:15:48 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered emails/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 140ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:15:52 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (171.0ms)
+Completed 200 OK in 203ms (Views: 187.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:15:59 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT last_insert_rowid()
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to stevo_star2004@hotmail.com (485ms)
+Date: Sun, 17 Apr 2011 16:15:59 +0100
+From: guildfordstudentoffers@gmail.com
+To: stevo_star2004@hotmail.com
+Message-ID: <4dab042fc9e78_e808d6-487@StephensPC.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for subscribing to the Guildford Student Offers newsletter!
+Completed   in 704ms
+
+Java::JavaLang::NoSuchMethodError (org.jruby.Ruby.getSelectorPool()Lorg/jruby/util/io/SelectorPool;):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (31.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:17:46 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>""}, "commit"=>"Subscribe"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = '') LIMIT 1[0m
+Rendered emails/_form.html.erb (15.0ms)
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/new.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:17:48 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 265ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:18:30 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered posts/index.html.erb within layouts/application (266.0ms)
+Completed 200 OK in 297ms (Views: 266.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:22:32 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 281ms (Views: 265.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:23:29 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (219.0ms)
+Completed 200 OK in 265ms (Views: 219.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:23:46 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1
+Rendered emails/_form.html.erb (0.0ms)
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 110ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:23:49 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/24" for 127.0.0.1 at Sun Apr 17 16:23:51 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"24"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails" WHERE "emails"."id" = 24 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM "emails" WHERE "emails"."id" = 24[0m
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 78ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:23:51 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered emails/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:23:55 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 171ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:24:02 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT last_insert_rowid()
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to stevo_star2004@hotmail.com (687ms)
+Date: Sun, 17 Apr 2011 16:24:03 +0100
+From: guildfordstudentoffers@gmail.com
+To: stevo_star2004@hotmail.com
+Message-ID: <4dab0613b3b0_1148d6899da@StephensPC.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for subscribing to the Guildford Student Offers newsletter!
+Completed   in 1015ms
+
+Java::JavaLang::NoSuchMethodError (org.jruby.Ruby.getSelectorPool()Lorg/jruby/util/io/SelectorPool;):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:25:26 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (266.0ms)
+Completed 200 OK in 297ms (Views: 281.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:25:35 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star"}, "commit"=>"Subscribe"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star') LIMIT 1
+Rendered emails/_form.html.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/new.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 156ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:25:38 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/25" for 127.0.0.1 at Sun Apr 17 16:25:40 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"25"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails" WHERE "emails"."id" = 25 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM "emails" WHERE "emails"."id" = 25[0m
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 110ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:25:40 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered emails/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 156ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:26:05 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (46.0ms)
+Rendered posts/index.html.erb within layouts/application (265.0ms)
+Completed 200 OK in 296ms (Views: 265.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:26:16 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Rendered mailer/registration_confirmation.text.erb (16.0ms)
+
+Sent mail to stevo_star2004@hotmail.com (437ms)
+Date: Sun, 17 Apr 2011 16:26:16 +0100
+From: guildfordstudentoffers@gmail.com
+To: stevo_star2004@hotmail.com
+Message-ID: <4dab0698a7b98_fac8be94782@StephensPC.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for subscribing to the Guildford Student Offers newsletter!
+Completed   in 672ms
+
+Java::JavaLang::NoSuchMethodError (org.jruby.Ruby.getSelectorPool()Lorg/jruby/util/io/SelectorPool;):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:27:21 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (218.0ms)
+Completed 200 OK in 250ms (Views: 234.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:27:33 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"test@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'test@hotmail.com') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to test@hotmail.com (453ms)
+Date: Sun, 17 Apr 2011 16:27:34 +0100
+From: guildfordstudentoffers@gmail.com
+To: test@hotmail.com
+Message-ID: <4dab06e631510_fac8e4948ba@StephensPC.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for subscribing to the Guildford Student Offers newsletter!
+Completed   in 625ms
+
+Java::JavaLang::NoSuchMethodError (org.jruby.Ruby.getSelectorPool()Lorg/jruby/util/io/SelectorPool;):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:27:57 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 281ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:28:05 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"test@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'test@hotmail.com') LIMIT 1
+Rendered emails/_form.html.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/new.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 156ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:28:11 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/27" for 127.0.0.1 at Sun Apr 17 16:28:14 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"27"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails" WHERE "emails"."id" = 27 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM "emails" WHERE "emails"."id" = 27[0m
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 94ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:28:14 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered emails/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 157ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/26" for 127.0.0.1 at Sun Apr 17 16:28:17 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"26"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails" WHERE "emails"."id" = 26 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "emails" WHERE "emails"."id" = 26
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 78ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:28:17 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:32:51 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 281ms (Views: 265.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:33:36 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to stevo_star2004@hotmail.com (500ms)
+Date: Sun, 17 Apr 2011 16:33:37 +0100
+From: guildfordstudentoffers@gmail.com
+To: stevo_star2004@hotmail.com
+Message-ID: <4dab08513cca8_aa08d678252@StephensPC.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for subscribing to the Guildford Student Offers newsletter!
+Completed   in 766ms
+
+Java::JavaLang::NoSuchMethodError (org.jruby.Ruby.getSelectorPool()Lorg/jruby/util/io/SelectorPool;):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:34:10 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (218.0ms)
+Completed 200 OK in 250ms (Views: 218.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:34:18 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"test@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'test@hotmail.com') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to test@hotmail.com (391ms)
+Date: Sun, 17 Apr 2011 16:34:18 +0100
+From: guildfordstudentoffers@gmail.com
+To: test@hotmail.com
+Message-ID: <4dab087abac48_aa08e678337@StephensPC.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for subscribing to the Guildford Student Offers newsletter!
+Completed   in 563ms
+
+Java::JavaLang::NoSuchMethodError (org.jruby.Ruby.getSelectorPool()Lorg/jruby/util/io/SelectorPool;):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:34:46 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 281ms (Views: 266.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:35:03 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"lol@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'lol@hotmail.com') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to lol@hotmail.com (453ms)
+Date: Sun, 17 Apr 2011 16:35:03 +0100
+From: guildfordstudentoffers@gmail.com
+To: lol@hotmail.com
+Message-ID: <4dab08a7c63e0_f5c8d62989f@StephensPC.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for subscribing to the Guildford Student Offers newsletter!
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 657ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sun Apr 17 16:35:04 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered posts/index.html.erb within layouts/application (235.0ms)
+Completed 200 OK in 266ms (Views: 235.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:43:06 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 297ms (Views: 266.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:43:47 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered posts/index.html.erb within layouts/application (218.0ms)
+Completed 200 OK in 265ms (Views: 234.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:43:54 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"st"}, "commit"=>"Subscribe"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'st') LIMIT 1
+Rendered emails/_form.html.erb (16.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/new.html.erb within layouts/application (79.0ms)
+Completed 200 OK in 125ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:43:57 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 125ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/30" for 127.0.0.1 at Sun Apr 17 16:43:59 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"30"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails" WHERE "emails"."id" = 30 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mDELETE FROM "emails" WHERE "emails"."id" = 30[0m
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 109ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:43:59 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/28" for 127.0.0.1 at Sun Apr 17 16:44:01 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"28"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails" WHERE "emails"."id" = 28 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "emails" WHERE "emails"."id" = 28
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 110ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:44:02 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails/28" for 127.0.0.1 at Sun Apr 17 16:44:04 +0100 2011
+  Processing by EmailsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails" WHERE "emails"."id" = 28 LIMIT 1
+Completed   in 16ms
+
+ActiveRecord::RecordNotFound (Couldn't find Email with ID=28):
+  app/controllers/emails_controller.rb:16:in `show'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.0ms)
+
+
+Started GET "/emails/28" for 127.0.0.1 at Sun Apr 17 16:44:07 +0100 2011
+  Processing by EmailsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails" WHERE "emails"."id" = 28 LIMIT 1[0m
+Completed   in 16ms
+
+ActiveRecord::RecordNotFound (Couldn't find Email with ID=28):
+  app/controllers/emails_controller.rb:16:in `show'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:44:10 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails".* FROM "emails"
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 79ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/29" for 127.0.0.1 at Sun Apr 17 16:44:12 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"29"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails" WHERE "emails"."id" = 29 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "emails" WHERE "emails"."id" = 29
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 282ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:44:13 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 78ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:44:19 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 156ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:44:26 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to stevo_star2004@hotmail.com (500ms)
+Date: Sun, 17 Apr 2011 16:44:26 +0100
+From: guildfordstudentoffers@gmail.com
+To: stevo_star2004@hotmail.com
+Message-ID: <4dab0ada7dbb8_e688d6487f3@StephensPC.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for subscribing to the Guildford Student Offers newsletter!
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 688ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sun Apr 17 16:44:27 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (16.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 141ms (Views: 125.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:47:56 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 281ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:48:02 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered emails/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 125ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails/31" for 127.0.0.1 at Sun Apr 17 16:48:04 +0100 2011
+  Processing by EmailsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "id"=>"31"}
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails" WHERE "emails"."id" = 31 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  DELETE FROM "emails" WHERE "emails"."id" = 31
+Redirected to http://localhost:3000/emails
+Completed 302 Found in 109ms
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 16:48:05 +0100 2011
+  Processing by EmailsController#index as HTML
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails".* FROM "emails"[0m
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/index.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 94ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:48:06 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (203.0ms)
+Completed 200 OK in 234ms (Views: 219.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:48:15 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"stevo_star2004@hotmail.com"}, "commit"=>"Subscribe"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'stevo_star2004@hotmail.com') LIMIT 1
+  [1m[36mSQL (16.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to stevo_star2004@hotmail.com (438ms)
+Date: Sun, 17 Apr 2011 16:48:15 +0100
+From: guildfordstudentoffers@gmail.com
+To: stevo_star2004@hotmail.com
+Message-ID: <4dab0bbfb6dc8_884914-4dd@StephensPC.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for subscribing to the Guildford Student Offers newsletter!
+Completed   in 657ms
+
+Java::JavaLang::NoSuchMethodError (org.jruby.Ruby.getSelectorPool()Lorg/jruby/util/io/SelectorPool;):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:48:58 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered posts/index.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 156ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 16:49:39 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 281ms (Views: 265.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 16:49:51 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"guildfordstudentoffers@gmail.com"}, "commit"=>"Subscribe"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'guildfordstudentoffers@gmail.com') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT last_insert_rowid()[0m
+Rendered mailer/registration_confirmation.text.erb (0.0ms)
+
+Sent mail to guildfordstudentoffers@gmail.com (484ms)
+Date: Sun, 17 Apr 2011 16:49:51 +0100
+From: guildfordstudentoffers@gmail.com
+To: guildfordstudentoffers@gmail.com
+Message-ID: <4dab0c1f53bd8_d288be2851b@StephensPC.mail>
+Subject: Registered
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for subscribing to the Guildford Student Offers newsletter!
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 703ms
+
+
+Started GET "/posts" for 127.0.0.1 at Sun Apr 17 16:49:51 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (16.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (218.0ms)
+Completed 200 OK in 250ms (Views: 218.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 17:00:05 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 172ms (Views: 157.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 17:00:10 +0100 2011
+  Processing by EmailsController#index as HTML
+Redirected to http://localhost:3000/user_sessions/new
+Completed 302 Found in 46ms
+
+
+Started GET "/user_sessions/new" for 127.0.0.1 at Sun Apr 17 17:00:10 +0100 2011
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/_form.html.erb (16.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 110ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 17:00:13 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 156ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 17:00:17 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"a"}, "commit"=>"Subscribe"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'a') LIMIT 1
+Rendered emails/_form.html.erb (16.0ms)
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/new.html.erb within layouts/application (79.0ms)
+Completed 200 OK in 110ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 17:00:34 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 140ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Apr 17 17:02:11 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 141ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 17:02:16 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"a"}, "commit"=>"Subscribe"}
+  [1m[36mEmail Load (0.0ms)[0m  [1mSELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'a') LIMIT 1[0m
+Rendered emails/_form.html.erb (16.0ms)
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/new.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 109ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails/new" for 127.0.0.1 at Sun Apr 17 17:02:22 +0100 2011
+  Processing by EmailsController#new as HTML
+Rendered emails/_form.html.erb (16.0ms)
+Rendered emails/_formmini.html.erb (0.0ms)
+Rendered emails/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 63ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/emails" for 127.0.0.1 at Sun Apr 17 17:02:33 +0100 2011
+  Processing by EmailsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vz5XKipr4OtQlKAwIDUk2iY2mx9bZVqMrimajLWTX6A=", "email"=>{"email"=>"test"}, "commit"=>"Create Email"}
+  [1m[35mEmail Load (0.0ms)[0m  SELECT "emails"."id" FROM "emails" WHERE ("emails"."email" = 'test') LIMIT 1
+Rendered emails/_form.html.erb (16.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered emails/new.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 93ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/emails" for 127.0.0.1 at Sun Apr 17 17:02:48 +0100 2011
+  Processing by EmailsController#index as HTML
+Redirected to http://localhost:3000/user_sessions/new
+Completed 302 Found in 32ms
+
+
+Started GET "/user_sessions/new" for 127.0.0.1 at Sun Apr 17 17:02:48 +0100 2011
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/_form.html.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 78ms (Views: 47.0ms | ActiveRecord: 0.0ms)
