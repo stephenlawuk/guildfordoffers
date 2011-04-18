@@ -1,17 +1,15 @@
 Guildfordoffers::Application.routes.draw do
   resources :emails
-  resources :posts  
+  resources :posts
   resources :users
   resources :user_sessions
-  get "pages/about"
-  get "pages/contact"
-  get "pages/faq"
-  get "pages/partners"
   match 'feed' => "posts#feed", :as => :feed, :defaults => {:format => 'rss'}
+  match 'postlist' => "posts#list", :as => :postlist
   match 'about' => "pages#about"
   match 'contact' => "pages#contact"
   match 'faq' => "pages#faq"
   match 'partners' => "pages#partners"
+  match 'controlpanel' => "pages#controlpanel", :as => :control
   match 'login' => 'user_sessions#new', :as => :login
   match 'logout' => 'user_sessions#destroy', :as => :logout
 

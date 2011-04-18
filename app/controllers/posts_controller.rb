@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 
-  before_filter :require_user, :only => [:new, :create, :edit, :update, :destroy]
+  before_filter :require_user, :only => [:new, :list, :create, :edit, :update, :destroy]
 
   # GET /posts
   # GET /posts.xml
@@ -10,6 +10,17 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
+      format.xml  { render :xml => @posts }
+    end
+  end
+
+  # GET /posts
+  # GET /posts.xml
+  def list
+    @posts = Post.paginate :page => params[:page], :per_page => 24, :order => "created_at DESC"
+
+    respond_to do |format|
+      format.html # list.html.erb
       format.xml  { render :xml => @posts }
     end
   end

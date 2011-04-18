@@ -3,7 +3,7 @@
     Created on : 13 March 2011, 19:17:49
     Author     : Stephen Law
     Description:
-        Default rails stylesheet, handles error checking and body.
+        Default rails stylesheet, handles error checking and forms.
 */
 
 body {
@@ -26,6 +26,16 @@ form.new_post, form.edit_post {
     margin: 0 auto;
 }
 
+form.new_user_session {
+    width: 450px;
+    margin: 0 auto;
+}
+
+form.edit_user, form.new_user {
+    width: 700px;
+    margin: 0 auto;
+}
+
 label {
     display: block;
     margin-left: 15px;
@@ -41,10 +51,36 @@ input {
     font-family: verdana, arial, helvetica, sans-serif;
 }
 
+form.new_user input {
+    width: 300px;
+    font-size: 12px;
+    font-family: verdana, arial, helvetica, sans-serif;    
+}
+
+form.edit_user input {
+    width: 300px;
+    font-size: 12px;
+    font-family: verdana, arial, helvetica, sans-serif;    
+}
+
+form.new_user_session input {
+    width: 300px;
+    font-size: 12px;
+    font-family: verdana, arial, helvetica, sans-serif;
+}
+
 input#email_email {
     width: 300px;
     font-size: 12px;
     font-family: verdana, arial, helvetica, sans-serif;
+}
+
+#user_session_submit {
+    width: 100px;
+}
+
+#user_submit {
+    width: 100px;
 }
 
 #post_submit {
@@ -74,7 +110,6 @@ div.field, div.actions {
 .field_with_errors {
     padding: 2px;
     background-color: red;
-    width: 550px;
 }
 
 #error_explanation {

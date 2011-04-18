@@ -1,6 +1,7 @@
 <h1>Editing email</h1>
+<%= link_to 'Back', emails_path %>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @email %> |
-<%= link_to 'Back', emails_path %>
+<p>Warning destroying this record is permanent.</p>
+<%= link_to 'Destroy', @email, :confirm => 'Are you sure?', :method => :delete %>

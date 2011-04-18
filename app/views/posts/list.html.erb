@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+<h1>Listing Offers</h1>
+
+<table class="postlisting">
+<tr>
+  <th>Created At</th>
+  <th>Offer</th>
+  <th>Company</th>
+</tr>
+<% @posts.each do |post| %>
+  <tr>
+    <td><%= post.created_at %></td>
+    <td><%= post.offer %></td>
+    <td><%= post.company %></td>
+    <td>
+    <%= link_to 'Show', post %> |
+    <%= link_to 'Edit', edit_post_path(post) %> |
+    <%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<div class="page_info">
+  <%= page_entries_info @posts, :entry_name => 'Offers' %>
+</div>
+<%= will_paginate @posts, :previous_label => '&#171;Previous', :next_label => 'Next&#187;' %>
+
+<br/>
+

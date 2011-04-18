@@ -26,6 +26,16 @@ form.new_post, form.edit_post {
     margin: 0 auto;
 }
 
+form.new_user_session {
+    width: 450px;
+    margin: 0 auto;
+}
+
+form.edit_user, form.new_user {
+    width: 700px;
+    margin: 0 auto;
+}
+
 label {
     display: block;
     margin-left: 15px;
@@ -41,10 +51,36 @@ input {
     font-family: verdana, arial, helvetica, sans-serif;
 }
 
+form.new_user input {
+    width: 300px;
+    font-size: 12px;
+    font-family: verdana, arial, helvetica, sans-serif;    
+}
+
+form.edit_user input {
+    width: 300px;
+    font-size: 12px;
+    font-family: verdana, arial, helvetica, sans-serif;    
+}
+
+form.new_user_session input {
+    width: 300px;
+    font-size: 12px;
+    font-family: verdana, arial, helvetica, sans-serif;
+}
+
 input#email_email {
     width: 300px;
     font-size: 12px;
     font-family: verdana, arial, helvetica, sans-serif;
+}
+
+#user_session_submit {
+    width: 100px;
+}
+
+#user_submit {
+    width: 100px;
 }
 
 #post_submit {
@@ -74,7 +110,6 @@ div.field, div.actions {
 .field_with_errors {
     padding: 2px;
     background-color: red;
-    width: 550px;
 }
 
 #error_explanation {
@@ -150,6 +185,14 @@ div.links {
     padding-top: 10px;
 }
 
+div.rss {
+    width: 80px;
+    height: 80px;
+    float: right;
+    font-size: 10px;
+    text-align: center;
+}
+
 div.banner {
     width: 1024px;
     height: 150px;
@@ -180,6 +223,11 @@ div.container {
     height: auto;
     padding-top: 15px;
     padding-bottom: 15px;
+    text-align: center;
+}
+
+div.rendered {
+    clear: both;
 }
 
 div.footer {
@@ -267,17 +315,46 @@ div.offerinfo {
     border-left:1px solid #FFFFFF;
 }
 
-/*
-Divs for listing users
-word-wrap: break-word;
-is available in IE7+, FF 3.5 and Webkit enabled browsers (Safari/Chrome etc).
-To handle IE6 also need to declare word-wrap: break-all;
-*/
+/* Divs for static pages */
 
-div.users {
-    width: 100%;
+div.contactusleft {
+    width: 500px;
     text-align: left;
-    word-wrap: break-word;
+    float: left;
+}
+
+div.contactusright {
+    width: 500px;
+    text-align: left;
+    float: right;
+    padding-left: 20px;
+}
+
+p.about {
+    width: 600px;
+    text-align: left;
+    margin: auto;
+}
+
+.faq {
+    width: 500px;
+    text-align: left;
+    margin: auto;
+}
+
+.business {
+    width: 800px;
+    text-align: left;
+    margin: auto;
+}
+
+div.terms {
+    width: 800px;
+    margin: auto;
+}
+
+div.terms textarea {
+    width: 100%;
 }
 
 /* Divs for twitter */
@@ -330,8 +407,8 @@ margin-right: 2px;
 }
 
 /* CSS for links */
-a { color: #000; text-decoration: none;}
-a:visited { color: #666; }
+a { color: #666666; text-decoration: none;}
+a:visited { color: #666666; }
 div.header a:hover { color: #fff; text-decoration: underline; }
 div.container a:hover { color: #fff; text-decoration: underline; background-color: #718eff; }
 div.footer a {color: #FFFFFF}
@@ -352,3 +429,42 @@ a.return {font-size: 11px;}
 }
 
 a.linkarea{display: block; width: 100%; height: 100%; text-decoration: none;}
+
+.postlisting {
+   border-collapse:collapse;
+   font-size: 14px;
+   text-align: left;
+   margin: auto;
+}
+
+.userlisting {
+   border-collapse:collapse;
+   font-size: 11px;
+   text-align: left;
+   margin: auto;
+   width: 100%
+}
+
+.emaillisting {
+   width: 60%;
+   border-collapse:collapse;
+   font-size: 14px;
+   text-align: left;
+   margin: auto;
+}
+
+td {
+   padding: 2px 4px;
+}
+
+tr {
+   border: 2px solid #666;
+   margin-bottom: 3px;
+}
+
+/*
+Notes 
+word-wrap: break-word;
+is available in IE7+, FF 3.5 and Webkit enabled browsers (Safari/Chrome etc).
+To handle IE6 also need to declare word-wrap: break-all;
+*/

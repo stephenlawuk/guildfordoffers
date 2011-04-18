@@ -53,23 +53,26 @@
     - v0.7      Email MVC introduced. Partial render using additional form in
                 application layout. Also added basic email format validation.
     - v0.7.1    Welcome mail upon newsletter subscribe (doesnt send as no valid
-                mail server). Access rights on controllers setup.
+                mail server). Also access rights on controllers are now setup.
+    - v0.7.2    Control panel static page with restricted access.
+                Cleaned up main application by splitting into partials
+                RSS Feed Link put into header
+                All except posts show view formatted and added content.
+                Print image and a few docs added.
 
 == To Do List
-    - admin control panel/menu
     - RSS feed needs a little formatting
-    - Format layout and CSS forms/index/shows/new/edit/update
+    - Format show posts
     - 404/422/500 html pages (force them into yield?)
-    - about / for businesses page (created need info)
     - search
     - social network integration (share and comments to do)
     - twitter speech bubble may need some graphics work
-    - map
+    - map (ym4r, geokit)
 
 == Known Bugs
 
     -- Need to validate imgurl as invalid link causes crash
-    -- difference in caps/noncaps in page url causes error
+    -- difference in caps/noncaps in page url causes error. possibly validate?
     -- Deprecation warning on model/user.rb due to acts_as_authentic
         There are some patches by users but not by main author for now i have
         suppressed the warning as it is not a big deal.

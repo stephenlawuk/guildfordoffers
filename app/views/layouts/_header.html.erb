@@ -1,0 +1,48 @@
+  <a name="top"></a>
+  <div class="header noprint">
+    <div class="nav">
+      <div class="logo">
+        <a title="Guildford Student Offers" href="http://www.guildfordoffers.com" target="_blank"><img alt="Guildford Student Offers" class="borderless" src="/images/gsologo.png"/></a>
+      </div>
+      <div class="socialbox">
+        <!-- AddThis Code BEGIN -->
+        <div class="addthis_default_style">
+        <a class="addthis_button_facebook_like" fb:like:layout="box_count" fb:like:width="46" fb:like:height="100" addthis:url="http://www.facebook.com/guildfordoffers"></a>
+        <a class="addthis_button_tweet" tw:count="vertical" addthis:url="http://www.guildfordoffers.com" tw:via="guildfordoffers" tw:text="Guilford Student Offers have loads of discounts check them out!!"></a>
+        <a class="addthis_counter" addthis:url="http://www.guildfordoffers.com" addthis:title="Amazing Student Discounts At Guildford Student Offers Check them out!!"></a>
+        </div>
+        <!-- AddThis Code END -->
+      </div>
+      <div class="links">
+        <div class="rss">
+          <%= link_to image_tag("/images/feed.png", :alt => "RSS Feed", :class => "borderless"), :feed, :title => "RSS Feed", :target => "_blank" %>
+          <br/>
+          <%= link_to "RSS Feed", :feed %>
+        </div>
+        <% if current_user %>
+          Signed in as <%= current_user.username %> | <%= link_to "Logout", :logout%>
+          <br/>
+          <%= link_to "Home", root_url%> |
+          <%= link_to "Control Panel", :control%>
+        <% else %>
+          <%= link_to "Login", :login %>
+          <br/>
+          <%= link_to "Home", root_url%>
+        <% end %>
+      </div>
+    </div>
+    <div class="banner">
+      <div id="fbarrow">
+        <a class="linkarea" title="guildfordoffers on facebook" href="http://www.facebook.com/guildfordoffers"></a>
+      </div>
+      <div id="twitter_container">
+        <div id="twitter_update_list">
+          Twitter feed loading
+        </div>
+        <div id="twitter_bottom">
+          <a class="linkarea" title="guildfordoffers on twitter" href="http://twitter.com/guildfordoffers"></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
