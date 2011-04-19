@@ -98,7 +98,7 @@ class PostsController < ApplicationController
 
   # RSS feed
   def feed
-    @posts = Post.all(:select => "id, offer, description, created_at", :order => "created_at DESC", :limit => 20)
+    @posts = Post.all(:select => "id, offer, description, company, imgurl, created_at", :order => "created_at DESC", :limit => 24)
 
     respond_to do |format|
       format.rss { render :layout => false } #index.rss.builder

@@ -86,6 +86,7 @@ div.container {
 }
 
 div.rendered {
+    font-size: 10px;
     clear: both;
 }
 
@@ -157,21 +158,125 @@ div.footercopyright {
 
 /* Divs for show offer */
 
-div.companyinfo {
-    width: 300px;
-    float: left;
-    text-align: left;
-    min-height: 30em;
+div.offertitle {
+    width: 100%;
     height: auto;
-    border-right:1px solid #FFFFFF;
+}
+
+div.companytitle {
+    width: 350px;
+    float: left;   
+    text-align: left;
+    height: auto;
+    padding: 10px;
+}
+
+div.offer {
+    width: 620px;
+    float: right;
+    text-align: left;
+    height: auto;
+    padding: 10px;
+}
+
+div.offercontainer {
+    width: 100%;
+    height: auto;
+}
+
+/*
+Notes 
+word-wrap: break-word;
+is available in IE7+, FF 3.5 and Webkit enabled browsers (Safari/Chrome etc).
+To handle IE6 also need to declare word-wrap: break-all;
+*/
+div.companyinfo {
+    width: 350px;
+    float: left;
+    margin: auto;
+    min-height: 20em;
+    height: auto;
+    padding: 10px;
+    background: #ffffcc;
+    word-wrap: break-word;
+    border:1px solid #CCCCCC;
+}
+
+div.companytext {
+    width: 300px;
+    padding: 20px;
+    height: auto;
+    text-align: left;
+}
+
+div.map {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    text-align: left;
 }
 
 div.offerinfo {
-    margin-left: 320px;
+    width: 640px;
+    float: right;
     text-align: left;
-    min-height: 30em;
     height: auto;
-    border-left:1px solid #FFFFFF;
+}
+
+div.info {
+    background: #99ff99;
+    border:1px solid #CCCCCC;
+    padding: 10px;
+    min-height: 20em;
+    height: auto;
+}
+
+div.tags {
+    background: #ff9933;
+    border:1px solid #CCCCCC;
+    padding: 10px;
+    margin-top: 10px;
+    height: auto;
+}
+
+div.datebox {
+    margin-top: 10px;
+    width: 100%;
+    height: 20px;
+    clear: both;
+    font-size: 11px;
+    border:1px solid #CCCCCC;
+    background: #FFFFFF;
+}
+
+div.createdat {
+    width: 500px;
+    float: left;
+    text-align: left;
+    padding: 3px;
+}
+
+div.updatedat {
+    width: 500px;
+    float: right;
+    text-align: right;
+    padding: 3px;
+}
+
+div.backandprint {
+    width: 100% 
+}
+
+div.back {
+    width: 500px;
+    text-align: left;
+    float: left;
+}
+
+div.print {
+    width: 500px;
+    text-align: right;
+    float: right;
 }
 
 /* Divs for static pages */
@@ -322,8 +427,16 @@ tr {
 }
 
 /*
-Notes 
-word-wrap: break-word;
-is available in IE7+, FF 3.5 and Webkit enabled browsers (Safari/Chrome etc).
-To handle IE6 also need to declare word-wrap: break-all;
+Containing floats patch works in all browsers
+<div id="container">
+<div id="float">
+</div>
+<div class="clear"></div>
+</div>
 */
+.clear {
+	clear:both;
+	line-height:0;
+	height:0;
+	font-size:0; /* kills IE6 bug */
+}

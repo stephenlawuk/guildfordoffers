@@ -3,6 +3,7 @@
     -logins
     admin pass
     user password
+    if you accidently delete all users take :new off the before filter in users
 
     Required
     - Rails v3.0.5
@@ -59,15 +60,26 @@
                 RSS Feed Link put into header
                 All except posts show view formatted and added content.
                 Print image and a few docs added.
+    - v0.7.3    Added image to RSS feed
+                Formated posts views
+                Added missing company images
+                Added back nav to pages
 
 == To Do List
-    - RSS feed needs a little formatting
-    - Format show posts
-    - 404/422/500 html pages (force them into yield?)
-    - search
+    - #1 search
+    - #2 map (ym4r, geokit)
+    - Show description html safe container?? and images for web exc etc
     - social network integration (share and comments to do)
     - twitter speech bubble may need some graphics work
-    - map (ym4r, geokit)
+    - 404/422/500 html pages (force them into yield?)
+    - whats hot
+    - cheap weak? maybe
+    - split css up into different files as its a mess
+    - validations on nil fields
+    - dont show out of date vouchers
+    - rating
+    - more info on index offers javascript??
+    - Search link via the tags?
 
 == Known Bugs
 

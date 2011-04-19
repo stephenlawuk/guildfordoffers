@@ -1,7 +1,13 @@
+<div class="backandprint noprint">
+  <div class="back">
+    <%= link_to 'Back', emails_path %>
+  </div>
+  <div class="clear"></div>
+</div>
+
+<div id="notice"><%= notice %></div>
+
 <h1>Editing email</h1>
-<%= link_to 'Back', emails_path %>
-
 <%= render 'form' %>
-
 <p>Warning destroying this record is permanent.</p>
 <%= link_to 'Destroy', @email, :confirm => 'Are you sure?', :method => :delete %>

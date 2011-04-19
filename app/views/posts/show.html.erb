@@ -1,61 +1,84 @@
-<a href="#" onClick=" window.print(); return false"><img class="borderless" src="/images/print.gif"/> Print This Offer</a>
-<br/>
-
-<p id="notice"><%= notice %></p>
-
-  <% if @post.created_at.to_date == Date.today %>
-    Posted <%=time_ago_in_words(@post.created_at)%> ago.
-  <% else %>
-    Posted <%= display_date(@post.created_at) %>.
-  <% end %>
-
-<h1><%= @post.company %></h1>
-<h1><%= @post.offer %></h1>
-<%= @post.nus %>
-<%= @post.web %>
-<div>
-<div class="companyinfo">
-  <div class="center">
-  <% if @post.imgurl.blank? %>
-    <%= image_tag("/images/companylogos/nullimg.jpg", :alt => @post.company) %>
-  <% else %>
-    <%= image_tag(@post.imgurl, :alt => @post.company) %>
-  <% end %>
+<div class="backandprint noprint">
+  <div class="back">
+    <%= link_to 'Back', posts_path %>
   </div>
-  <br/>
-  Phone: <%= @post.phone %>
-  <br/>
-  Email: <%= @post.email %>
-  <br/>
-  Website: <%= @post.website %>
-  <br/>
-  Facebook: <%= @post.facebook %>
-  <br/>
-  Twitter: <%= @post.twitter %>
-  <br/>
-  Opening Times:
-  <br/>
-  <%= @post.openingtimes %>
-  <br/>
-  Address:<br/>
-  <%= @post.address %>
-  <br/>
-  Lat: <%= @post.latitude %>
-  <br/>
-  Long: <%= @post.longitude %>
+  <div class="print">
+    <a href="#" onClick=" window.print(); return false"><img class="borderless" src="/images/print.gif"/> Print This Offer</a>
+  </div>
+  <div class="clear"></div>
 </div>
-<div class="offerinfo">
-  <b>Description:</b>
-  <%= @post.description %>
-  <br/>
-  <br/>
-  Valid To: <%= @post.validto %>
-  <br/>
-  Valid To Conditions: <%= @post.validtonotes %>
-  <br/>
-  <br/>
-  Tags: <%= @post.metadata %>
+
+<div id="notice"><%= notice %></div>
+
+<div class="offertitle">
+  <div class="companytitle">
+    <h1><%= @post.company %></h1>
+  </div>
+  <div class="offer">
+    <h1><%= @post.offer %></h1>
+    <%= @post.nus %><%= @post.web %>
+  </div>
+  <div class="clear"></div>
 </div>
+<div class="offercontainer">
+  <div class="companyinfo">
+    <% if @post.imgurl.blank? %>
+      <%= image_tag("/images/companylogos/nullimg.jpg", :alt => @post.company) %>
+    <% else %>
+      <%= image_tag(@post.imgurl, :alt => @post.company) %>
+    <% end %>
+    <h2>Business Contact Info</h2>
+    <%= link_to image_tag("/images/officialbutton.png", :alt => "Official Site", :class => "borderless"), @post.website , :title => "Official Site", :target => "_blank" %>
+    <%= link_to image_tag("/images/facebook.png", :alt => "Facebook", :class => "borderless"), @post.facebook , :title => "Facebook", :target => "_blank" %>
+    <%= link_to image_tag("/images/twitter.png", :alt => "Twitter", :class => "borderless"), @post.twitter , :title => "Twitter", :target => "_blank"%>
+    <%= link_to image_tag("/images/email.png", :alt => "Email", :class => "borderless"), "mailto:" + @post.email , :title => "Email", :target => "_blank" %>
+    <br/>
+    <div class="companytext">
+      <%= image_tag("/images/phone.png", :alt => "Phone") %> <%= @post.phone %>
+      <br/>
+      <%= image_tag("/images/house.png", :alt => "Address") %> Address:
+      <br/>
+      <%= @post.address %>
+      <br/>
+      Opening Times:
+      <br/>
+      <%= @post.openingtimes %>
+    </div>
+    <br/>
+    <div class="map">
+      Map stuff:
+      <br/>
+      Latitude: <%= @post.latitude %>
+      <br/>
+      Longitude: <%= @post.longitude %>
+    </div>
+  </div>
+  <div class="offerinfo">
+    <div class="info">
+      <b>Description:</b>
+      <%= @post.description %>
+      <br/>
+      <br/>
+      <b>Valid To:</b> <%= @post.validto %>
+      <br/>
+      <b>Valid To Conditions:</b> <%= @post.validtonotes %>
+    </div>
+    <div class="tags">
+      Tags: <%= @post.metadata %>
+    </div>
+  </div>
+  <div class="clear"></div>
 </div>
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<div class="datebox noprint">
+  <div class="createdat">
+    <% if @post.created_at.to_date == Date.today %>
+      Posted <%=time_ago_in_words(@post.created_at)%> ago.
+    <% else %>
+      Posted <%= display_date(@post.created_at) %>.
+    <% end %>
+  </div>
+  <div class="updatedat">
+    Last updated <%= display_date(@post.updated_at) %>
+  </div>
+  <div class="clear"></div>
+</div>
