@@ -4,6 +4,12 @@ gem 'rails', '3.0.5'
 gem 'authlogic'
 gem "will_paginate", "~> 3.0.pre2"
 
+# Although plugin is installed some geocoding api is only in the gem
+gem 'ym4r'
+
+# Needed to install ym4r via windows command line
+# rails plugin install git://github.com/ewildgoose/ym4r_gm.git
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

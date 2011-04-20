@@ -11,3 +11,10 @@
   <%= stylesheet_link_tag "scaffold", "stylesheet1", :cache => true, :concat => true %>
   <%= stylesheet_link_tag "print", :media => 'print' %>
   <%= javascript_include_tag :defaults %>
+  <% if controller.controller_name == 'posts' && controller.action_name == 'show' %>
+    <% unless @post.latitude.blank? or @post.longitude.blank? %>
+    <%= raw GMap.header %>
+    <%= raw @map.to_html%>
+    <% end %>
+  <% end %>
+

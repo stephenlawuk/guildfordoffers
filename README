@@ -8,6 +8,8 @@
     Required
     - Rails v3.0.5
     - Authlogic v2.1.6
+    - Ym4r gem and plugin
+    - rails plugin install git://github.com/ewildgoose/ym4r_gm.git
     - Will_paginate v3.0.pre2 (installed manually into netbeans via download at
         http://rubygems.org/gems/will_paginate/versions/3.0.pre2)
     - Mail server - config found in config>initializers>setup_mail.rb and also
@@ -64,18 +66,23 @@
                 Formated posts views
                 Added missing company images
                 Added back nav to pages
+    - v0.7.4    Installed ym4r plugin and gem, added maps with business loc.
+                Dynamic error pages. Bad urls handled with a static 404
+                offer show blank email fix
+                FB share with modded javascript
 
 == To Do List
     - #1 search
-    - #2 map (ym4r, geokit)
+    - #2 map (ym4r, geokit) - need to get user location, dif icons
+    - geocoder alternative compatible with rails 3
     - Show description html safe container?? and images for web exc etc
-    - social network integration (share and comments to do)
+    - comments / reviews
     - twitter speech bubble may need some graphics work
-    - 404/422/500 html pages (force them into yield?)
+    - web exclusive and NUS card req images.
     - whats hot
     - cheap weak? maybe
     - split css up into different files as its a mess
-    - validations on nil fields
+    - validations on nil fields done some
     - dont show out of date vouchers
     - rating
     - more info on index offers javascript??
@@ -84,10 +91,11 @@
 == Known Bugs
 
     -- Need to validate imgurl as invalid link causes crash
-    -- difference in caps/noncaps in page url causes error. possibly validate?
     -- Deprecation warning on model/user.rb due to acts_as_authentic
         There are some patches by users but not by main author for now i have
         suppressed the warning as it is not a big deal.
+    -- log_error(exception) in app controller doesnt appear to be working in
+        development in rails 3 not sure about live.
 
 == Description of Contents
 

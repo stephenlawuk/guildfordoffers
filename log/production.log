@@ -1,0 +1,24 @@
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 19 20:07:45 +0100 2011
+  Processing by PostsController#index as HTML
+Completed   in 0ms
+
+ActiveRecord::StatementInvalid (ActiveRecord::JDBCError: no such table: posts: SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0):
+  app/controllers/posts_controller.rb:9:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Apr 19 20:08:39 +0100 2011
+  Processing by PostsController#index as HTML
+Completed   in 0ms
+
+ActiveRecord::StatementInvalid (ActiveRecord::JDBCError: no such table: posts: SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0):
+  app/controllers/posts_controller.rb:9:in `index'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)

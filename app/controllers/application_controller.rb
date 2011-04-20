@@ -7,6 +7,14 @@ class ApplicationController < ActionController::Base
     @start_time = Time.now
   end
 
+  unless config.consider_all_requests_local
+    rescue_from Exception, :with => :render_error
+    rescue_from ActiveRecord::RecordNotFound, :with => :render_not_found
+    rescue_from ActionController::RoutingError, :with => :render_not_found
+    rescue_from ActionController::UnknownController, :with => :render_not_found
+    rescue_from ActionController::UnknownAction, :with => :render_not_found
+  end
+
   helper_method :current_user_session, :current_user
 
   private
@@ -47,4 +55,30 @@ class ApplicationController < ActionController::Base
     redirect_to(session[:return_to] || default)
     session[:return_to] = nil
 	end
+
+  # log error doesnt appear to be working or it maybe auto
+  # not sure which formats rails 3 uses might be _ or .
+  def render_not_found(exception)
+    @exception = exception
+    activate_authlogic
+    render :template => "/errors/404.html.erb", :status => 404
+    #log_error(exception)
+    #log.error(exception)
+  end
+  
+  def render_error(exception)
+    @exception = exception
+    activate_authlogic
+    render :template => "/errors/500.html.erb", :status => 500
+    #log_error(exception)
+    #log.error(exception)
+  end
+
+# Not working in rails 3 until rails developers fixes it
+#protected
+#  def render_optional_error_file(status_code)
+#    status = interpret_status(status_code)
+#    render :template => "errors/#{status[0,3]}.html.erb", :status => status, :layout => 'application.html.erb'
+#  end
+
 end

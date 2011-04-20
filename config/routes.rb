@@ -12,8 +12,11 @@ Guildfordoffers::Application.routes.draw do
   match 'controlpanel' => "pages#controlpanel", :as => :control
   match 'login' => 'user_sessions#new', :as => :login
   match 'logout' => 'user_sessions#destroy', :as => :logout
+  #handle any other url with 404
+  match '*a', :to => "errors#error404"
 
   root :to => "posts#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

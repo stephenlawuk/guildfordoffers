@@ -5,8 +5,8 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.xml
   def index
-   # @posts = Post.all(:order => "created_at DESC")
-   @posts = Post.paginate :page => params[:page], :per_page => 24, :order => "created_at DESC"
+    # @posts = Post.all(:order => "created_at DESC")
+    @posts = Post.paginate :page => params[:page], :per_page => 24, :order => "created_at DESC"
 
     respond_to do |format|
       format.html # index.html.erb
@@ -29,6 +29,18 @@ class PostsController < ApplicationController
   # GET /posts/1.xml
   def show
     @post = Post.find(params[:id])
+
+    unless @post.latitude.blank? or @post.longitude.blank?
+      @marker = GMarker.new([@post.latitude,@post.longitude],:title => @post.company, :info_window => @post.offer)
+      @myloc = GMarker.new([@post.latitude-0.001,@post.longitude],:title => "Me", :info_window => "you are here")
+
+      @map = GMap.new("map")
+      @map.control_init(:large_map => true,:map_type => true)
+      @map.set_map_type_init(GMapType::G_HYBRID_MAP)
+      @map.center_zoom_init([@post.latitude,@post.longitude],17)
+      @map.overlay_init(@marker)
+      @map.overlay_init(@myloc)
+    end
 
     respond_to do |format|
       format.html # show.html.erb

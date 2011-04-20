@@ -349,8 +349,8 @@ div.companytext {
     text-align: left;
 }
 
-div.map {
-    width: 100%;
+div#map {
+    min-height: 300px;
     padding: 20px;
     height: auto;
     text-align: left;
@@ -377,6 +377,14 @@ div.tags {
     padding: 10px;
     margin-top: 10px;
     height: auto;
+}
+
+div.spreadword {
+    background: #5f6d76;
+    border:1px solid #CCCCCC;
+    padding: 10px;
+    margin-top: 10px;
+    height: 90px;
 }
 
 div.datebox {
@@ -504,17 +512,28 @@ div.terms textarea {
 
 /* CSS for Addthis alignment */
 .addthis_button_facebook_like {
- margin-top: 1px;
+    margin-top: 1px;
+    margin-right: 2px;
 }
 .addthis_button_tweet {
-margin-right: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.fbshare {
+    display:block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fb_share_count_nub_top {
+    background: url("/images/fbbubble.png") no-repeat !important;
 }
 
 /* CSS for links */
 a { color: #666666; text-decoration: none;}
 a:visited { color: #666666; }
 div.header a:hover { color: #fff; text-decoration: underline; }
-div.container a:hover { color: #fff; text-decoration: underline; background-color: #718eff; }
 div.footer a {color: #FFFFFF}
 div.footer a:hover {color: #000000; background-color: #FFFFFF;}
 a.return {font-size: 11px;}
@@ -580,3 +599,17 @@ Containing floats patch works in all browsers
 	height:0;
 	font-size:0; /* kills IE6 bug */
 }
+
+/* Error pages */
+
+div.dialog {
+  width: 25em;
+  padding: 0 4em;
+  margin: 4em auto 0 auto;
+  border: 1px solid #ccc;
+  border-right-color: #999;
+  border-bottom-color: #999;
+  background: #FFFFFF;
+}
+h1.error { font-size: 100%; color: #f00; line-height: 1.5em; }
+

@@ -25,3 +25,9 @@ Guildfordoffers::Application.configure do
   config.action_dispatch.best_standards_support = :builtin
 end
 
+#class ActionDispatch::Request
+# def local?
+#   false
+# end
+#end
+
