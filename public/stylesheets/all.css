@@ -20,6 +20,16 @@ pre {
     font-size: 11px;
 }
 
+form {
+    width: 700px;
+    margin: 0 auto;
+}
+
+form.new_email {
+    width: 300px;
+    margin: 0 auto;
+}
+
 form.new_post, form.edit_post {
     width: 650px;
     margin: 0 auto;
@@ -90,6 +100,11 @@ input#email_email {
     width: 100px;
 }
 
+#search_submit {
+    width: 100px;
+    float: right;
+}
+
 textarea {
     width: 400px;
     font-size: 12px;
@@ -150,6 +165,7 @@ div.field, div.actions {
 div {
     display: block;
     margin: 0 auto;
+/*  border: 1px dashed #000000; */
 }
 
 /* Nav + Banner Div height = header height */
@@ -213,7 +229,8 @@ div.searchbg {
 
 div.search {
     width: 1024px;
-    height: 50px;
+    height: 20px;
+    padding: 15px;
 }
 
 div.container {

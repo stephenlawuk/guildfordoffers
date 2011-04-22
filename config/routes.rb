@@ -5,6 +5,7 @@ Guildfordoffers::Application.routes.draw do
   resources :user_sessions
   match 'feed' => "posts#feed", :as => :feed, :defaults => {:format => 'rss'}
   match 'postlist' => "posts#list", :as => :postlist
+  match 'search' => "posts#search", :as => :search
   match 'about' => "pages#about"
   match 'contact' => "pages#contact"
   match 'faq' => "pages#faq"

@@ -1,0 +1,5 @@
+<%= form_for :search, @search, :url => {:controller => :posts ,:action => 'search' }, :html => {:method => :get} do |f| %>
+    <%= f.label "Search" %>
+    <%= f.text_field :offer_or_description_or_company_or_metadata_multiterm %>
+    <%= f.submit "Go" %>
+<% end %>

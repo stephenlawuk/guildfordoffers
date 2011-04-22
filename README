@@ -70,26 +70,31 @@
                 Dynamic error pages. Bad urls handled with a static 404
                 offer show blank email fix
                 FB share with modded javascript
+    - v0.7.5    searchlogic trialed, settled on meta_search for now
+                geocoder gem installed
+                geocoder semi implemented with IP seems very dodgy though.
+                search implemented and works from any page
 
 == To Do List
-    - #1 search
-    - #2 map (ym4r, geokit) - need to get user location, dif icons
-    - geocoder alternative compatible with rails 3
+    - #1 search queries fix
+    - #2 map dif icons
     - Show description html safe container?? and images for web exc etc
-    - comments / reviews
+    - comments / reviews (FBML)
     - twitter speech bubble may need some graphics work
     - web exclusive and NUS card req images.
     - whats hot
     - cheap weak? maybe
     - split css up into different files as its a mess
-    - validations on nil fields done some
     - dont show out of date vouchers
     - rating
     - more info on index offers javascript??
     - Search link via the tags?
+    - printed count ant figure out currently
 
-== Known Bugs
+== Known Bugs/Issues
 
+    -- Geocoder IP addressing is terrible switch to Geokit whenever it is ready
+    -- Search limited to 1 term or exact match on more than 1 term.
     -- Need to validate imgurl as invalid link causes crash
     -- Deprecation warning on model/user.rb due to acts_as_authentic
         There are some patches by users but not by main author for now i have

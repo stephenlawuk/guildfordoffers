@@ -1,9 +1,11 @@
 <div id="notice"><%= notice %></div>
 
-<h1>Listing Offers</h1>
+<h1>Search Results</h1>
 <br/>
 
-<% @posts.each do |post| %>
+<% if @posts_count > 0 %>
+
+<% @search.each do |post| %>
   <% if post.imgurl.blank? %>
     <%= link_to image_tag("/images/companylogos/nullimg.jpg", :alt => post.offer), post, :title => post.offer %>
   <% else %>
@@ -18,3 +20,10 @@
 <%= will_paginate @posts, :previous_label => '&#171;Previous', :next_label => 'Next&#187;' %>
 
 <br/>
+
+<% else %>
+
+No results found. Try simplifying your search.
+
+<% end %>
+

@@ -3,6 +3,11 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.5'
 gem 'authlogic'
 gem "will_paginate", "~> 3.0.pre2"
+# search logic also appears to be not ready for rails 3 yet
+# lots of broken functions for scopes etc
+#gem 'rd_searchlogic', :require => 'searchlogic'
+gem 'meta_search'
+gem 'geocoder'
 
 # Although plugin is installed some geocoding api is only in the gem
 gem 'ym4r'

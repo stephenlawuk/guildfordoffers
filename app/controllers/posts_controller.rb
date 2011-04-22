@@ -1,6 +1,30 @@
 class PostsController < ApplicationController
 
   before_filter :require_user, :only => [:new, :list, :create, :edit, :update, :destroy]
+  before_filter :getlocation
+
+  # unused currently unable to call from view
+  def incprintcount
+    @post = Post.find(params[:id])
+    if @post.printcount.blank?
+      @post.update_attribute(:printcount, "1")
+      @post.save
+    else
+      @post.update_attribute(:printcount, @post.printcount + 1)
+      @post.save
+    end
+  end
+
+  # go to app controller to change ip while on local host
+  def getlocation
+    @myip = remote_ip()
+    # based off freegeoip.net is really terrible
+    result = Geocoder.search(@myip)
+    @mylat = result.latitude
+    @mylong = result.longitude
+    @mycity = result.address
+    #51.243048, -0.588458
+  end
 
   # GET /posts
   # GET /posts.xml
@@ -16,10 +40,28 @@ class PostsController < ApplicationController
 
   # GET /posts
   # GET /posts.xml
+  def search
+    @search = Post.search(params[:search])
+    @posts = @search.all
+    @posts = @search.paginate :page => params[:page], :per_page => 24, :order => "created_at DESC"
+    @posts_count = @search.count
+   # @search = Post.offer_like_any(params[:search])
+   # @posts = @search.all.paginate :page => params[:page], :per_page => 24, :order => "created_at DESC"
+   # @posts = Post.offer_like_any(params[:search].to_s.split).paginate :page => params[:page], :per_page => 24, :order => "created_at DESC"
+   # @posts = Post.company_like_any(params[:search].to_s.split).paginate :page => params[:page], :per_page => 24, :order => "created_at DESC"
+   respond_to do |format|
+      format.html # search.html.erb
+      format.xml  { render :xml => @posts }
+   end
+  end
+
+  # GET /posts
+  # GET /posts.xml
   def list
     @posts = Post.paginate :page => params[:page], :per_page => 24, :order => "created_at DESC"
 
     respond_to do |format|
+
       format.html # list.html.erb
       format.xml  { render :xml => @posts }
     end
@@ -32,7 +74,7 @@ class PostsController < ApplicationController
 
     unless @post.latitude.blank? or @post.longitude.blank?
       @marker = GMarker.new([@post.latitude,@post.longitude],:title => @post.company, :info_window => @post.offer)
-      @myloc = GMarker.new([@post.latitude-0.001,@post.longitude],:title => "Me", :info_window => "you are here")
+      @myloc = GMarker.new([@mylat,@mylong],:title => "You", :info_window => "You Are Here At #@mylat, #@mylong")
 
       @map = GMap.new("map")
       @map.control_init(:large_map => true,:map_type => true)

@@ -20,6 +20,16 @@ pre {
     font-size: 11px;
 }
 
+form {
+    width: 700px;
+    margin: 0 auto;
+}
+
+form.new_email {
+    width: 300px;
+    margin: 0 auto;
+}
+
 form.new_post, form.edit_post {
     width: 650px;
     margin: 0 auto;
@@ -88,6 +98,11 @@ input#email_email {
 
 #email_submit {
     width: 100px;
+}
+
+#search_submit {
+    width: 100px;
+    float: right;
 }
 
 textarea {

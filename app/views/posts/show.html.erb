@@ -3,13 +3,17 @@
     <%= link_to 'Back', posts_path %>
   </div>
   <div class="print">
-    <a href="#" onClick=" window.print(); return false"><img class="borderless" src="/images/print.gif"/> Print This Offer</a>
+    <a href="#" onClick=" window.print(); return false"><img alt="Print This Offer" class="borderless" src="/images/print.gif"/> Print This Offer</a>
   </div>
   <div class="clear"></div>
 </div>
 
 <div id="notice"><%= notice %></div>
 
+IP address <%= @myip %>
+<br/>My Lat <%= @mylat %>
+<br/>My Long <%= @mylong %>
+<br/>My Add <%= @mycity %>
 <div class="offertitle">
   <div class="companytitle">
     <h1><%= @post.company %></h1>

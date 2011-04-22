@@ -31,7 +31,11 @@
         case collection.size
         when 0; "No #{plural_name} found"
         when 1; "Displaying #{b}1#{eb} #{entry_name}"
-        else;   "Displaying #{b}all #{collection.size}#{eb} #{plural_name}"
+        else %{Displaying #{plural_name} #{b}%d#{sp}-#{sp}%d#{eb} out of #{b}%d#{eb} results} % [
+          collection.offset + 1,
+          collection.offset + collection.length,
+          collection.total_entries
+        ]
         end
       else
         %{Displaying #{plural_name} #{b}%d#{sp}-#{sp}%d#{eb} out of #{b}%d#{eb} results} % [

@@ -3,6 +3,19 @@ class ApplicationController < ActionController::Base
 
   before_filter :timer
 
+  #override ip on localhost method else get real ip
+  def remote_ip
+    if request.remote_ip == '127.0.0.1'
+      # Hard coded remote address
+      #'2.125.147.111'
+      #'131.227.132.17'
+      '141.227.132.17'
+      #'94.136.40.103'
+    else
+      request.remote_ip
+    end
+  end
+
   def timer
     @start_time = Time.now
   end

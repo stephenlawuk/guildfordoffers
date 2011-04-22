@@ -2,7 +2,7 @@ class PagesController < ApplicationController
 
   before_filter :require_user, :only => [:controlpanel]
 
-  def about    
+  def about
     respond_to do |format|
       format.html # about.html.erb
       format.xml  { render :xml => @page }
