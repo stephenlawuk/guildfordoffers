@@ -74,10 +74,13 @@
                 geocoder gem installed
                 geocoder semi implemented with IP seems very dodgy though.
                 search implemented and works from any page
+    - v 0.8     Favicon with a "G" added
+                Adjusted username model for uniqueness on field
+                Facebook comments
 
 == To Do List
-    - #1 search queries fix
-    - #2 map dif icons
+    - improve search
+    - map different icons
     - Show description html safe container?? and images for web exc etc
     - comments / reviews (FBML)
     - twitter speech bubble may need some graphics work
@@ -89,13 +92,19 @@
     - rating
     - more info on index offers javascript??
     - Search link via the tags?
-    - printed count ant figure out currently
+    - printed count cant figure out currently
 
 == Known Bugs/Issues
 
-    -- Geocoder IP addressing is terrible switch to Geokit whenever it is ready
-    -- Search limited to 1 term or exact match on more than 1 term.
-    -- Need to validate imgurl as invalid link causes crash
+    -- Geocoder gem database is very inaccurate and should be replaced
+       as soon as possible with Geokit when it becomes available. There is also
+       a depreciation warning in the Geocoder implementation that can’t be helped.
+    -- Search is still at an early stage and only really handles a single keyword
+       or exact phrase match.
+    -- An invalid image URL in the database causes a routing error when that
+       record tries to load. I was unable to work out how I could possibly
+       validate this, the only way is to monitor the logs for any errors and
+       correct the record if it happens.
     -- Deprecation warning on model/user.rb due to acts_as_authentic
         There are some patches by users but not by main author for now i have
         suppressed the warning as it is not a big deal.

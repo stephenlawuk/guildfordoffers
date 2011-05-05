@@ -41,7 +41,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.xml
   def search
-    @search = Post.search(params[:search])
+    @search = Post.search(params[:search].split(' '))
     @posts = @search.all
     @posts = @search.paginate :page => params[:page], :per_page => 24, :order => "created_at DESC"
     @posts_count = @search.count

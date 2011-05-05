@@ -10,6 +10,9 @@ Guildfordoffers::Application.routes.draw do
   match 'contact' => "pages#contact"
   match 'faq' => "pages#faq"
   match 'partners' => "pages#partners"
+  match 'error404' => "errors#404"
+  match 'error422' => "errors#422"
+  match 'error500' => "errors#500"
   match 'controlpanel' => "pages#controlpanel", :as => :control
   match 'login' => 'user_sessions#new', :as => :login
   match 'logout' => 'user_sessions#destroy', :as => :logout

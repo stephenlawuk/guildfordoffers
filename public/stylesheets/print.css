@@ -14,7 +14,7 @@ body {
 }
 
 .noprint {
-    display: none;
+    display: none !important;
 } 
 
 a {

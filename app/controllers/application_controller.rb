@@ -7,9 +7,16 @@ class ApplicationController < ActionController::Base
   def remote_ip
     if request.remote_ip == '127.0.0.1'
       # Hard coded remote address
+      # mine which is useless as it appears in manchester
       #'2.125.147.111'
+      # surrey uni ip
+      #'131.227.76.231'
+      '131.227.132.6'
       #'131.227.132.17'
-      '141.227.132.17'
+      #France IP
+      #'141.227.132.17'
+      #Random guildford IP maps to london
+      # '195.194.86.82'
       #'94.136.40.103'
     else
       request.remote_ip

@@ -42065,3 +42065,3289 @@ Rendered layouts/_footer.html.erb (31.0ms)
 Rendered layouts/_endscripts.html.erb (0.0ms)
 Rendered posts/show.html.erb within layouts/application (125.0ms)
 Completed 200 OK in 547ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 23 00:19:10 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (31.0ms)
+Rendered layouts/_header.html.erb (109.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (313.0ms)
+Completed 200 OK in 750ms (Views: 313.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Sat Apr 23 00:19:28 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (156.0ms)
+Completed 200 OK in 594ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Thu Apr 28 15:40:22 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (62.0ms)
+Rendered layouts/_header.html.erb (125.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (437.0ms)
+Completed 200 OK in 1500ms (Views: 562.0ms | ActiveRecord: 16.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 30 12:43:14 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (94.0ms)
+Rendered layouts/_header.html.erb (110.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (485.0ms)
+Completed 200 OK in 1157ms (Views: 532.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 30 18:01:31 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (125.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (297.0ms)
+Completed 200 OK in 797ms (Views: 297.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sat Apr 30 18:06:02 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 688ms (Views: 266.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Sun May 01 18:42:19 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (78.0ms)
+Rendered layouts/_header.html.erb (125.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (437.0ms)
+Completed 200 OK in 1093ms (Views: 468.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/feed" for 127.0.0.1 at Sun May 01 18:42:23 +0100 2011
+  Processing by PostsController#feed as RSS
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT id, offer, description, company, imgurl, created_at FROM "posts" ORDER BY created_at DESC LIMIT 24[0m
+Rendered posts/feed.rss.builder (407.0ms)
+Completed 200 OK in 813ms (Views: 407.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at Sun May 01 18:42:25 +0100 2011
+  Processing by ErrorsController#error404 as HTML
+  Parameters: {"a"=>"favicon.ico"}
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered errors/404.html.erb within layouts/application (125.0ms)
+Completed 404 Not Found in 125ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at Sun May 01 18:42:28 +0100 2011
+  Processing by ErrorsController#error404 as HTML
+  Parameters: {"a"=>"favicon.ico"}
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered errors/404.html.erb within layouts/application (93.0ms)
+Completed 404 Not Found in 109ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Mon May 02 17:34:10 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (62.0ms)
+Rendered layouts/_header.html.erb (110.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (406.0ms)
+Completed 200 OK in 1093ms (Views: 468.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at Mon May 02 17:34:23 +0100 2011
+  Processing by PagesController#contact as HTML
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (63.0ms)
+Rendered posts/_searchform.erb (15.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered pages/contact.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 157ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 00:54:25 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (78.0ms)
+Rendered layouts/_header.html.erb (250.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (515.0ms)
+Completed 200 OK in 1093ms (Views: 546.0ms | ActiveRecord: 16.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 14:50:50 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (78.0ms)
+Rendered layouts/_header.html.erb (125.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (78.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (454.0ms)
+Completed 200 OK in 1079ms (Views: 485.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search%5Boffer_or_description_or_company_or_metadata_multiterm%5D=pizza&commit=Go" for 127.0.0.1 at Tue May 03 14:51:01 +0100 2011
+  Processing by PostsController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>{"offer_or_description_or_company_or_metadata_multiterm"=>"pizza"}, "commit"=>"Go"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE (((("posts"."offer" LIKE '%pizza%' OR "posts"."description" LIKE '%pizza%') OR "posts"."company" LIKE '%pizza%') OR "posts"."metadata" LIKE '%pizza%'))
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (((("posts"."offer" LIKE '%pizza%' OR "posts"."description" LIKE '%pizza%') OR "posts"."company" LIKE '%pizza%') OR "posts"."metadata" LIKE '%pizza%')) ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts" WHERE (((("posts"."offer" LIKE '%pizza%' OR "posts"."description" LIKE '%pizza%') OR "posts"."company" LIKE '%pizza%') OR "posts"."metadata" LIKE '%pizza%'))
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (15.0ms)
+Rendered posts/search.html.erb within layouts/application (171.0ms)
+Completed 200 OK in 625ms (Views: 187.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 15:05:45 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (235.0ms)
+Completed 200 OK in 641ms (Views: 235.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search%5Boffer_or_description_or_company_or_metadata_multiterm%5D=pizza+&commit=Go" for 127.0.0.1 at Tue May 03 15:05:52 +0100 2011
+  Processing by PostsController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>{"offer_or_description_or_company_or_metadata_multiterm"=>"pizza "}, "commit"=>"Go"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (63.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/search.html.erb within layouts/application (188.0ms)
+Completed 200 OK in 594ms (Views: 204.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 15:06:28 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (172.0ms)
+Completed 200 OK in 578ms (Views: 188.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search%5Boffer_or_description_or_company_or_metadata_multiterm%5D=pizza&commit=Go" for 127.0.0.1 at Tue May 03 15:06:33 +0100 2011
+  Processing by PostsController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>{"offer_or_description_or_company_or_metadata_multiterm"=>"pizza"}, "commit"=>"Go"}
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (((("posts"."offer" LIKE '%pizza%' OR "posts"."description" LIKE '%pizza%') OR "posts"."company" LIKE '%pizza%') OR "posts"."metadata" LIKE '%pizza%'))[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE (((("posts"."offer" LIKE '%pizza%' OR "posts"."description" LIKE '%pizza%') OR "posts"."company" LIKE '%pizza%') OR "posts"."metadata" LIKE '%pizza%')) ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts" WHERE (((("posts"."offer" LIKE '%pizza%' OR "posts"."description" LIKE '%pizza%') OR "posts"."company" LIKE '%pizza%') OR "posts"."metadata" LIKE '%pizza%'))[0m
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/search.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 546ms (Views: 140.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 15:10:59 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (15.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (171.0ms)
+Completed 200 OK in 562ms (Views: 187.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 15:12:22 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (125.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (297.0ms)
+Completed 200 OK in 734ms (Views: 297.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 15:14:51 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (110.0ms)
+Rendered posts/_searchform.erb (15.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (15.0ms)
+Rendered posts/index.html.erb within layouts/application (297.0ms)
+Completed 200 OK in 812ms (Views: 312.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search%5Boffer_or_description_or_company_or_metadata_multiterm%5D=pizza&commit=Go" for 127.0.0.1 at Tue May 03 15:14:58 +0100 2011
+  Processing by PostsController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>{"offer_or_description_or_company_or_metadata_multiterm"=>"pizza"}, "commit"=>"Go"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed   in 391ms
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (15.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (15.0ms)
+Rendered errors/500.html.erb within layouts/application (125.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 15:27:42 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (125.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (297.0ms)
+Completed 200 OK in 828ms (Views: 297.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search%5Bkeywords%5D=pizza&commit=Go" for 127.0.0.1 at Tue May 03 15:27:49 +0100 2011
+  Processing by PostsController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>{"keywords"=>"pizza"}, "commit"=>"Go"}
+Completed   in 8125ms
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (63.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered errors/500.html.erb within layouts/application (141.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 17:09:02 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (125.0ms)
+Rendered posts/_searchform.erb (32.0ms)
+Rendered posts/index.html.erb within layouts/application (282.0ms)
+Completed   in 907ms
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered posts/_searchform.erb (15.0ms)
+Rendered errors/500.html.erb within layouts/application (31.0ms)
+
+ActionView::Template::Error (wrong # of arguments(3 for 2)):
+    1: <%= form_for :search, @search, :url => {:controller => :posts ,:action => 'search' }, :html => {:method => :get} do |f| %>
+    2:     <%= f.label "Search" %>
+    3:     <%= f.text_field :offer_or_description_or_company_or_metadata_multiterm, params[:search], :value => 'Search' %>
+    4:     <%= f.submit "Go" %>
+    5: <% end %>
+  app/views/posts/_searchform.erb:3:in `text_field'
+  app/views/posts/_searchform.erb:3:in `_app_views_posts__searchform_erb___177946680_2300_8739'
+  app/views/posts/_searchform.erb:1:in `_app_views_posts__searchform_erb___177946680_2300_8739'
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___830604654_2294_0'
+  app/controllers/application_controller.rb:85:in `render_error'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at Tue May 03 17:09:03 +0100 2011
+  Processing by ErrorsController#error404 as HTML
+  Parameters: {"a"=>"favicon.ico"}
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered errors/404.html.erb within layouts/application (78.0ms)
+Completed   in 94ms
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (15.0ms)
+Rendered posts/_searchform.erb (47.0ms)
+Rendered errors/500.html.erb within layouts/application (78.0ms)
+
+ActionView::Template::Error (wrong # of arguments(3 for 2)):
+    1: <%= form_for :search, @search, :url => {:controller => :posts ,:action => 'search' }, :html => {:method => :get} do |f| %>
+    2:     <%= f.label "Search" %>
+    3:     <%= f.text_field :offer_or_description_or_company_or_metadata_multiterm, params[:search], :value => 'Search' %>
+    4:     <%= f.submit "Go" %>
+    5: <% end %>
+  app/views/posts/_searchform.erb:3:in `text_field'
+  app/views/posts/_searchform.erb:3:in `_app_views_posts__searchform_erb___177946680_2336_8739'
+  app/views/posts/_searchform.erb:1:in `_app_views_posts__searchform_erb___177946680_2336_8739'
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___830604654_2330_0'
+  app/controllers/application_controller.rb:85:in `render_error'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at Tue May 03 17:09:06 +0100 2011
+  Processing by ErrorsController#error404 as HTML
+  Parameters: {"a"=>"favicon.ico"}
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (63.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered errors/404.html.erb within layouts/application (78.0ms)
+Completed   in 94ms
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (16.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered errors/500.html.erb within layouts/application (31.0ms)
+
+ActionView::Template::Error (wrong # of arguments(3 for 2)):
+    1: <%= form_for :search, @search, :url => {:controller => :posts ,:action => 'search' }, :html => {:method => :get} do |f| %>
+    2:     <%= f.label "Search" %>
+    3:     <%= f.text_field :offer_or_description_or_company_or_metadata_multiterm, params[:search], :value => 'Search' %>
+    4:     <%= f.submit "Go" %>
+    5: <% end %>
+  app/views/posts/_searchform.erb:3:in `text_field'
+  app/views/posts/_searchform.erb:3:in `_app_views_posts__searchform_erb___177946680_2372_8739'
+  app/views/posts/_searchform.erb:1:in `_app_views_posts__searchform_erb___177946680_2372_8739'
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___830604654_2366_0'
+  app/controllers/application_controller.rb:85:in `render_error'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 17:09:42 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (31.0ms)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 672ms (Views: 266.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 17:10:15 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (140.0ms)
+Completed   in 578ms
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (16.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered errors/500.html.erb within layouts/application (16.0ms)
+
+ActionView::Template::Error (undefined method `merge' for nil:NilClass):
+    1: <%= form_for :search, @search, :url => {:controller => :posts ,:action => 'search' }, :html => {:method => :get} do |f| %>
+    2:     <%= f.label "Search" %>
+    3:     <%= f.text_field :offer_or_description_or_company_or_metadata_multiterm, params[:search] %>
+    4:     <%= f.submit "Go" %>
+    5: <% end %>
+  app/views/posts/_searchform.erb:3:in `_app_views_posts__searchform_erb___177946680_2442_8739'
+  app/views/posts/_searchform.erb:1:in `_app_views_posts__searchform_erb___177946680_2442_8739'
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb___830604654_2436_0'
+  app/controllers/application_controller.rb:85:in `render_error'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 19:09:07 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (125.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (297.0ms)
+Completed 200 OK in 828ms (Views: 312.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 19:12:40 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (46.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (15.0ms)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 672ms (Views: 265.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 19:13:26 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (15.0ms)
+Rendered posts/index.html.erb within layouts/application (172.0ms)
+Completed 200 OK in 578ms (Views: 172.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Tue May 03 19:13:56 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (78.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (219.0ms)
+Completed 200 OK in 672ms (Views: 219.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Tue May 03 19:14:09 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1[0m
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 609ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 19:29:07 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (32.0ms)
+Rendered posts/_searchform.erb (15.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (157.0ms)
+Completed 200 OK in 891ms (Views: 172.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Tue May 03 19:29:58 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (46.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 578ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Tue May 03 19:30:51 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1[0m
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (15.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 562ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 19:33:49 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 563ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 19:35:17 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 547ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Tue May 03 19:35:44 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 515ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 19:36:35 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 516ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 19:36:59 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (437.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (578.0ms)
+Completed 200 OK in 985ms (Views: 594.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 19:37:39 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 938ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 19:37:42 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (46.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 594ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?fb_xd_fragment" for 127.0.0.1 at Tue May 03 19:37:42 +0100 2011
+  Processing by PostsController#index as HTML
+  Parameters: {"fb_xd_fragment"=>nil}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 547ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?fb_xd_fragment" for 127.0.0.1 at Tue May 03 19:37:44 +0100 2011
+  Processing by PostsController#index as HTML
+  Parameters: {"fb_xd_fragment"=>nil}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (94.0ms)
+Rendered posts/_searchform.erb (15.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (188.0ms)
+Completed 200 OK in 657ms (Views: 204.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 19:38:39 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (15.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 562ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 19:39:43 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (110.0ms)
+Completed 200 OK in 547ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 19:40:39 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (32.0ms)
+Rendered posts/_searchform.erb (15.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 578ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 19:41:41 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (15.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (15.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 547ms (Views: 125.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 19:43:58 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (266.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (344.0ms)
+Completed 200 OK in 750ms (Views: 360.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 19:47:24 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (32.0ms)
+Rendered posts/_searchform.erb (15.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 578ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 19:47:42 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (15.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 546ms (Views: 125.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 19:49:40 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (31.0ms)
+Rendered layouts/_header.html.erb (63.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (78.0ms)
+Rendered layouts/_footer.html.erb (78.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (235.0ms)
+Completed 200 OK in 641ms (Views: 235.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 21:39:42 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (15.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (31.0ms)
+Rendered layouts/_header.html.erb (109.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (297.0ms)
+Completed 200 OK in 766ms (Views: 313.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Tue May 03 21:39:46 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1
+Rendered layouts/_head.html.erb (31.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 625ms (Views: 157.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 21:44:47 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (187.0ms)
+Rendered layouts/_footer.html.erb (187.0ms)
+Rendered layouts/_endscripts.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (406.0ms)
+Completed 200 OK in 812ms (Views: 406.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/33" for 127.0.0.1 at Tue May 03 21:45:21 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 33 LIMIT 1[0m
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (62.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (15.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 562ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 21:47:52 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (32.0ms)
+Rendered layouts/_header.html.erb (109.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (296.0ms)
+Completed 200 OK in 328ms (Views: 312.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/posts/33" for 127.0.0.1 at Tue May 03 21:47:55 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 33 LIMIT 1
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 687ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 21:48:22 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (32.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (234.0ms)
+Completed 200 OK in 250ms (Views: 234.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/posts/33" for 127.0.0.1 at Tue May 03 21:48:26 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 33 LIMIT 1[0m
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (62.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 593ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/33" for 127.0.0.1 at Tue May 03 21:48:49 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 33 LIMIT 1
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 593ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 21:49:03 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (32.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (157.0ms)
+Completed 200 OK in 188ms (Views: 172.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Tue May 03 21:49:36 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1[0m
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 578ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 21:50:13 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 562ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/33" for 127.0.0.1 at Tue May 03 21:50:18 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 33 LIMIT 1
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 921ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 21:51:08 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 156ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Tue May 03 21:51:12 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1[0m
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 531ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Tue May 03 21:51:17 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered posts/_searchform.erb (15.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 516ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 21:52:04 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (15.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (156.0ms)
+Completed 200 OK in 187ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/33" for 127.0.0.1 at Tue May 03 21:52:06 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 33 LIMIT 1[0m
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (32.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 547ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 21:54:32 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 156ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Tue May 03 21:54:38 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 547ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 21:55:35 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (78.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (172.0ms)
+Completed 200 OK in 578ms (Views: 172.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/33" for 127.0.0.1 at Tue May 03 21:55:38 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 33 LIMIT 1[0m
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 532ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 21:57:05 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (31.0ms)
+Rendered layouts/_header.html.erb (110.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (297.0ms)
+Completed 200 OK in 766ms (Views: 297.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/33" for 127.0.0.1 at Tue May 03 21:57:10 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 33 LIMIT 1
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (63.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 625ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 21:59:27 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (46.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (218.0ms)
+Completed 200 OK in 625ms (Views: 234.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/posts/33" for 127.0.0.1 at Tue May 03 21:59:30 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 33 LIMIT 1[0m
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (63.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (16.0ms)
+Rendered posts/show.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 578ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 22:00:07 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (32.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (188.0ms)
+Completed 200 OK in 625ms (Views: 203.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/33" for 127.0.0.1 at Tue May 03 22:00:10 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 33 LIMIT 1
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 563ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 22:13:16 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (156.0ms)
+Completed 200 OK in 562ms (Views: 171.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 22:29:24 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (46.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 578ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/33" for 127.0.0.1 at Tue May 03 22:29:29 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 33 LIMIT 1[0m
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 562ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 22:31:28 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 547ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Tue May 03 22:31:57 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 562ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue May 03 22:32:17 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 516ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Wed May 04 01:46:05 +0100 2011
+
+SyntaxError (C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/application_controller.rb:102: syntax error, unexpected end-of-file
+):
+  app/controllers/application_controller.rb:454
+  app/controllers/application_controller.rb:454:in `load'
+  app/controllers/posts_controller.rb:1
+  app/controllers/posts_controller.rb:454:in `load'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (16.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (63.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at Wed May 04 01:46:06 +0100 2011
+
+SyntaxError (C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/application_controller.rb:102: syntax error, unexpected end-of-file
+):
+  app/controllers/application_controller.rb:454
+  app/controllers/application_controller.rb:454:in `load'
+  app/controllers/errors_controller.rb:1
+  app/controllers/errors_controller.rb:454:in `load'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at Wed May 04 01:46:09 +0100 2011
+
+SyntaxError (C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/app/controllers/application_controller.rb:102: syntax error, unexpected end-of-file
+):
+  app/controllers/application_controller.rb:454
+  app/controllers/application_controller.rb:454:in `load'
+  app/controllers/errors_controller.rb:1
+  app/controllers/errors_controller.rb:454:in `load'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed May 04 01:56:49 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (93.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (265.0ms)
+Completed 200 OK in 797ms (Views: 281.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search%5Boffer_or_description_or_company_or_metadata_multiterm%5D=pizza&commit=Go" for 127.0.0.1 at Wed May 04 01:56:54 +0100 2011
+  Processing by PostsController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>{"offer_or_description_or_company_or_metadata_multiterm"=>"pizza"}, "commit"=>"Go"}
+Completed   in 375ms
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (62.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered errors/500.html.erb within layouts/application (141.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search%5Boffer_or_description_or_company_or_metadata_multiterm%5D=pizza&commit=Go" for 127.0.0.1 at Wed May 04 01:57:01 +0100 2011
+  Processing by PostsController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>{"offer_or_description_or_company_or_metadata_multiterm"=>"pizza"}, "commit"=>"Go"}
+Completed   in 375ms
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (62.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered errors/500.html.erb within layouts/application (141.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed May 04 01:58:23 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (63.0ms)
+Rendered posts/_searchform.erb (15.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (204.0ms)
+Completed 200 OK in 625ms (Views: 235.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search%5Boffer_or_description_or_company_or_metadata_multiterm%5D=pizza&commit=Go" for 127.0.0.1 at Wed May 04 01:58:31 +0100 2011
+  Processing by PostsController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>{"offer_or_description_or_company_or_metadata_multiterm"=>"pizza"}, "commit"=>"Go"}
+Completed   in 375ms
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered errors/500.html.erb within layouts/application (125.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed May 04 01:58:52 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (32.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (46.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (156.0ms)
+Completed 200 OK in 562ms (Views: 171.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed May 04 01:59:02 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 562ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed May 04 01:59:26 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 547ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed May 04 02:00:08 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (156.0ms)
+Completed 200 OK in 562ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search?utf8=%E2%9C%93&search%5Boffer_or_description_or_company_or_metadata_multiterm%5D=pizza&commit=Go" for 127.0.0.1 at Wed May 04 02:00:14 +0100 2011
+  Processing by PostsController#search as HTML
+  Parameters: {"utf8"=>"✓", "search"=>{"offer_or_description_or_company_or_metadata_multiterm"=>"pizza"}, "commit"=>"Go"}
+Completed   in 375ms
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered errors/500.html.erb within layouts/application (94.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed May 04 02:16:25 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (15.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 719ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Wed May 04 02:16:28 +0100 2011
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/_form.html.erb (0.0ms)
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (15.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (15.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 125ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at Wed May 04 02:16:32 +0100 2011
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QUhvDPMpzv4DQTzprdB9ZTO4mIxfX9X1kXv+Fv0BZFc=", "user_session"=>{"username"=>"Admin", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE (LOWER("users".username) = 'admin') LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "login_count" = 24, "last_login_at" = '2011-04-22 13:05:35.203000', "current_login_at" = '2011-05-04 01:16:33.187000', "last_request_at" = '2011-05-04 01:16:33.187000', "persistence_token" = '135172f9d8cd93dccb02b163b5f05fe464d5d16a36a4ab386f1a9d28fdd80b5d6945d7569179f656e29341122af0f25fab3d7cdd11d79cc89d4353b9cb029872', "updated_at" = '2011-05-04 01:16:33.203000' WHERE "users"."id" = 1[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 390ms
+
+
+Started GET "/posts" for 127.0.0.1 at Wed May 04 02:16:33 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 01:16:33.921000', "updated_at" = '2011-05-04 01:16:33.921000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (187.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (15.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (281.0ms)
+Completed 200 OK in 687ms (Views: 297.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/controlpanel" for 127.0.0.1 at Wed May 04 02:16:36 +0100 2011
+  Processing by PagesController#controlpanel as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-04 01:16:36.609000', "updated_at" = '2011-05-04 01:16:36.609000' WHERE "users"."id" = 1[0m
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (16.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered pages/controlpanel.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 328ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/controlpanel" for 127.0.0.1 at Wed May 04 02:16:41 +0100 2011
+  Processing by PagesController#controlpanel as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 01:16:41.234000', "updated_at" = '2011-05-04 01:16:41.234000' WHERE "users"."id" = 1
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (16.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered pages/controlpanel.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 203ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Wed May 04 02:16:49 +0100 2011
+  Processing by UsersController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-04 01:16:49.406000', "updated_at" = '2011-05-04 01:16:49.406000' WHERE "users"."id" = 1[0m
+Rendered users/_form.html.erb (16.0ms)
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (15.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered users/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 235ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/controlpanel" for 127.0.0.1 at Wed May 04 02:16:54 +0100 2011
+  Processing by PagesController#controlpanel as HTML
+  [1m[35mUser Load (16.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 01:16:54.703000', "updated_at" = '2011-05-04 01:16:54.703000' WHERE "users"."id" = 1
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered pages/controlpanel.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 250ms (Views: 62.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/controlpanel" for 127.0.0.1 at Wed May 04 02:16:59 +0100 2011
+  Processing by PagesController#controlpanel as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-04 01:16:59.218000', "updated_at" = '2011-05-04 01:16:59.218000' WHERE "users"."id" = 1[0m
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered pages/controlpanel.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 219ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at Wed May 04 02:17:03 +0100 2011
+  Processing by PostsController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 01:17:03.390000', "updated_at" = '2011-05-04 01:17:03.390000' WHERE "users"."id" = 1
+Rendered posts/_form.html.erb (63.0ms)
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/new.html.erb within layouts/application (110.0ms)
+Completed 200 OK in 672ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at Wed May 04 02:17:05 +0100 2011
+  Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QUhvDPMpzv4DQTzprdB9ZTO4mIxfX9X1kXv+Fv0BZFc=", "post"=>{"offer"=>"", "description"=>"", "validto"=>"", "validtonotes"=>"", "company"=>"", "phone"=>"", "email"=>"", "website"=>"", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"", "longitude"=>"", "openingtimes"=>"", "metadata"=>"", "imgurl"=>"", "nus"=>"0", "web"=>"0"}, "commit"=>"Post Offer"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-04 01:17:06.078000', "updated_at" = '2011-05-04 01:17:06.078000' WHERE "users"."id" = 1[0m
+Rendered posts/_form.html.erb (15.0ms)
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered posts/_searchform.erb (15.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/new.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 672ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at Wed May 04 02:23:09 +0100 2011
+  Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QUhvDPMpzv4DQTzprdB9ZTO4mIxfX9X1kXv+Fv0BZFc=", "post"=>{"offer"=>"", "description"=>"", "validto"=>"l", "validtonotes"=>"", "company"=>"", "phone"=>"", "email"=>"", "website"=>"", "facebook"=>"", "twitter"=>"", "address"=>"", "latitude"=>"", "longitude"=>"", "openingtimes"=>"", "metadata"=>"", "imgurl"=>"", "nus"=>"0", "web"=>"0"}, "commit"=>"Post Offer"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 01:23:10.000000', "updated_at" = '2011-05-04 01:23:10.000000' WHERE "users"."id" = 1
+Rendered posts/_form.html.erb (16.0ms)
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 625ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Wed May 04 16:30:19 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (110.0ms)
+Rendered layouts/_header.html.erb (125.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (62.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (484.0ms)
+Completed 200 OK in 1297ms (Views: 500.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Wed May 04 16:31:44 +0100 2011
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/_form.html.erb (0.0ms)
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (109.0ms)
+Completed 200 OK in 187ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at Wed May 04 16:31:48 +0100 2011
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"88tbk3lC0P3nIddtdPkToVFhelI9xwsf3aCmJgwgPS0=", "user_session"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE (LOWER("users".username) = 'admin') LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "login_count" = 25, "last_login_at" = '2011-05-04 01:16:33.187000', "current_login_at" = '2011-05-04 15:31:48.828000', "last_request_at" = '2011-05-04 15:31:48.890000', "persistence_token" = 'b6239411cd973a1b2d676224105c787e1cedcff66574d9d957640d56d806436f0163d6413e8a83764514120bbeb34eda4ece83ec2952d8f640eb0c9a194bda2e', "updated_at" = '2011-05-04 15:31:48.906000' WHERE "users"."id" = 1[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 610ms
+
+
+Started GET "/posts" for 127.0.0.1 at Wed May 04 16:31:49 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 15:31:49.765000', "updated_at" = '2011-05-04 15:31:49.765000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (203.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (375.0ms)
+Completed 200 OK in 812ms (Views: 390.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/controlpanel" for 127.0.0.1 at Wed May 04 16:31:51 +0100 2011
+  Processing by PagesController#controlpanel as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-04 15:31:52.093000', "updated_at" = '2011-05-04 15:31:52.093000' WHERE "users"."id" = 1[0m
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (15.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered pages/controlpanel.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 265ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Wed May 04 16:31:57 +0100 2011
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 15:31:57.421000', "updated_at" = '2011-05-04 15:31:57.421000' WHERE "users"."id" = 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (15.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (63.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered users/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 297ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at Wed May 04 16:31:59 +0100 2011
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 15:32:00.062000', "updated_at" = '2011-05-04 15:32:00.062000' WHERE "users"."id" = 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Rendered users/_form.html.erb (16.0ms)
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (31.0ms)
+Rendered users/edit.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 296ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/controlpanel" for 127.0.0.1 at Wed May 04 16:37:46 +0100 2011
+  Processing by PagesController#controlpanel as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 15:37:46.562000', "updated_at" = '2011-05-04 15:37:46.562000' WHERE "users"."id" = 1
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered pages/controlpanel.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 218ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at Wed May 04 16:37:50 +0100 2011
+  Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-04 15:37:50.781000', "updated_at" = '2011-05-04 15:37:50.781000' WHERE "users"."id" = 1[0m
+Rendered posts/_form.html.erb (62.0ms)
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/new.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 735ms (Views: 157.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Wed May 04 16:37:53 +0100 2011
+  Processing by UsersController#new as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 15:37:53.656000', "updated_at" = '2011-05-04 15:37:53.656000' WHERE "users"."id" = 1
+Rendered users/_form.html.erb (16.0ms)
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered users/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 235ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at Wed May 04 16:40:18 +0100 2011
+  Processing by UserSessionsController#destroy as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-04 15:40:18.468000', "updated_at" = '2011-05-04 15:40:18.468000' WHERE "users"."id" = 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 15:40:18.625000', "updated_at" = '2011-05-04 15:40:18.625000' WHERE "users"."id" = 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "persistence_token" = '1399590b9bc282f1ae832c0446080df9aa8ac71760c7e9a5ffff6c16174378832e5efc4bdb7bc6a13f3f4f401ae612403ed6f3457d3f9b1bd8ac47d2e95963cf', "updated_at" = '2011-05-04 15:40:18.703000' WHERE "users"."id" = 1[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 406ms
+
+
+Started GET "/posts" for 127.0.0.1 at Wed May 04 16:40:18 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 547ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Wed May 04 16:41:18 +0100 2011
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/_form.html.erb (0.0ms)
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 94ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed May 04 16:41:54 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 516ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Wed May 04 16:42:01 +0100 2011
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/_form.html.erb (0.0ms)
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (15.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 110ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at Wed May 04 16:42:07 +0100 2011
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"88tbk3lC0P3nIddtdPkToVFhelI9xwsf3aCmJgwgPS0=", "user_session"=>{"username"=>"Admin", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE (LOWER("users".username) = 'admin') LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "login_count" = 26, "last_login_at" = '2011-05-04 15:31:48.828000', "current_login_at" = '2011-05-04 15:42:07.765000', "last_request_at" = '2011-05-04 15:42:07.765000', "persistence_token" = 'd73a93165d5f606dc97422c227e5e809803f0619db596bbd8d42b25428e271e5545412aba0ba3ee91d2d13b397b14cec262ad20bdae11f066425a49401dd549f', "updated_at" = '2011-05-04 15:42:07.765000' WHERE "users"."id" = 1[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 157ms
+
+
+Started GET "/posts" for 127.0.0.1 at Wed May 04 16:42:07 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 15:42:08.500000', "updated_at" = '2011-05-04 15:42:08.500000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (234.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (344.0ms)
+Completed 200 OK in 734ms (Views: 344.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed May 04 17:55:49 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[36mUser Load (15.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-04 16:55:50.312000', "updated_at" = '2011-05-04 16:55:50.312000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (156.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 656ms (Views: 235.0ms | ActiveRecord: 15.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Wed May 04 22:15:16 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (63.0ms)
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 21:15:18.171000', "updated_at" = '2011-05-04 21:15:18.187000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (281.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (62.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (515.0ms)
+Completed 200 OK in 953ms (Views: 515.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Wed May 04 22:15:24 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1[0m
+Rendered layouts/_head.html.erb (31.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 21:15:25.515000', "updated_at" = '2011-05-04 21:15:25.515000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (188.0ms)
+Rendered posts/_searchform.erb (15.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (281.0ms)
+Completed 200 OK in 718ms (Views: 296.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed May 04 22:16:58 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (375.0ms)
+Completed 200 OK in 796ms (Views: 390.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Wed May 04 22:17:06 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1[0m
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (78.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 562ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Wed May 04 22:53:24 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (110.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (297.0ms)
+Completed 200 OK in 781ms (Views: 312.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Wed May 04 22:54:00 +0100 2011
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/_form.html.erb (16.0ms)
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (15.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered user_sessions/new.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 156ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at Wed May 04 22:54:03 +0100 2011
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"49jW6qGkhYoSczqYHQIpYytyHX7m+01azVph+4BoJ10=", "user_session"=>{"username"=>"Admin", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE (LOWER("users".username) = 'admin') LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "login_count" = 27, "last_login_at" = '2011-05-04 15:42:07.765000', "current_login_at" = '2011-05-04 21:54:04.265000', "last_request_at" = '2011-05-04 21:54:04.265000', "persistence_token" = '65d14d4203318c5c45d1046236b3f4a4a97ae04e4c336d6cdc03a834bb1624b7594f8a7cc06f2369acd34d624bd1cde8175034b24412582fafd09d242283188c', "updated_at" = '2011-05-04 21:54:04.281000' WHERE "users"."id" = 1[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 500ms
+
+
+Started GET "/posts" for 127.0.0.1 at Wed May 04 22:54:04 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 21:54:05.078000', "updated_at" = '2011-05-04 21:54:05.078000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (172.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (375.0ms)
+Completed 200 OK in 750ms (Views: 375.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at Wed May 04 22:54:08 +0100 2011
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"49jW6qGkhYoSczqYHQIpYytyHX7m+01azVph+4BoJ10=", "user_session"=>{"username"=>"Admin", "password"=>"[FILTERED]"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE (LOWER("users".username) = 'admin') LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "login_count" = 28, "last_login_at" = '2011-05-04 21:54:04.265000', "current_login_at" = '2011-05-04 21:54:08.906000', "last_request_at" = '2011-05-04 21:54:08.906000', "persistence_token" = '4a1e54fec2309fa4f64688cb55cdfc6cd6beaba58c403ec5d935be295685ffba9a8875f107a6b2b9720ce7f37cd296316f6aeb5692dcd7926c318a88bed83272', "updated_at" = '2011-05-04 21:54:08.906000' WHERE "users"."id" = 1
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 172ms
+
+
+Started GET "/posts" for 127.0.0.1 at Wed May 04 22:54:09 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-04 21:54:09.656000', "updated_at" = '2011-05-04 21:54:09.656000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (140.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 656ms (Views: 265.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/controlpanel" for 127.0.0.1 at Wed May 04 22:54:11 +0100 2011
+  Processing by PagesController#controlpanel as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 21:54:11.750000', "updated_at" = '2011-05-04 21:54:11.750000' WHERE "users"."id" = 1
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered posts/_searchform.erb (15.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered pages/controlpanel.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 250ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/404" for 127.0.0.1 at Wed May 04 22:54:28 +0100 2011
+  Processing by ErrorsController#error404 as HTML
+  Parameters: {"a"=>"404"}
+Rendered layouts/_head.html.erb (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-04 21:54:29.062000', "updated_at" = '2011-05-04 21:54:29.062000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (172.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered errors/404.html.erb within layouts/application (235.0ms)
+Completed 404 Not Found in 250ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/422" for 127.0.0.1 at Wed May 04 22:54:32 +0100 2011
+  Processing by ErrorsController#error404 as HTML
+  Parameters: {"a"=>"422"}
+Rendered layouts/_head.html.erb (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 21:54:32.703000', "updated_at" = '2011-05-04 21:54:32.703000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (156.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered errors/404.html.erb within layouts/application (234.0ms)
+Completed 404 Not Found in 250ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/422" for 127.0.0.1 at Wed May 04 22:54:37 +0100 2011
+  Processing by ErrorsController#error404 as HTML
+  Parameters: {"a"=>"422"}
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-04 21:54:37.343000', "updated_at" = '2011-05-04 21:54:37.359000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (297.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered errors/404.html.erb within layouts/application (344.0ms)
+Completed 404 Not Found in 359ms (Views: 344.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/404" for 127.0.0.1 at Wed May 04 22:54:43 +0100 2011
+  Processing by ErrorsController#error404 as HTML
+  Parameters: {"a"=>"404"}
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 21:54:43.375000', "updated_at" = '2011-05-04 21:54:43.375000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (281.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered errors/404.html.erb within layouts/application (328.0ms)
+Completed 404 Not Found in 344ms (Views: 328.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/500" for 127.0.0.1 at Wed May 04 22:54:46 +0100 2011
+  Processing by ErrorsController#error404 as HTML
+  Parameters: {"a"=>"500"}
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-04 21:54:46.734000', "updated_at" = '2011-05-04 21:54:46.734000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (172.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered errors/404.html.erb within layouts/application (219.0ms)
+Completed 404 Not Found in 219ms (Views: 219.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed May 04 22:56:32 +0100 2011
+
+SyntaxError (C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/routing/route_set.rb:198: Trailing '_' in number.              def 404_url(*args)
+                     ^):
+  config/routes.rb:13
+  config/routes.rb:1
+  config/routes.rb:235:in `load'
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at Wed May 04 22:56:33 +0100 2011
+
+ActionController::RoutingError (No route matches "/favicon.ico"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at Wed May 04 22:56:36 +0100 2011
+
+ActionController::RoutingError (No route matches "/favicon.ico"):
+  
+
+Rendered C:/Program Files/NetBeans 6.9.1/ruby/jruby-1.5.1/lib/ruby/gems/1.8/gems/actionpack-3.0.5/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed May 04 22:57:03 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 21:57:04.093000', "updated_at" = '2011-05-04 21:57:04.093000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (140.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (219.0ms)
+Completed 200 OK in 625ms (Views: 235.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/error500" for 127.0.0.1 at Wed May 04 22:57:09 +0100 2011
+  Processing by ErrorsController#500 as HTML
+Rendered layouts/_head.html.erb (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (15.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-04 21:57:09.656000', "updated_at" = '2011-05-04 21:57:09.656000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (157.0ms)
+Rendered posts/_searchform.erb (15.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered errors/500.html.erb within layouts/application (203.0ms)
+Completed 200 OK in 218ms (Views: 203.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/error422" for 127.0.0.1 at Wed May 04 22:57:18 +0100 2011
+  Processing by ErrorsController#422 as HTML
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 21:57:18.546000', "updated_at" = '2011-05-04 21:57:18.546000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (156.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered errors/422.html.erb within layouts/application (203.0ms)
+Completed 200 OK in 218ms (Views: 203.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed May 04 22:57:53 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (16.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-04 21:57:53.937000', "updated_at" = '2011-05-04 21:57:53.953000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (140.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 641ms (Views: 250.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/controlpanel" for 127.0.0.1 at Wed May 04 22:57:56 +0100 2011
+  Processing by PagesController#controlpanel as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 21:57:56.421000', "updated_at" = '2011-05-04 21:57:56.421000' WHERE "users"."id" = 1
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered pages/controlpanel.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 219ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/error404" for 127.0.0.1 at Wed May 04 22:57:59 +0100 2011
+  Processing by ErrorsController#404 as HTML
+Rendered layouts/_head.html.erb (15.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-04 21:57:59.328000', "updated_at" = '2011-05-04 21:57:59.328000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (188.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered errors/404.html.erb within layouts/application (234.0ms)
+Completed 200 OK in 250ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/error422" for 127.0.0.1 at Wed May 04 22:58:03 +0100 2011
+  Processing by ErrorsController#422 as HTML
+Rendered layouts/_head.html.erb (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 21:58:03.343000', "updated_at" = '2011-05-04 21:58:03.343000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (156.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered errors/422.html.erb within layouts/application (203.0ms)
+Completed 200 OK in 203ms (Views: 203.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/error500" for 127.0.0.1 at Wed May 04 22:58:05 +0100 2011
+  Processing by ErrorsController#500 as HTML
+Rendered layouts/_head.html.erb (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-04 21:58:05.937000', "updated_at" = '2011-05-04 21:58:05.953000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (171.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered errors/500.html.erb within layouts/application (203.0ms)
+Completed 200 OK in 219ms (Views: 219.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/controlpanel" for 127.0.0.1 at Wed May 04 23:12:09 +0100 2011
+  Processing by PagesController#controlpanel as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-04 22:12:09.390000', "updated_at" = '2011-05-04 22:12:09.390000' WHERE "users"."id" = 1
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (15.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered pages/controlpanel.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 203ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:04:26 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-05 00:04:27.796000', "updated_at" = '2011-05-05 00:04:27.796000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (250.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (453.0ms)
+Completed 200 OK in 953ms (Views: 453.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:05:45 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-05 00:05:46.562000', "updated_at" = '2011-05-05 00:05:46.578000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (234.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (437.0ms)
+Completed 200 OK in 844ms (Views: 453.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Thu May 05 01:07:11 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-05 00:07:12.390000', "updated_at" = '2011-05-05 00:07:12.390000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (156.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (204.0ms)
+Completed 200 OK in 641ms (Views: 219.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:07:56 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (15.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (16.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-05 00:07:56.859000', "updated_at" = '2011-05-05 00:07:56.859000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (172.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (281.0ms)
+Completed 200 OK in 703ms (Views: 281.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:09:17 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-05 00:09:18.718000', "updated_at" = '2011-05-05 00:09:18.718000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (328.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (625.0ms)
+Completed 200 OK in 1031ms (Views: 625.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Thu May 05 01:09:28 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered layouts/_head.html.erb (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (15.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-05 00:09:29.000000', "updated_at" = '2011-05-05 00:09:29.000000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (172.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (234.0ms)
+Completed 200 OK in 656ms (Views: 219.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:10:19 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (15.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-05 00:10:20.500000', "updated_at" = '2011-05-05 00:10:20.500000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (141.0ms)
+Rendered posts/_searchform.erb (15.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (266.0ms)
+Completed 200 OK in 672ms (Views: 267.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:11:58 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-05 00:11:59.109000', "updated_at" = '2011-05-05 00:11:59.109000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (172.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (266.0ms)
+Completed 200 OK in 672ms (Views: 281.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:12:09 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (15.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-05 00:12:10.265000', "updated_at" = '2011-05-05 00:12:10.265000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (187.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (281.0ms)
+Completed 200 OK in 687ms (Views: 281.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Thu May 05 01:12:40 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered layouts/_head.html.erb (15.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-05 00:12:40.781000', "updated_at" = '2011-05-05 00:12:40.781000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (157.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (234.0ms)
+Completed 200 OK in 640ms (Views: 234.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:14:36 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-05 00:14:37.515000', "updated_at" = '2011-05-05 00:14:37.515000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (140.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (235.0ms)
+Completed 200 OK in 641ms (Views: 235.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:15:20 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-05 00:15:20.531000', "updated_at" = '2011-05-05 00:15:20.531000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (141.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (235.0ms)
+Completed 200 OK in 625ms (Views: 235.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:16:05 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-05 00:16:06.171000', "updated_at" = '2011-05-05 00:16:06.171000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (188.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (266.0ms)
+Completed 200 OK in 656ms (Views: 281.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:16:19 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-05 00:16:19.796000', "updated_at" = '2011-05-05 00:16:19.796000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (203.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (281.0ms)
+Completed 200 OK in 687ms (Views: 297.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:16:33 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (15.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-05 00:16:33.734000', "updated_at" = '2011-05-05 00:16:33.734000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (297.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (375.0ms)
+Completed 200 OK in 782ms (Views: 391.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:17:22 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-05 00:17:23.421000', "updated_at" = '2011-05-05 00:17:23.421000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (281.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (484.0ms)
+Completed 200 OK in 953ms (Views: 484.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:18:12 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-05 00:18:13.484000', "updated_at" = '2011-05-05 00:18:13.484000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (172.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (390.0ms)
+Completed 200 OK in 812ms (Views: 406.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:18:33 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (16.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (15.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-05 00:18:34.453000', "updated_at" = '2011-05-05 00:18:34.453000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (156.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (281.0ms)
+Completed 200 OK in 672ms (Views: 281.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:18:48 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-05 00:18:48.921000', "updated_at" = '2011-05-05 00:18:48.921000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (234.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (359.0ms)
+Completed 200 OK in 781ms (Views: 359.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:18:59 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-05 00:19:00.328000', "updated_at" = '2011-05-05 00:19:00.328000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (250.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (46.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (391.0ms)
+Completed 200 OK in 797ms (Views: 391.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:19:51 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-05 00:19:52.265000', "updated_at" = '2011-05-05 00:19:52.265000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (188.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (15.0ms)
+Rendered posts/index.html.erb within layouts/application (296.0ms)
+Completed 200 OK in 671ms (Views: 296.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:20:01 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-05 00:20:02.265000', "updated_at" = '2011-05-05 00:20:02.265000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (172.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (328.0ms)
+Completed 200 OK in 734ms (Views: 328.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:22:08 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (15.0ms)
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-05 00:22:09.843000', "updated_at" = '2011-05-05 00:22:09.843000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (282.0ms)
+Rendered posts/_searchform.erb (15.0ms)
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (469.0ms)
+Completed 200 OK in 937ms (Views: 484.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:22:27 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-05 00:22:27.781000', "updated_at" = '2011-05-05 00:22:27.781000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (234.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (16.0ms)
+Rendered posts/index.html.erb within layouts/application (453.0ms)
+Completed 200 OK in 875ms (Views: 453.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:23:08 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-05 00:23:09.671000', "updated_at" = '2011-05-05 00:23:09.671000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (172.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (265.0ms)
+Completed 200 OK in 671ms (Views: 281.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:24:04 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-05 00:24:05.484000', "updated_at" = '2011-05-05 00:24:05.484000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (266.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (15.0ms)
+Rendered posts/index.html.erb within layouts/application (453.0ms)
+Completed 200 OK in 890ms (Views: 469.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/12" for 127.0.0.1 at Thu May 05 01:24:51 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 12 LIMIT 1[0m
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-05 00:24:51.687000', "updated_at" = '2011-05-05 00:24:51.687000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (203.0ms)
+Rendered posts/_searchform.erb (15.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (297.0ms)
+Completed 200 OK in 718ms (Views: 312.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/controlpanel" for 127.0.0.1 at Thu May 05 01:25:22 +0100 2011
+  Processing by PagesController#controlpanel as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-05 00:25:22.125000', "updated_at" = '2011-05-05 00:25:22.140000' WHERE "users"."id" = 1[0m
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (16.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered pages/controlpanel.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 281ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/postlist" for 127.0.0.1 at Thu May 05 01:25:48 +0100 2011
+  Processing by PostsController#list as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-05 00:25:49.234000', "updated_at" = '2011-05-05 00:25:49.234000' WHERE "users"."id" = 1
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/list.html.erb within layouts/application (172.0ms)
+Completed 200 OK in 781ms (Views: 187.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/12/edit" for 127.0.0.1 at Thu May 05 01:25:57 +0100 2011
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-05 00:25:57.578000', "updated_at" = '2011-05-05 00:25:57.578000' WHERE "users"."id" = 1[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 12 LIMIT 1
+Rendered posts/_form.html.erb (78.0ms)
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (0.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/edit.html.erb within layouts/application (156.0ms)
+Completed 200 OK in 719ms (Views: 188.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts/12" for 127.0.0.1 at Thu May 05 01:26:05 +0100 2011
+  Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"49jW6qGkhYoSczqYHQIpYytyHX7m+01azVph+4BoJ10=", "post"=>{"offer"=>"Save £250 on driving lessons!", "description"=>"Every 2 minutes someone passes with BSM*\\r\\n\\r\\nBSM is the UK’s number one driving school, with over 3000 instructors helping some 170,000 budding motorists to pass their test every year.\\r\\n\\r\\nWhile BSM is best known for teaching learner drivers, it also provides advanced driving training to individuals and businesses and is one of the largest providers of training for driving instructors. BSM also plays an active role in lobbying the Government on road safety and learner driver-related issues.\\r\\n\\r\\nAt BSM, pupils have always benefited from quality tuition from our instructors, who we train to the highest professional standards. Today, our learners also benefit from taking their lessons in one of our fleet of Fiat 500’s (Car of the Year 2008).\\r\\n\\r\\n15 Epsom Road\\r\\nGuildford, Surrey GU1 3JT\\r\\n01483 560 429\r\n\r\nNUS CARD REQUIRED", "validto"=>"", "validtonotes"=>"Valid until further notice.", "company"=>"BSM", "phone"=>"(01483)560429", "email"=>"", "website"=>"", "facebook"=>"", "twitter"=>"", "address"=>"15 Epsom Road,\r\nGuildford,\r\nSurrey,\r\nGU1 3JT", "latitude"=>"51.333", "longitude"=>"-0.467", "openingtimes"=>"", "metadata"=>"driving instructor lessons test", "imgurl"=>"/images/companylogos/BSM150x150.jpg", "nus"=>"1", "web"=>"0"}, "commit"=>"Post Offer", "id"=>"12"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-05 00:26:05.796000', "updated_at" = '2011-05-05 00:26:05.796000' WHERE "users"."id" = 1[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 12 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "posts" SET "description" = 'Every 2 minutes someone passes with BSM*\r\n\r\nBSM is the UK’s number one driving school, with over 3000 instructors helping some 170,000 budding motorists to pass their test every year.\r\n\r\nWhile BSM is best known for teaching learner drivers, it also provides advanced driving training to individuals and businesses and is one of the largest providers of training for driving instructors. BSM also plays an active role in lobbying the Government on road safety and learner driver-related issues.\r\n\r\nAt BSM, pupils have always benefited from quality tuition from our instructors, who we train to the highest professional standards. Today, our learners also benefit from taking their lessons in one of our fleet of Fiat 500’s (Car of the Year 2008).\r\n\r\n15 Epsom Road\r\nGuildford, Surrey GU1 3JT\r\n01483 560 429
+
+NUS CARD REQUIRED', "address" = '15 Epsom Road,
+Guildford,
+Surrey,
+GU1 3JT', "imgurl" = '/images/companylogos/BSM150x150.jpg', "updated_at" = '2011-05-05 00:26:06.375000' WHERE "posts"."id" = 12[0m
+Redirected to http://localhost:3000/posts/12
+Completed 302 Found in 797ms
+
+
+Started GET "/posts/12" for 127.0.0.1 at Thu May 05 01:26:06 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 12 LIMIT 1
+Rendered layouts/_head.html.erb (15.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-05 00:26:07.078000', "updated_at" = '2011-05-05 00:26:07.078000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (172.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (15.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 656ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:26:17 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-05 00:26:18.000000', "updated_at" = '2011-05-05 00:26:18.000000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (172.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (15.0ms)
+Rendered posts/index.html.erb within layouts/application (297.0ms)
+Completed 200 OK in 719ms (Views: 312.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:27:02 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-05 00:27:02.875000', "updated_at" = '2011-05-05 00:27:02.875000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (172.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (250.0ms)
+Completed 200 OK in 641ms (Views: 266.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:27:49 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-05 00:27:49.640000', "updated_at" = '2011-05-05 00:27:49.640000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (187.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (281.0ms)
+Completed 200 OK in 687ms (Views: 296.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Thu May 05 01:27:58 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered layouts/_head.html.erb (15.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-05 00:27:59.218000', "updated_at" = '2011-05-05 00:27:59.234000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (157.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (219.0ms)
+Completed 200 OK in 625ms (Views: 234.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:28:02 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-05 00:28:03.296000', "updated_at" = '2011-05-05 00:28:03.296000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (156.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (234.0ms)
+Completed 200 OK in 640ms (Views: 250.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:28:16 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (16.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE "users" SET "last_request_at" = '2011-05-05 00:28:16.765000', "updated_at" = '2011-05-05 00:28:16.765000' WHERE "users"."id" = 1
+Rendered layouts/_header.html.erb (141.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (219.0ms)
+Completed 200 OK in 641ms (Views: 234.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:28:25 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (15.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mAREL (0.0ms)[0m  [1mUPDATE "users" SET "last_request_at" = '2011-05-05 00:28:26.156000', "updated_at" = '2011-05-05 00:28:26.156000' WHERE "users"."id" = 1[0m
+Rendered layouts/_header.html.erb (141.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (234.0ms)
+Completed 200 OK in 625ms (Views: 234.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:35:23 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (15.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 563ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:38:11 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (32.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 625ms (Views: 157.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:38:23 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (16.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (156.0ms)
+Completed 200 OK in 563ms (Views: 156.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:39:30 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered posts/_searchform.erb (15.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 562ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:39:54 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 515ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:40:02 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (266.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (15.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (359.0ms)
+Completed 200 OK in 734ms (Views: 359.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Thu May 05 01:40:16 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered posts/_searchform.erb (16.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (93.0ms)
+Completed 200 OK in 515ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/35" for 127.0.0.1 at Thu May 05 01:40:28 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 35 LIMIT 1[0m
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (78.0ms)
+Completed 200 OK in 500ms (Views: 94.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 01:40:40 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (16.0ms)
+Rendered layouts/_footer.html.erb (16.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 547ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from C:/Documents and Settings/Stephen/My Documents/NetBeansProjects/guildfordoffers/vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb:12)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 02:23:28 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (110.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (312.0ms)
+Completed 200 OK in 843ms (Views: 312.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Thu May 05 02:23:41 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mSQL (0.0ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (63.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (47.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (156.0ms)
+Completed 200 OK in 578ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 02:25:44 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT COUNT(*) FROM "posts"
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (47.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (203.0ms)
+Rendered layouts/_footer.html.erb (203.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (406.0ms)
+Completed 200 OK in 812ms (Views: 406.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Thu May 05 02:25:51 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1[0m
+Rendered layouts/_head.html.erb (16.0ms)
+Rendered layouts/_header.html.erb (62.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (31.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 578ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Thu May 05 02:32:18 +0100 2011
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT 24 OFFSET 0
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT COUNT(*) FROM "posts"[0m
+Rendered layouts/_head.html.erb (15.0ms)
+Rendered layouts/_header.html.erb (31.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (31.0ms)
+Rendered layouts/_footer.html.erb (47.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/index.html.erb within layouts/application (188.0ms)
+Completed 200 OK in 579ms (Views: 188.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/34" for 127.0.0.1 at Thu May 05 02:32:24 +0100 2011
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 34 LIMIT 1
+Rendered layouts/_head.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (32.0ms)
+Rendered posts/_searchform.erb (0.0ms)
+Rendered emails/_formmini.html.erb (32.0ms)
+Rendered layouts/_footer.html.erb (32.0ms)
+Rendered layouts/_endscripts.html.erb (0.0ms)
+Rendered posts/show.html.erb within layouts/application (125.0ms)
+Completed 200 OK in 578ms (Views: 140.0ms | ActiveRecord: 0.0ms)
