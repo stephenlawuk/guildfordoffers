@@ -7,11 +7,16 @@
 */
 
 body {
-    background: #b0d8f9;
-    color: #333333;
+    background: #000000 url("/rework/bg.jpg") center top no-repeat;
+    color: #000000;
     font-family: verdana, arial, helvetica, sans-serif;
     margin: 0 auto;
     text-align: center;
+}
+
+h1 {
+   text-align: left;
+   clear: both;
 }
 
 pre {
@@ -21,7 +26,7 @@ pre {
 }
 
 form {
-    width: 700px;
+    width: 450px;
     margin: 0 auto;
 }
 
@@ -47,15 +52,15 @@ form.edit_user, form.new_user {
 
 label {
     display: block;
-    margin-left: 15px;
+    margin-left: 50px;
     width: 5em;
     float: left;
-    text-align: left;
     white-space: nowrap;
+    color: #FFFF00;
 }
 
 input {
-    width: 400px;
+    width: 200px;
     font-size: 12px;
     font-family: verdana, arial, helvetica, sans-serif;
 }
@@ -102,7 +107,6 @@ input#email_email {
 
 #search_submit {
     width: 100px;
-    float: right;
 }
 
 textarea {

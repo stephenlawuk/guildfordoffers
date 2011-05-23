@@ -74,9 +74,14 @@
                 geocoder gem installed
                 geocoder semi implemented with IP seems very dodgy though.
                 search implemented and works from any page
-    - v 0.8     Favicon with a "G" added
+    - v0.8      Favicon with a "G" added
                 Adjusted username model for uniqueness on field
                 Facebook comments
+    - v0.9      Major graphics rework and reorganising of links, divs, styles
+                Search bug fix
+                Lots of new images
+                Custom map icons
+                More conditionals on offer view
 
 == To Do List
     - improve search
@@ -96,6 +101,8 @@
 
 == Known Bugs/Issues
 
+    -- Minor bug - custom icon reduces map zoom bar not sure on fix.
+       possibly to do with initialisation order.
     -- Geocoder gem database is very inaccurate and should be replaced
        as soon as possible with Geokit when it becomes available. There is also
        a depreciation warning in the Geocoder implementation that can’t be helped.

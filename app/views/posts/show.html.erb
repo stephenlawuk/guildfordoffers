@@ -1,21 +1,11 @@
 <div class="backandprint noprint">
-  <div class="back">
-    <%= link_to 'Back', posts_path %>
-  </div>
   <div class="print">
-    <a href="#" onClick=" window.print(); return false"><img alt="Print This Offer" class="borderless" src="/images/print.gif"/> Print This Offer</a>
+    <a href="#" onClick=" window.print(); return false"><img alt="Print This Offer" class="borderless" src="/rework/printer.png"/> Print This Offer</a>
   </div>
   <div class="clear"></div>
 </div>
 
 <div id="notice"><%= notice %></div>
-
-<div class="noprint">
-IP address <%= @myip %>
-<br/>My Lat <%= @mylat %>
-<br/>My Long <%= @mylong %>
-<br/>My Add <%= @mycity %>
-</div>
 
 <div class="offertitle">
   <div class="companytitle">
@@ -23,60 +13,120 @@ IP address <%= @myip %>
   </div>
   <div class="offer">
     <h1><%= @post.offer %></h1>
-    <%= @post.nus %><%= @post.web %>
   </div>
   <div class="clear"></div>
 </div>
 <div class="offercontainer">
   <div class="companyinfo">
-    <% if @post.imgurl.blank? %>
-      <%= image_tag("/images/companylogos/nullimg.jpg", :alt => @post.company) %>
-    <% else %>
-      <%= image_tag(@post.imgurl, :alt => @post.company) %>
+    <% if @post.web == "1" %>
+      <div class="badge">
+        <%= image_tag("/rework/web.png", :alt => "Online Only") %>
+      </div>
     <% end %>
-    <h2>Business Contact Info</h2>
-    <%= link_to image_tag("/images/officialbutton.png", :alt => "Official Site", :class => "borderless"), @post.website , :title => "Official Site", :target => "_blank" %>
-    <%= link_to image_tag("/images/facebook.png", :alt => "Facebook", :class => "borderless"), @post.facebook , :title => "Facebook", :target => "_blank" %>
-    <%= link_to image_tag("/images/twitter.png", :alt => "Twitter", :class => "borderless"), @post.twitter , :title => "Twitter", :target => "_blank"%>
-    <% unless @post.email.blank? %>
-    <%= link_to image_tag("/images/email.png", :alt => "Email", :class => "borderless"), "mailto:" + @post.email , :title => "Email", :target => "_blank" %>
-    <% end %>
-    <br/>
-    <div class="companytext">
-      <%= image_tag("/images/phone.png", :alt => "Phone") %> <%= @post.phone %>
-      <br/>
-      <%= image_tag("/images/house.png", :alt => "Address") %> Address:
-      <br/>
-      <%= @post.address %>
-      <br/>
-      Opening Times:
-      <br/>
-      <%= @post.openingtimes %>
+    <div class="businessboxtop">
+      <% if @post.imgurl.blank? %>
+        <%= image_tag("/images/companylogos/nullimg.jpg", :alt => @post.company) %>
+      <% else %>
+        <%= image_tag(@post.imgurl, :alt => @post.company) %>
+      <% end %>
     </div>
-    <br/>
-    <div>
-      Map stuff:
-      <br/>
-      Latitude: <%= @post.latitude %>
-      <br/>
-      Longitude: <%= @post.longitude %>
+    <div class="businessboxmiddle">
+      TEXT ABOUT COMPANY<br/>
+      TEXT ABOUT COMPANY<br/>
+      TEXT ABOUT COMPANY<br/><br/>
+      <div class="companytext">
+        <%= image_tag("/rework/phone.png", :alt => "Phone") %> Telephone:
+        <br/>
+        <% if @post.phone.blank? %>
+          <div class="companytext">N/A</div>
+        <% else %>
+          <div class="companytext"><%= @post.phone %></div>
+        <% end %>
+        <br/>
+        <%= image_tag("/rework/home.png", :alt => "Address") %> Address:
+        <br/>
+        <% if @post.address.blank? %>
+          <div class="companytext">N/A</div>
+        <% else %>
+          <div class="companytext"><%= @post.address %></div>
+        <% end %>
+        <br/>
+        <%= image_tag("/rework/time.png", :alt => "Address") %> Opening Times:
+        <br/>
+        <% if @post.openingtimes.blank? %>
+          <div class="companytext">N/A</div>
+        <% else %>
+          <div class="companytext"><%= @post.openingtimes %></div>
+        <% end %>
+        <br/>
+        <br/>
+      </div>
+      <%= link_to image_tag("/images/officialbutton.png", :alt => "Official Site", :class => "borderless"), @post.website , :title => "Official Site", :target => "_blank" %>
+      <%= link_to image_tag("/images/facebook.png", :alt => "Facebook", :class => "borderless"), @post.facebook , :title => "Facebook", :target => "_blank" %>
+      <%= link_to image_tag("/images/twitter.png", :alt => "Twitter", :class => "borderless"), @post.twitter , :title => "Twitter", :target => "_blank"%>
+      <% unless @post.email.blank? %>
+      <%= link_to image_tag("/images/email.png", :alt => "Email", :class => "borderless"), "mailto:" + @post.email , :title => "Email", :target => "_blank" %>
+      <% end %>
+    </div>
+    <div class="businessboxbottom">
+      <div class="companytext">
+        <br/>
+        <%= image_tag("/rework/compass.png", :alt => "Geolocation") %> Geolocation:
+        <br/>
+        <div class="companytext">
+        Latitude:
+        <% if @post.latitude.blank? %>
+            N/A
+        <% else %>
+          <%= @post.latitude %>
+        <% end %>
+        <br/>
+        Longitude:
+        <% if @post.longitude.blank? %>
+            N/A
+        <% else %>
+          <%= @post.longitude %>
+        <% end %>
+        </div>
+      </div>
     </div>
   </div>
   <div class="offerinfo">
     <div class="info">
-      <b>Description:</b>
-      <%= @post.description %>
-      <br/>
-      <br/>
-      <b>Valid To:</b> <%= @post.validto %>
-      <br/>
-      <b>Valid To Conditions:</b> <%= @post.validtonotes %>
+      <% if @post.nus == "1" %>
+        <div class="badge">
+          <%= image_tag("/rework/nus.png", :alt => "NUS Card Required") %>
+        </div>
+      <% end %>
+      <div class="boxtop"></div>
+      <div class="boxmiddle">
+        <%= @post.description %>
+        <br/>
+        <br/>
+        <b>Valid To:</b>
+        <% if @post.validto.blank? %>
+            N/A
+        <% else %>
+          <%= @post.validto %>
+        <% end %>
+        <br/>
+        <b>Conditions:</b>
+        <% if @post.validto.blank? %>
+            N/A
+        <% else %>
+          <%= @post.validtonotes %>
+        <% end %>
+      </div>
+      <div class="boxbottom"></div>
     </div>
     <div class="tags">
-      Tags: <%= @post.metadata %>
+      <div class="boxtop"></div>
+      <div class="boxmiddle">
+        <b>Tags:</b> <%= @post.metadata %>
+      </div>
+      <div class="boxbottom"></div>
     </div>
     <div class="spreadword noprint">
-        Spread The Word!! 
         <!-- AddThis Code BEGIN -->
         <div class="addthis_default_style">
         <a class="addthis_button_facebook_like" fb:like:layout="box_count" fb:like:width="46" fb:like:height="60" addthis:url="<%=  request.url %>" ></a>
@@ -102,12 +152,20 @@ IP address <%= @myip %>
   </div>
   <div class="clear"></div>
 </div>
+
 <div id="map" class="noprint">
   No Map Data Available
 </div>
 <br/>
+<div class="userinfo noprint">
+USER INFO - UNDER DEVELOPEMENT <br/>
+IP address <%= @myip %>
+<br/>My Lat <%= @mylat %>
+<br/>My Long <%= @mylong %>
+<br/>My Address <%= @mycity %>
+</div>
 <div class="noprint">
 <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
-<fb:comments href=<%=request.url%> num_posts="5" width="900px"></fb:comments>
+<fb:comments href="<%=request.url%>" num_posts="5" width="940px" colorscheme="dark"></fb:comments>
 </div>
 <br/><br/>

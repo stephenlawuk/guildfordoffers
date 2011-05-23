@@ -41,7 +41,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.xml
   def search
-    @search = Post.search(params[:search].split(' '))
+    @search = Post.search(params[:search])
     @posts = @search.all
     @posts = @search.paginate :page => params[:page], :per_page => 24, :order => "created_at DESC"
     @posts_count = @search.count
@@ -73,13 +73,26 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
 
     unless @post.latitude.blank? or @post.longitude.blank?
-      @marker = GMarker.new([@post.latitude,@post.longitude],:title => @post.company, :info_window => @post.offer)
-      @myloc = GMarker.new([@mylat,@mylong],:title => "You", :info_window => "You Are Here At #@mylat, #@mylong")
-
       @map = GMap.new("map")
       @map.control_init(:large_map => true,:map_type => true)
       @map.set_map_type_init(GMapType::G_HYBRID_MAP)
       @map.center_zoom_init([@post.latitude,@post.longitude],17)
+      @map.icon_global_init(GIcon.new(:image => "/rework/location.png",
+        :icon_anchor => GPoint.new(6,11),
+        :info_window_anchor => GPoint.new(6,11)),
+      "businessicon")
+
+      @map.icon_global_init(GIcon.new(:image => "/rework/youarehere.png",
+        :icon_anchor => GPoint.new(13,14),
+        :info_window_anchor => GPoint.new(13,14)),
+      "hereicon")
+
+      busloc = Variable.new("businessicon")
+      youarehere = Variable.new("hereicon")
+
+      @marker = GMarker.new([@post.latitude,@post.longitude], :icon => busloc, :title => @post.company, :info_window => @post.offer)
+      @myloc = GMarker.new([@mylat,@mylong], :icon => youarehere,:title => "You", :info_window => "You Are Here At #@mylat, #@mylong")
+
       @map.overlay_init(@marker)
       @map.overlay_init(@myloc)
     end

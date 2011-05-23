@@ -17,7 +17,7 @@ div {
 div.header {
     width: 100%;
     height: 230px;
-    background: #153766 url(../images/navbg.jpg) repeat-x;
+    background: url(../rework/navbg.png) top no-repeat;
 }
 
 div.logo {
@@ -61,28 +61,35 @@ div.banner {
 }
 
 div#fbarrow {
-    width: 700px;
-    background: url("/images/likeus.png") no-repeat;
-    height: 50px;
+    width: 315px;
+    background: url("/rework/FBlikeus.png") no-repeat;
+    height: 75px;
     margin-left: 240px;
 }
 
 div.searchbg {
     width: 100%;
-    background: #ffffff;
+    clear: both;
 }
 
 div.search {
-    width: 1024px;
+    width: 500px;
     height: 20px;
-    padding: 15px;
+    float: right;
 }
 
-div.container {
-    width: 1024px;
-    min-height: 40em;
+div.containerbg {
+    background: url(../rework/containerbg.png) top no-repeat;
+    width: 100%;
+    min-height: 35em;
     height: auto;
-    padding-top: 15px;
+}
+
+div.container {  
+    width: 1024px;
+    min-height: 35em;
+    height: auto;
+    padding-top: 5px;
     padding-bottom: 15px;
     text-align: center;
 }
@@ -90,14 +97,18 @@ div.container {
 div.rendered {
     font-size: 10px;
     clear: both;
+    color: #FFFF00;
 }
 
 div.footer {
+    background: url(../rework/footerbg.png) top no-repeat;
     width: 100%;
     height: 200px;
-    background: #000000;
     color: #FFFFFF;
-    border-top: 3px solid #CCCCCC;
+}
+
+div.footer a {
+    font-size: 12px;
 }
 
 div.footercontainer {
@@ -148,20 +159,23 @@ div.columnright {
 
 div.footertitle {
     font-size: 15px;
-    border-bottom: 3px solid #3366ff;
+    border-bottom: 3px solid #FFFF00;
+    color: #FFFF00;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 div.footercopyright {
     clear: both;
     width: 1024px;
     font-size: 60%;
-    padding-top: 30px;
+    padding-top: 90px;
 }
 
 /* Divs for show offer */
 
 div.offertitle {
-    width: 100%;
+    width: 940px;
     height: auto;
 }
 
@@ -170,19 +184,17 @@ div.companytitle {
     float: left;   
     text-align: left;
     height: auto;
-    padding: 10px;
 }
 
 div.offer {
-    width: 620px;
+    width: 540px;
     float: right;
     text-align: left;
     height: auto;
-    padding: 10px;
 }
 
 div.offercontainer {
-    width: 100%;
+    width: 940px;
     height: auto;
 }
 
@@ -193,92 +205,126 @@ is available in IE7+, FF 3.5 and Webkit enabled browsers (Safari/Chrome etc).
 To handle IE6 also need to declare word-wrap: break-all;
 */
 div.companyinfo {
-    width: 350px;
+    width: 380px;
     float: left;
     margin: auto;
     min-height: 20em;
     height: auto;
-    padding: 10px;
-    background: #ffffcc;
     word-wrap: break-word;
-    border:1px solid #CCCCCC;
+    color: #FFFF00;
 }
 
 div.companytext {
-    width: 300px;
-    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     height: auto;
     text-align: left;
 }
 
 div#map {
     min-height: 300px;
-    padding: 20px;
     height: auto;
+    width: 940px;
     text-align: left;
+    color: #666666;
 }
 
 div.offerinfo {
-    width: 640px;
+    width: 540px;
     float: right;
     text-align: left;
     height: auto;
 }
 
+div.boxtop {
+   height: 16px;
+   background: url(../rework/boxtop.png) 0 0 no-repeat;
+}
+
+div.boxmiddle {
+   height: auto;
+   background: url(../rework/boxmiddle.png) 0 0 repeat-y;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+div.boxbottom {
+   height: 17px;
+   background: url(../rework/boxbottom.png) 0 0 no-repeat;
+}
+
+div.businessboxtop {
+    /*image is 212px*/
+   height: 157px;
+   background: url(../rework/businessboxtop.png) 0 0 no-repeat;
+   padding-top: 25px;
+   padding-left: 115px;
+   text-align: left;
+}
+
+div.businessboxmiddle {
+   height: auto;
+   background: url(../rework/businessboxmiddle.png) 0 0 repeat-y;
+   padding-top: 15px;
+}
+
+div.businessboxbottom {
+   height: 151px;
+   background: url(../rework/businessboxbottom.png) 0 0 no-repeat;
+   text-align: left;
+}
+
 div.info {
-    background: #99ff99;
-    border:1px solid #CCCCCC;
-    padding: 10px;
     min-height: 20em;
     height: auto;
+    color: #FFFFFF;
 }
 
 div.tags {
-    background: #ff9933;
-    border:1px solid #CCCCCC;
-    padding: 10px;
     margin-top: 10px;
     height: auto;
+    color: #FFFF00;
 }
 
 div.spreadword {
-    background: #5f6d76;
-    border:1px solid #CCCCCC;
+    background: url(../rework/spreadtheword.png) 0px 12px no-repeat;
     padding: 10px;
     margin-top: 10px;
     height: 90px;
 }
 
 div.datebox {
-    margin-top: 10px;
-    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 940px;
     height: 20px;
     clear: both;
     font-size: 11px;
-    border:1px solid #CCCCCC;
     background: #FFFFFF;
+    color: #000000;
 }
 
 div.createdat {
-    width: 500px;
+    width: 400px;
     float: left;
     text-align: left;
     padding: 3px;
 }
 
 div.updatedat {
-    width: 500px;
+    width: 400px;
     float: right;
     text-align: right;
     padding: 3px;
 }
 
 div.backandprint {
+    padding-top: 15px;
     width: 100% 
 }
 
 div.back {
-    width: 500px;
+    width: 200px;
     text-align: left;
     float: left;
 }
@@ -308,18 +354,22 @@ p.about {
     width: 600px;
     text-align: left;
     margin: auto;
+    color: #FFFF00;
 }
 
 .faq {
-    width: 500px;
+    width: 700px;
     text-align: left;
     margin: auto;
+    padding: 10px;
+    color: #FFFF00;
 }
 
 .business {
     width: 800px;
     text-align: left;
     margin: auto;
+    color: #FFFF00;
 }
 
 div.terms {
@@ -334,42 +384,43 @@ div.terms textarea {
 /* Divs for twitter */
 
 #twitter_container {
-    width: 700px;
-    background: url("/images/bubble.png") no-repeat;
-    height: 70px;
-    margin-left: 251px;
+    width: 420px;
+    background: url("/rework/bubble.png") no-repeat;
+    height: 150px;
+    float: right;
 }
 
 #twitter_update_list {
-    width: 700px;
-    height: 60px;
-    padding-top: 5px;
+    width: 420px;
+    height: 150px;
+    padding-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
     overflow: hidden;
     font-size: 12px;
     font-style: italic;
-    color: #31353d;
+    color: #FFFFFF;
     font-family: Georgia;
     font-weight: bold;
     text-align: left;
 }
 
 #twitter_update_list a {
-    color: #5f6d76;
+    color: #FFFF00;
     border-bottom: dotted 1px;
     text-decoration: none;
 }
 
 #twitter_update_list a:hover {
-    color: #31353d;
+    color: #FFFFFF;
 }
 
 #twitter_bottom {
     display: block;
-    width: 700px;
-    height: 30px;
-    background: url("/images/twitterfollow.png") no-repeat;
+    width: 315px;
+    height: 75px;
+    background: url("/rework/twitterfollow.png") no-repeat;
+    margin-left: 290px;
 }
 
 /* CSS for Addthis alignment */
@@ -387,8 +438,8 @@ div.terms textarea {
 }
 
 /* CSS for links */
-a { color: #666666; text-decoration: none;}
-a:visited { color: #666666; }
+a { color: #FFFFFF; text-decoration: none;}
+a:visited { color: #FFFFFF; }
 div.header a:hover { color: #fff; text-decoration: underline; }
 div.footer a {color: #FFFFFF}
 div.footer a:hover {color: #000000; background-color: #FFFFFF;}
@@ -467,4 +518,45 @@ div.dialog {
   border-bottom-color: #999;
   background: #FFFFFF;
 }
+
+h1 {
+    color: #FFFF00;
+}
+
 h1.error { font-size: 100%; color: #f00; line-height: 1.5em; }
+
+h2 {
+    color: #FFFF00;
+}
+
+h3 {
+    color: #FFFF00;
+    text-decoration: underline;
+}
+
+hr {
+    color: #611861;
+    background: #611861;
+    border: none;
+}
+
+.page_info {
+    color: #FFFF00;
+}
+
+.pagination {
+    color: #FFFF00;
+}
+
+p {
+    color: #FFFF00;
+}
+
+.userinfo {
+    color: #FFFF00;
+}
+
+.badge {
+    float: right;
+    clear: none;
+}
